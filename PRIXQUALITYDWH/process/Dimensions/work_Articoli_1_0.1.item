@@ -4,7 +4,7 @@
     <contextParameter comment="" name="VerticaStaging_Login" prompt="VerticaStaging_Login?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="horsadmin"/>
     <contextParameter comment="" name="VerticaStaging_Database" prompt="VerticaStaging_Database?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="vertica01"/>
     <contextParameter comment="" name="VerticaStaging_AdditionalParams" prompt="VerticaStaging_AdditionalParams?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value=""/>
-    <contextParameter comment="" name="VerticaStaging_Password" prompt="VerticaStaging_Password?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:hcjfUiwxG5SsHOtRKH0fEkBIdTCbSMQKD0KLhTSbRf4M7t71kQ=="/>
+    <contextParameter comment="" name="VerticaStaging_Password" prompt="VerticaStaging_Password?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:FhockFmshtq3kWHQDMIH5XiIzPLdc0hyV1hnqtBM6innx7i8qg=="/>
     <contextParameter comment="" name="VerticaStaging_Server" prompt="VerticaStaging_Server?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="10.0.1.217"/>
     <contextParameter comment="" name="VerticaStaging_Port" prompt="VerticaStaging_Port?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="5433"/>
   </context>
@@ -50,7 +50,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:N2AqxbA0ASDreQIVxGKDNu/yWfcRpLV7ZLYRz4iw"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:b+/3niGLb7hFslFnGX1M/wA0m/MQ8h4nq0xh2F56"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -85,7 +85,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:hOsohbS4exvYXIifOdhOT/C2G9QpA4BNDQCFFWcP"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:DmF2YqJ7KJ07G0ZypkxDs6ndV8rUdfkP5dBdQQcT"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -133,7 +133,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Q1fHUkUR1rCmk2XVol7M2gt3Lp8eBl9a+l3UEeXvF2m6FB/QhHEURShnpNwBUEPBoApLDs9W44Oz84Q="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:A5xUKDfHTEVVjR7kzrv107bfdAh53DHRbUo91rwoMR7RB3kCIbeYIVGncMGSw4Ec7HcvzAYiZZH8ygQ="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_97qzwDLwEeuOOuF0jpKN3w - metadata"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;A0ARTDDF&quot;"/>
@@ -343,7 +343,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-      <outputTables name="out2" sizeState="INTERMEDIATE">
+      <outputTables activateExpressionFilter="true" expressionFilter="row2.hashID == null || out1.hashID == row2.hashID" name="out2" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="out1.A0ADOC " name="A0ADOC" nullable="true" type="id_String"/>
         <mapperTableEntries expression="out1.A0AEXP " name="A0AEXP" nullable="true" type="id_String"/>
         <mapperTableEntries expression="out1.A0ATCA " name="A0ATCA" nullable="true" type="id_String"/>
@@ -431,7 +431,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Q7WKsBmuq/AemQiwzrQgLtN7neeaxqtwfKfUEU3c/NC+fWa3R41L2TlPiwyX/L5qkhn/FrxRTZo2ZGI="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8FdBgv4UI7fiZ4xpfH0pPXpL9nrwEhczMmN0b8nUkdd9GLGVZ7u64bzaoI6qyNVpOf4RedcWYe9UYxU="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;work_Articoli_1&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -530,7 +530,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:06s2bngF7BVIALQrSDkQ4JRBCqfc6w+NexkR/pCFBSNXfkKVjnJXhro+Wpcnvc2IEW8bTt3bGx4aQuY="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:cbmFNSbqTurvBjvYvoeVPYj017DcsrrgakKWskGXswYAxmDSBjYyoQqacb48xncZdx/Zpv3xEZba5vM="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;work_Articoli_1&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -740,7 +740,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qJJAgtDDxwUguXMGVIL41Ot1xBEfuP6ASRyzKnyuaWDNOsDkbTD1Ir0gKV0jmbEJikScfx2lWJ/3XGs="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:sk8mkJ/GZd5/y3LduU3hXB6ZX7aT74kRdGudCYG/E8Dfa+0U5jxcQHudEEFOViwdZPRZ3LAEXNoZ4XY="/>
     <elementParameter field="TEXT" name="PROPERTIES" value="context.VerticaStaging_AdditionalParams"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -793,13 +793,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_12ba71d7-c730-48e0-a6cb-b874e52bda5d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eptaGKQnOOaCs5J2CREPdqVQxx9uu6Qzob8qhE6iSRQrFlybMpnOZkQC1hOhMH6N0FWxgPMtogK0
-VaRy6PqteQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3420c4b2-415c-409c-8200-d0201dbca28b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zB17Ln+X4jUfubudSUc8u8RMSJdi7yCS9UQ1ziWMuk8ORswTXM0eRU6LUmPXyxbfng46JOP7in1t
-xOCuDBKRNg==</DigestValue></Reference></SignedInfo><SignatureValue>SfSVSpuDp6beatR8K2ENm0pA7nZMlMqOk6APTfrMgWH3PCuhGuLngwsPbrT3C1NHxUV8ziPTqxjg
-g5OAT9hY+ccwMa4SbKQxe8TDHJhhR2uzYVdf23NGGFTRzx6P8yoKT9QGxney7FkHH2zM32EfnxkE
-auiIdQsu0scLnqq+FgsXjWPmdKO0v+Zl7jlTqpow1b+HAXUEJNg5+7xrljL/MDdvXAKCL+XEv5iJ
-mkWOqGGqA4JGRTp4y/hKXJ8Zn1+puOV4BP9lkCgnGxedKPtnNkiL69VjBpny0txfA/qV9HVlrvVT
-D8DWGZK2XbHisdbyBWl4ox/zk/U4gAFc+VFibg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_25978e7b-e013-4ae0-a6e3-c10336d5c503"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IEigba3llgCUQR6582WMqsIAo3JBGXaCTsVr0MVpA+beJ2MkYmTOGUDsr6HX5AIrTRWMOvtgHN7x
+eRwXpC+rIA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ac2b7971-cdef-4439-b811-2e490fb7f4f6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>L+8j67L6hWUEIWlBUKBzd7xuZ0XVfEyx+lQA915+6xOyBqJ+bRE8CSkjuD1HrWkaFCqcPtVa/X97
+zU5Utj2JqA==</DigestValue></Reference></SignedInfo><SignatureValue>OpNatIlft38tJRMA6PWKtzjdLsTXTvK3m/BRBlL87RswyHXF4qd+1eNQNSPuEwgTiz4032cZjCEQ
+STEYA9xyvOJSAKML9N1j9W5EP4JGZePF8o/4DgJOr7pO04CLiesTNMK/5drvKb8A+yXPivw+LIvS
+eDHe6nW27c5roqWHKBQo63EBdAcLf/gdrN7NcuuQUU0Vmpol7B3Gd7t+nn0tu5x1zqIWvp+WEaVe
+/0Mpf3zRzdgoo8XiUdNSz//U/nNcOC/FCowGNcbGoOUam/OARa6iRPUasyMv7GrljNsl1jQfioFS
+CED46nDFm2DDslDyBTGAb4XfHixf3q/UbkUhEg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -821,4 +821,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3420c4b2-415c-409c-8200-d0201dbca28b" Target="#_12ba71d7-c730-48e0-a6cb-b874e52bda5d"><Timestamp>2020-12-10 10:47:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ac2b7971-cdef-4439-b811-2e490fb7f4f6" Target="#_25978e7b-e013-4ae0-a6e3-c10336d5c503"><Timestamp>2020-12-11 10:35:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
