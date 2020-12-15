@@ -6,12 +6,12 @@
     <groupId>org.example.prixqualitydwh</groupId>
     <artifactId>code.Master</artifactId>
     <version>7.3.1</version>
-    <relativePath>../../../../</relativePath>
+    <relativePath>../../../../../</relativePath>
   </parent>
   <groupId>org.example.prixqualitydwh.job</groupId>
-  <artifactId>Stg_Tracciato_AR</artifactId>
+  <artifactId>Copy_of_Stg_DBIAR00F</artifactId>
   <version>0.1.0</version>
-  <name>PRIXQUALITYDWH Stg_Tracciato_AR-0.1.0 (0.1,Job Designs)</name>
+  <name>PRIXQUALITYDWH Copy_of_Stg_DBIAR00F-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -24,7 +24,7 @@
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>PRIXQUALITYDWH</talend.project.name>
     <talend.product.version>7.3.1.20200219_1130</talend.product.version>
-    <talend.job.finalName>stg_tracciato_ar_0_1</talend.job.finalName>
+    <talend.job.finalName>copy_of_stg_dbiar00f_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.prixqualitydwh.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.prixqualitydwh.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
@@ -33,10 +33,10 @@
     <talend.job.context>Production</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>Stg_Tracciato_AR</talend.job.name>
-    <talend.job.id>___i9MC2kEeuXnsc4Bwy--A</talend.job.id>
+    <talend.job.name>Copy_of_Stg_DBIAR00F</talend.job.name>
+    <talend.job.id>_aEBAMD4CEeuYoo3p7NoI5A</talend.job.id>
     <talend.project.id>0</talend.project.id>
-    <talend.job.folder>staging/</talend.job.folder>
+    <talend.job.folder>staging/listini/</talend.job.folder>
     <talend.job.framework></talend.job.framework>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.type>Standard</talend.job.type>
@@ -84,11 +84,6 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>jakarta-oro-2.0.8</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
       <artifactId>job-audit</artifactId>
       <version>1.1</version>
     </dependency>
@@ -96,6 +91,11 @@
       <groupId>net.minidev</groupId>
       <artifactId>json-smart</artifactId>
       <version>2.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>net.sf.jt400</groupId>
+      <artifactId>jt400</artifactId>
+      <version>9.8</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
@@ -131,11 +131,6 @@
       <groupId>org.talend.libraries</groupId>
       <artifactId>talend_file_enhanced_20070724</artifactId>
       <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.vertica</groupId>
-      <artifactId>vertica-jdbc</artifactId>
-      <version>9.3.1-0</version>
     </dependency>
     <dependency>
       <groupId>org.example.prixqualitydwh.code</groupId>
