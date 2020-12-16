@@ -30,7 +30,7 @@
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
     <talend.job.jvmargs>-Xms512M -Xmx10240M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
-    <talend.job.context>Default</talend.job.context>
+    <talend.job.context>Production</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
     <talend.job.name>Main_Dimension</talend.job.name>
@@ -131,6 +131,18 @@
       <groupId>org.example.prixqualitydwh.code</groupId>
       <artifactId>routines</artifactId>
       <version>7.3.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.prixqualitydwh.joblet</groupId>
+      <artifactId>log_start</artifactId>
+      <version>0.1.0</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>org.example.prixqualitydwh.joblet</groupId>
+      <artifactId>log_end</artifactId>
+      <version>0.1.0</version>
+      <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.example.prixqualitydwh.job</groupId>
