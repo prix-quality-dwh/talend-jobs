@@ -1,0 +1,1683 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="AS400_Login" prompt="AS400_Login?" promptNeeded="false" repositoryContextId="_Mwc5YCpvEeutodfUG7h-rA" type="id_String" value="DB2DRDA"/>
+    <contextParameter comment="" name="AS400_Database" prompt="AS400_Database?" promptNeeded="false" repositoryContextId="_Mwc5YCpvEeutodfUG7h-rA" type="id_String" value="STOREDAT"/>
+    <contextParameter comment="" name="AS400_AdditionalParams" prompt="AS400_AdditionalParams?" promptNeeded="false" repositoryContextId="_Mwc5YCpvEeutodfUG7h-rA" type="id_String" value="prompt=false;libraries=STOREDAT;translate binary=true;date format=iso"/>
+    <contextParameter comment="" name="AS400_Password" prompt="AS400_Password?" promptNeeded="false" repositoryContextId="_Mwc5YCpvEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:KUYsorv8Ij+p9mV+PgtuSQlZJ3cjIVbmIGJXzTuQ7wIy1dA="/>
+    <contextParameter comment="" name="AS400_Server" prompt="AS400_Server?" promptNeeded="false" repositoryContextId="_Mwc5YCpvEeutodfUG7h-rA" type="id_String" value="10.0.1.205"/>
+    <contextParameter comment="" name="unzipCmd" prompt="unzipCmd?" promptNeeded="false" repositoryContextId="_R9MXoDCcEeu_htijJqL_Xw" type="id_String" value="C:\Program Files\7-zip\7z.exe"/>
+    <contextParameter comment="" name="tempPath" prompt="tempPath?" promptNeeded="false" repositoryContextId="_R9MXoDCcEeu_htijJqL_Xw" type="id_String" value="C:\temp\temp"/>
+    <contextParameter comment="" name="zipFilePath" prompt="zipFilePath?" promptNeeded="false" repositoryContextId="_R9MXoDCcEeu_htijJqL_Xw" type="id_String" value="C:\temp"/>
+    <contextParameter comment="" name="VerticaDWH_Login" prompt="VerticaDWH_Login?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="horsadmin"/>
+    <contextParameter comment="" name="VerticaDWH_Password" prompt="VerticaDWH_Password?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:r3LrkqhadZeYRTkYOUgFYFCSav2YdWGWCxeBEkLnG8pWy334eg=="/>
+    <contextParameter comment="" name="VerticaDWH_Database" prompt="VerticaDWH_Database?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="vertica01"/>
+    <contextParameter comment="" name="VerticaDWH_Schema" prompt="VerticaDWH_Schema?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="DWH"/>
+    <contextParameter comment="" name="VerticaDWH_AdditionalParams" prompt="VerticaDWH_AdditionalParams?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value=""/>
+    <contextParameter comment="" name="VerticaDWH_Server" prompt="VerticaDWH_Server?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="10.0.1.217"/>
+    <contextParameter comment="" name="VerticaDWH_Port" prompt="VerticaDWH_Port?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="5433"/>
+    <contextParameter comment="" name="VerticaStaging_Login" prompt="VerticaStaging_Login?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="horsadmin"/>
+    <contextParameter comment="" name="VerticaStaging_AdditionalParams" prompt="VerticaStaging_AdditionalParams?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value=""/>
+    <contextParameter comment="" name="VerticaStaging_Database" prompt="VerticaStaging_Database?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="vertica01"/>
+    <contextParameter comment="" name="VerticaStaging_Password" prompt="VerticaStaging_Password?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:C0+NcFoSg/W7eLVUhSSi7RI4EW/5Wj1cs+z/C3yBAEsAv05x3A=="/>
+    <contextParameter comment="" name="VerticaStaging_Schema" prompt="VerticaStaging_Schema?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="DWH_int"/>
+    <contextParameter comment="" name="VerticaStaging_Server" prompt="VerticaStaging_Server?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="10.0.1.217"/>
+    <contextParameter comment="" name="VerticaStaging_Port" prompt="VerticaStaging_Port?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="5433"/>
+  </context>
+  <context confirmationNeeded="false" name="Production">
+    <contextParameter comment="" name="AS400_Login" prompt="AS400_Login?" promptNeeded="false" repositoryContextId="_Mwc5YCpvEeutodfUG7h-rA" type="id_String" value="DB2DRDA"/>
+    <contextParameter comment="" name="AS400_Database" prompt="AS400_Database?" promptNeeded="false" repositoryContextId="_Mwc5YCpvEeutodfUG7h-rA" type="id_String" value="STOREDAT"/>
+    <contextParameter comment="" name="AS400_AdditionalParams" prompt="AS400_AdditionalParams?" promptNeeded="false" repositoryContextId="_Mwc5YCpvEeutodfUG7h-rA" type="id_String" value="prompt=false;libraries=STOREDAT;translate binary=true;date format=iso"/>
+    <contextParameter comment="" name="AS400_Password" prompt="AS400_Password?" promptNeeded="false" repositoryContextId="_Mwc5YCpvEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:3Z8ezjlAlvZUb7Sx1KVR0ALLbDGVa5v8qdd2nnsBrVSxMc0="/>
+    <contextParameter comment="" name="AS400_Server" prompt="AS400_Server?" promptNeeded="false" repositoryContextId="_Mwc5YCpvEeutodfUG7h-rA" type="id_String" value="10.0.1.205"/>
+    <contextParameter comment="" name="unzipCmd" prompt="unzipCmd?" promptNeeded="false" repositoryContextId="_R9MXoDCcEeu_htijJqL_Xw" type="id_String" value="7za"/>
+    <contextParameter comment="" name="tempPath" prompt="tempPath?" promptNeeded="false" repositoryContextId="_R9MXoDCcEeu_htijJqL_Xw" type="id_String" value="/tmp/tracciati/tmp/"/>
+    <contextParameter comment="" name="zipFilePath" prompt="zipFilePath?" promptNeeded="false" repositoryContextId="_R9MXoDCcEeu_htijJqL_Xw" type="id_String" value="/tmp/tracciati"/>
+    <contextParameter comment="" name="VerticaDWH_Login" prompt="VerticaDWH_Login?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="horsadmin"/>
+    <contextParameter comment="" name="VerticaDWH_Password" prompt="VerticaDWH_Password?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:jNVCs/H1+p7vKMEjMMWPz5r4PTBhd8s3KHPlHafH9VSoV7Izyw=="/>
+    <contextParameter comment="" name="VerticaDWH_Database" prompt="VerticaDWH_Database?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="vertica01"/>
+    <contextParameter comment="" name="VerticaDWH_Schema" prompt="VerticaDWH_Schema?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="DWH"/>
+    <contextParameter comment="" name="VerticaDWH_AdditionalParams" prompt="VerticaDWH_AdditionalParams?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value=""/>
+    <contextParameter comment="" name="VerticaDWH_Server" prompt="VerticaDWH_Server?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="10.0.1.217"/>
+    <contextParameter comment="" name="VerticaDWH_Port" prompt="VerticaDWH_Port?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="5433"/>
+    <contextParameter comment="" name="VerticaStaging_Login" prompt="VerticaStaging_Login?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="horsadmin"/>
+    <contextParameter comment="" name="VerticaStaging_AdditionalParams" prompt="VerticaStaging_AdditionalParams?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value=""/>
+    <contextParameter comment="" name="VerticaStaging_Database" prompt="VerticaStaging_Database?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="vertica01"/>
+    <contextParameter comment="" name="VerticaStaging_Password" prompt="VerticaStaging_Password?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:whOWtAAAGACKc9I8PayJL+hCKyfr5icZxnbpJN8J2rJOhZ5r7g=="/>
+    <contextParameter comment="" name="VerticaStaging_Schema" prompt="VerticaStaging_Schema?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="DWH_int"/>
+    <contextParameter comment="" name="VerticaStaging_Server" prompt="VerticaStaging_Server?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="10.0.1.217"/>
+    <contextParameter comment="" name="VerticaStaging_Port" prompt="VerticaStaging_Port?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="5433"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:gcgpnZR7zcw7ZA13Pc6RU5XUMIaZr4DKMoVmETtY"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="true"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/alessandro.zenato/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:1oiy5eNjhztYuU+8InZXRtlq4L5U+zNQxgRoz4ly"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_QhonIDo1EeuTtMZ8L3C03g" name="DQTechnical"/>
+    <routinesParameter id="_QhDYUDo1EeuTtMZ8L3C03g" name="DataMasking"/>
+    <routinesParameter id="_QczKcDo1EeuTtMZ8L3C03g" name="DataOperation"/>
+    <routinesParameter id="_QhVsMDo1EeuTtMZ8L3C03g" name="DataQualityDependencies"/>
+    <routinesParameter id="_QhOXcDo1EeuTtMZ8L3C03g" name="DataQuality"/>
+    <routinesParameter id="_QhhSYDo1EeuTtMZ8L3C03g" name="DqStringHandling"/>
+    <routinesParameter id="_QfyNADo1EeuTtMZ8L3C03g" name="Mathematical"/>
+    <routinesParameter id="_Qf5hwDo1EeuTtMZ8L3C03g" name="Numeric"/>
+    <routinesParameter id="_Qf_oYDo1EeuTtMZ8L3C03g" name="Relational"/>
+    <routinesParameter id="_Qg8DkDo1EeuTtMZ8L3C03g" name="SQLike"/>
+    <routinesParameter id="_QgL1oDo1EeuTtMZ8L3C03g" name="StringHandling"/>
+    <routinesParameter id="_QgXb0Do1EeuTtMZ8L3C03g" name="TalendDataGenerator"/>
+    <routinesParameter id="_QgewkDo1EeuTtMZ8L3C03g" name="TalendDate"/>
+    <routinesParameter id="_QgxEcDo1EeuTtMZ8L3C03g" name="TalendStringUtil"/>
+    <routinesParameter id="_Qgk3MDo1EeuTtMZ8L3C03g" name="TalendString"/>
+  </parameters>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tVerticaClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="DWH_Vertica"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_2"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tVerticaConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_IFGvICpwEeutodfUG7h-rA"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="VERTICA_9_0"/>
+    <elementParameter field="TEXT" name="HOST" value="context.VerticaDWH_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="VERTICA"/>
+    <elementParameter field="TEXT" name="PORT" value="context.VerticaDWH_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.VerticaDWH_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.VerticaDWH_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.VerticaDWH_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:92iYxN8jFyt8hc6igUuJoGQiexF/bfgW5FcZaIcVsUlLkflWErJL5EXwFKEFjrMZgiW+vNS45g=="/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.VerticaDWH_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="&quot;dwh_vertica&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="DWH_Vertica"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tVerticaConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_EnPBcCptEeutodfUG7h-rA"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="VERTICA_9_0"/>
+    <elementParameter field="TEXT" name="HOST" value="context.VerticaStaging_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="VERTICA"/>
+    <elementParameter field="TEXT" name="PORT" value="context.VerticaStaging_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.VerticaStaging_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.VerticaStaging_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.VerticaStaging_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uKMv1yW4Nupj8tVRYUeCu/hLaZ8UYCWFiONxExpMRrRwW1t8dR+ysWWXEqWw1iMQ3vo1MD4gMfXtKFg="/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.VerticaStaging_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Staging_Vertica"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tVerticaClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="928" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_2"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TEXT" name="LABEL" value="Staging_Vertica"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tVerticaInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_EnPBcCptEeutodfUG7h-rA"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="VERTICA_9_0"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.VerticaStaging_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="VERTICA"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.VerticaStaging_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:pf7TZKDRk4brxPAjF7ZfF/iEQZpiea4Hisg0siMz+YkwX49ZcPS9uS6lF7Ycdo+y6lk+5W2uwxO0RbI="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;LWALL00F&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from &quot; +context.VerticaStaging_Schema+&quot;.LWALL00F&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="vertica_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.VerticaStaging_AdditionalParams"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWANNU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCDAZ"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCRCM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCDAR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWDTIN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCL01"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCL02"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCL03"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCL04"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCL05"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCL06"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCL07"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCL08"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCL09"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCL10"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCL11"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCL12"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCL13"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCL14"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCN01"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCN02"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCN03"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCN04"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCN05"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCN06"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCN07"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCN08"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCN09"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCN10"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCN11"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCN12"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCN13"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LWCN14"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Staging__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" key="false" length="1" name="LWANNU" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="LWCDAZ" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="LWCRCM" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="LWCDAR" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LWDTIN" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCL01" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCL02" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCL03" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCL04" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCL05" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCL06" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCL07" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCL08" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCL09" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCL10" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCL11" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCL12" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCL13" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCL14" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCN01" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCN02" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCN03" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCN04" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCN05" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCN06" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCN07" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCN08" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCN09" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCN10" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCN11" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCN12" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCN13" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="LWCN14" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_Wa2QMDuIEeu_TfPfH6GknQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Out1" name="Out1">
+      <column comment="" key="false" length="2" name="codice_azienda" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="codice_raggruppamento" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="codice_articolo" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="data_validita_da" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="base_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="riga_documento_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="documento_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="fuori_fattura_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_fa_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="nettissimo_fa_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="commerciale_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="amministrativo_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="logistico_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="premi_fornitori_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="base_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="riga_documento_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="documento_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="fuori_fattura_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_fa_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="nettissimo_fa_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="commerciale_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="amministrativo_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="logistico_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="premi_fornitori_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="codice_annullamento" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_12" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_13" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_14" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_12" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_13" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_14" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables activateExpressionFilter="true" expressionFilter="!row1.LWANNU.equals(&quot;A&quot;)" name="Out1" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.LWCDAZ " name="codice_azienda" type="id_String"/>
+        <mapperTableEntries expression="row1.LWCRCM " name="codice_raggruppamento" type="id_String"/>
+        <mapperTableEntries expression="row1.LWCDAR " name="codice_articolo" type="id_String"/>
+        <mapperTableEntries expression="row1.LWDTIN " name="data_validita_da" type="id_Date"/>
+        <mapperTableEntries expression="row1.LWCL01 " name="base_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCL02 " name="riga_documento_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCL03 " name="documento_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCL04 " name="fuori_fattura_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCL05 " name="std_fa_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCL06 " name="nettissimo_fa_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCL07 " name="commerciale_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCL08 " name="amministrativo_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCL09 " name="logistico_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCL10 " name="premi_fornitori_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCL11 " name="std_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCN01 " name="base_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCN02 " name="riga_documento_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCN03 " name="documento_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCN04 " name="fuori_fattura_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCN05 " name="std_fa_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCN06 " name="nettissimo_fa_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCN07 " name="commerciale_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCN08 " name="amministrativo_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCN09 " name="logistico_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCN10 " name="premi_fornitori_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCN11 " name="std_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWANNU " name="codice_annullamento" type="id_String"/>
+        <mapperTableEntries expression="row1.LWCL12 " name="costo_progr_futuro_12" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCL13 " name="costo_progr_futuro_13" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCL14 " name="costo_progr_futuro_14" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCN12 " name="costo_medio_futuro_12" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCN13 " name="costo_medio_futuro_13" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.LWCN14 " name="costo_medio_futuro_14" type="id_BigDecimal"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="LWANNU" type="id_String"/>
+        <mapperTableEntries name="LWCDAZ" type="id_String"/>
+        <mapperTableEntries name="LWCRCM" type="id_String"/>
+        <mapperTableEntries name="LWCDAR" type="id_String"/>
+        <mapperTableEntries name="LWDTIN" type="id_Date"/>
+        <mapperTableEntries name="LWCL01" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCL02" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCL03" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCL04" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCL05" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCL06" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCL07" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCL08" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCL09" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCL10" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCL11" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCL12" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCL13" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCL14" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCN01" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCN02" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCN03" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCN04" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCN05" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCN06" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCN07" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCN08" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCN09" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCN10" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCN11" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCN12" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCN13" type="id_BigDecimal"/>
+        <mapperTableEntries name="LWCN14" type="id_BigDecimal"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSortRow_1"/>
+    <elementParameter field="TABLE" name="CRITERIA">
+      <elementValue elementRef="COLNAME" value="codice_articolo"/>
+      <elementValue elementRef="SORT" value="alpha"/>
+      <elementValue elementRef="ORDER" value="asc"/>
+      <elementValue elementRef="COLNAME" value="data_validita_da"/>
+      <elementValue elementRef="SORT" value="date"/>
+      <elementValue elementRef="ORDER" value="asc"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="EXTERNAL" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMPFILE" show="false" value="&quot;C:/Users/alessandro.zenato/workspace/temp&quot;"/>
+    <elementParameter field="CHECK" name="CREATEDIR" show="false" value="true"/>
+    <elementParameter field="TEXT" name="EXTERNAL_SORT_BUFFERSIZE" show="false" value="1000000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Out1" name="tSortRow_1">
+      <column comment="" key="false" length="2" name="codice_azienda" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="codice_raggruppamento" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="codice_articolo" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="data_validita_da" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="base_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="riga_documento_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="documento_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="fuori_fattura_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_fa_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="nettissimo_fa_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="commerciale_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="amministrativo_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="logistico_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="premi_fornitori_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="base_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="riga_documento_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="documento_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="fuori_fattura_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_fa_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="nettissimo_fa_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="commerciale_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="amministrativo_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="logistico_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="premi_fornitori_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="codice_annullamento" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_12" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_13" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_14" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_12" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_13" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_14" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="704" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_Wa2QMDuIEeu_TfPfH6GknQ-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out2">
+      <column comment="" key="false" length="2" name="codice_azienda" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="codice_raggruppamento" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="codice_articolo" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="data_validita_da" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="base_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="riga_documento_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="documento_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="fuori_fattura_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_fa_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="nettissimo_fa_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="commerciale_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="amministrativo_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="logistico_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="premi_fornitori_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="base_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="riga_documento_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="documento_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="fuori_fattura_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_fa_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="nettissimo_fa_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="commerciale_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="amministrativo_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="logistico_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="premi_fornitori_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="codice_annullamento" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_12" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_13" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_14" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_12" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_13" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_14" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RowNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out2" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row2.codice_azienda " name="codice_azienda" type="id_String"/>
+        <mapperTableEntries expression="row2.codice_raggruppamento " name="codice_raggruppamento" type="id_String"/>
+        <mapperTableEntries expression="row2.codice_articolo " name="codice_articolo" type="id_String"/>
+        <mapperTableEntries expression="row2.data_validita_da " name="data_validita_da" type="id_Date"/>
+        <mapperTableEntries expression="row2.base_progressivi " name="base_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.riga_documento_progressivi " name="riga_documento_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.documento_progressivi " name="documento_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.fuori_fattura_progressivi " name="fuori_fattura_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.std_fa_progressivi " name="std_fa_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.nettissimo_fa_progressivi " name="nettissimo_fa_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.commerciale_progressivi " name="commerciale_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.amministrativo_progressivi " name="amministrativo_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.logistico_progressivi " name="logistico_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.premi_fornitori_progressivi " name="premi_fornitori_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.std_progressivi " name="std_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.base_anno " name="base_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.riga_documento_anno " name="riga_documento_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.documento_anno " name="documento_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.fuori_fattura_anno " name="fuori_fattura_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.std_fa_anno " name="std_fa_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.nettissimo_fa_anno " name="nettissimo_fa_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.commerciale_anno " name="commerciale_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.amministrativo_anno " name="amministrativo_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.logistico_anno " name="logistico_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.premi_fornitori_anno " name="premi_fornitori_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.std_anno " name="std_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.codice_annullamento " name="codice_annullamento" type="id_String"/>
+        <mapperTableEntries expression="row2.costo_progr_futuro_12 " name="costo_progr_futuro_12" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.costo_progr_futuro_13 " name="costo_progr_futuro_13" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.costo_progr_futuro_14 " name="costo_progr_futuro_14" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.costo_medio_futuro_12 " name="costo_medio_futuro_12" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.costo_medio_futuro_13 " name="costo_medio_futuro_13" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.costo_medio_futuro_14 " name="costo_medio_futuro_14" type="id_BigDecimal"/>
+        <mapperTableEntries expression="Numeric.sequence(&quot;rowNumber&quot;,1,1) " name="RowNo" nullable="true" type="id_Integer"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="codice_azienda" type="id_String"/>
+        <mapperTableEntries name="codice_raggruppamento" type="id_String"/>
+        <mapperTableEntries name="codice_articolo" type="id_String"/>
+        <mapperTableEntries name="data_validita_da" type="id_Date"/>
+        <mapperTableEntries name="base_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="riga_documento_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="documento_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="fuori_fattura_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="std_fa_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="nettissimo_fa_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="commerciale_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="amministrativo_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="logistico_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="premi_fornitori_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="std_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="base_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="riga_documento_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="documento_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="fuori_fattura_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="std_fa_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="nettissimo_fa_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="commerciale_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="amministrativo_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="logistico_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="premi_fornitori_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="std_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="codice_annullamento" type="id_String"/>
+        <mapperTableEntries name="costo_progr_futuro_12" type="id_BigDecimal"/>
+        <mapperTableEntries name="costo_progr_futuro_13" type="id_BigDecimal"/>
+        <mapperTableEntries name="costo_progr_futuro_14" type="id_BigDecimal"/>
+        <mapperTableEntries name="costo_medio_futuro_12" type="id_BigDecimal"/>
+        <mapperTableEntries name="costo_medio_futuro_13" type="id_BigDecimal"/>
+        <mapperTableEntries name="costo_medio_futuro_14" type="id_BigDecimal"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHashOutput_1"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DATA_WRITE_MODEL" value="MEMORY"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" show="false" value="&quot;C:/Users/alessandro.zenato/workspace/in.hash&quot;"/>
+    <elementParameter field="TEXT" name="MEMORY_HEAP_MAX_SIZE" show="false" value="2"/>
+    <elementParameter field="CLOSED_LIST" name="KEYS_MANAGEMENT" value="KEEP_ALL"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" show="false" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashOutput_1">
+      <column comment="" key="false" length="2" name="codice_azienda" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="codice_raggruppamento" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="codice_articolo" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="data_validita_da" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="base_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="riga_documento_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="documento_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="fuori_fattura_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_fa_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="nettissimo_fa_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="commerciale_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="amministrativo_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="logistico_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="premi_fornitori_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="base_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="riga_documento_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="documento_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="fuori_fattura_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_fa_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="nettissimo_fa_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="commerciale_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="amministrativo_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="logistico_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="premi_fornitori_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="codice_annullamento" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_12" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_13" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_14" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_12" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_13" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_14" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RowNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tVerticaCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCommit_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBCommit_1"/>
+  </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHashInput_1"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" show="false" value="&quot;C:/Users/alessandro.zenato/workspace/in.hash&quot;"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_1">
+      <column comment="" key="false" length="2" name="codice_azienda" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="codice_raggruppamento" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="codice_articolo" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="data_validita_da" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="base_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="riga_documento_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="documento_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="fuori_fattura_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_fa_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="nettissimo_fa_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="commerciale_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="amministrativo_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="logistico_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="premi_fornitori_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="base_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="riga_documento_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="documento_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="fuori_fattura_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_fa_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="nettissimo_fa_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="commerciale_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="amministrativo_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="logistico_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="premi_fornitori_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="codice_annullamento" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_12" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_13" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_14" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_12" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_13" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_14" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RowNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_4"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_Wa2QMDuIEeu_TfPfH6GknQ-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out3">
+      <column comment="" key="false" length="2" name="codice_azienda" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="codice_raggruppamento" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="codice_articolo" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="data_validita_da" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="base_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="riga_documento_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="documento_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="fuori_fattura_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_fa_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="nettissimo_fa_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="commerciale_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="amministrativo_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="logistico_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="premi_fornitori_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="base_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="riga_documento_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="documento_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="fuori_fattura_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_fa_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="nettissimo_fa_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="commerciale_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="amministrativo_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="logistico_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="premi_fornitori_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="codice_annullamento" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_12" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_13" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_14" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_12" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_13" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_14" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="data_validita_a" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out3" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row3.codice_azienda " name="codice_azienda" type="id_String"/>
+        <mapperTableEntries expression="row3.codice_raggruppamento " name="codice_raggruppamento" type="id_String"/>
+        <mapperTableEntries expression="row3.codice_articolo " name="codice_articolo" type="id_String"/>
+        <mapperTableEntries expression="row3.data_validita_da " name="data_validita_da" type="id_Date"/>
+        <mapperTableEntries expression="row3.base_progressivi " name="base_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.riga_documento_progressivi " name="riga_documento_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.documento_progressivi " name="documento_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.fuori_fattura_progressivi " name="fuori_fattura_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.std_fa_progressivi " name="std_fa_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.nettissimo_fa_progressivi " name="nettissimo_fa_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.commerciale_progressivi " name="commerciale_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.amministrativo_progressivi " name="amministrativo_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.logistico_progressivi " name="logistico_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.premi_fornitori_progressivi " name="premi_fornitori_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.std_progressivi " name="std_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.base_anno " name="base_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.riga_documento_anno " name="riga_documento_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.documento_anno " name="documento_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.fuori_fattura_anno " name="fuori_fattura_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.std_fa_anno " name="std_fa_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.nettissimo_fa_anno " name="nettissimo_fa_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.commerciale_anno " name="commerciale_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.amministrativo_anno " name="amministrativo_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.logistico_anno " name="logistico_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.premi_fornitori_anno " name="premi_fornitori_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.std_anno " name="std_anno" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.codice_annullamento " name="codice_annullamento" type="id_String"/>
+        <mapperTableEntries expression="row3.costo_progr_futuro_12 " name="costo_progr_futuro_12" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.costo_progr_futuro_13 " name="costo_progr_futuro_13" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.costo_progr_futuro_14 " name="costo_progr_futuro_14" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.costo_medio_futuro_12 " name="costo_medio_futuro_12" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.costo_medio_futuro_13 " name="costo_medio_futuro_13" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.costo_medio_futuro_14 " name="costo_medio_futuro_14" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.codice_articolo.equals(row4.codice_articolo) ? TalendDate.addDate(row4.data_validita_da ,-1,&quot;dd&quot;)  : null " name="data_validita_a" nullable="true" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="codice_azienda" type="id_String"/>
+        <mapperTableEntries name="codice_raggruppamento" type="id_String"/>
+        <mapperTableEntries name="codice_articolo" type="id_String"/>
+        <mapperTableEntries name="data_validita_da" type="id_Date"/>
+        <mapperTableEntries name="base_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="riga_documento_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="documento_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="fuori_fattura_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="std_fa_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="nettissimo_fa_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="commerciale_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="amministrativo_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="logistico_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="premi_fornitori_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="std_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="base_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="riga_documento_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="documento_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="fuori_fattura_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="std_fa_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="nettissimo_fa_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="commerciale_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="amministrativo_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="logistico_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="premi_fornitori_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="std_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="codice_annullamento" type="id_String"/>
+        <mapperTableEntries name="costo_progr_futuro_12" type="id_BigDecimal"/>
+        <mapperTableEntries name="costo_progr_futuro_13" type="id_BigDecimal"/>
+        <mapperTableEntries name="costo_progr_futuro_14" type="id_BigDecimal"/>
+        <mapperTableEntries name="costo_medio_futuro_12" type="id_BigDecimal"/>
+        <mapperTableEntries name="costo_medio_futuro_13" type="id_BigDecimal"/>
+        <mapperTableEntries name="costo_medio_futuro_14" type="id_BigDecimal"/>
+        <mapperTableEntries name="RowNo" nullable="true" type="id_Integer"/>
+      </inputTables>
+      <inputTables activateCondensedTool="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row4" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="codice_azienda" type="id_String"/>
+        <mapperTableEntries name="codice_raggruppamento" type="id_String"/>
+        <mapperTableEntries name="codice_articolo" type="id_String"/>
+        <mapperTableEntries expression="" name="data_validita_da" type="id_Date"/>
+        <mapperTableEntries name="base_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="riga_documento_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="documento_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="fuori_fattura_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="std_fa_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="nettissimo_fa_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="commerciale_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="amministrativo_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="logistico_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="premi_fornitori_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="std_progressivi" type="id_BigDecimal"/>
+        <mapperTableEntries name="base_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="riga_documento_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="documento_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="fuori_fattura_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="std_fa_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="nettissimo_fa_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="commerciale_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="amministrativo_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="logistico_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="premi_fornitori_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="std_anno" type="id_BigDecimal"/>
+        <mapperTableEntries name="codice_annullamento" type="id_String"/>
+        <mapperTableEntries name="costo_progr_futuro_12" type="id_BigDecimal"/>
+        <mapperTableEntries name="costo_progr_futuro_13" type="id_BigDecimal"/>
+        <mapperTableEntries name="costo_progr_futuro_14" type="id_BigDecimal"/>
+        <mapperTableEntries name="costo_medio_futuro_12" type="id_BigDecimal"/>
+        <mapperTableEntries name="costo_medio_futuro_13" type="id_BigDecimal"/>
+        <mapperTableEntries name="costo_medio_futuro_14" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row3.RowNo + 1" name="RowNo" nullable="true" operator="=" type="id_Integer"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHashInput_2"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" show="false" value="&quot;C:/Users/alessandro.zenato/workspace/in.hash&quot;"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_2">
+      <column comment="" key="false" length="2" name="codice_azienda" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="codice_raggruppamento" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="codice_articolo" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="data_validita_da" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="base_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="riga_documento_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="documento_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="fuori_fattura_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_fa_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="nettissimo_fa_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="commerciale_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="amministrativo_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="logistico_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="premi_fornitori_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="base_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="riga_documento_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="documento_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="fuori_fattura_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_fa_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="nettissimo_fa_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="commerciale_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="amministrativo_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="logistico_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="premi_fornitori_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="codice_annullamento" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_12" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_13" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_14" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_12" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_13" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_14" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RowNo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tVerticaOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_IFGvICpwEeutodfUG7h-rA"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="VERTICA_9_0"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="VERTICA"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.VerticaDWH_Server"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.VerticaDWH_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaDWH_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaDWH_Schema"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaDWH_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:knyvad3q954QrSXuAphQfSKoZB7XmrPaHupkv0P55QqlSi+Vf5BCRg94SXuaZihXOnQbN398Yw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dim_costi&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="CHECK" name="USE_CASCADE" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="vertica_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.VerticaDWH_AdditionalParams"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ABORT_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="TEXT" name="REJECT_MAX" show="false" value=""/>
+    <elementParameter field="FILE" name="EXCEPTIONS_PATH" show="false" value=""/>
+    <elementParameter field="TEXT" name="EXCEPTIONS_NODE" show="false" value=""/>
+    <elementParameter field="FILE" name="REJECTED_DATA" show="false" value=""/>
+    <elementParameter field="TEXT" name="REJECTED_NODE" show="false" value=""/>
+    <elementParameter field="CHECK" name="NO_COMMIT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="100"/>
+    <elementParameter field="CHECK" name="BATCH_MODE" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="codice_azienda"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="codice_raggruppamento"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="codice_articolo"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="data_validita_da"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="base_progressivi"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="riga_documento_progressivi"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="documento_progressivi"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fuori_fattura_progressivi"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="std_fa_progressivi"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nettissimo_fa_progressivi"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commerciale_progressivi"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="amministrativo_progressivi"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="logistico_progressivi"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="premi_fornitori_progressivi"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="std_progressivi"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="base_anno"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="riga_documento_anno"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="documento_anno"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fuori_fattura_anno"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="std_fa_anno"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nettissimo_fa_anno"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commerciale_anno"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="amministrativo_anno"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="logistico_anno"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="premi_fornitori_anno"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="std_anno"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="codice_annullamento"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="costo_progr_futuro_12"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="costo_progr_futuro_13"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="costo_progr_futuro_14"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="costo_medio_futuro_12"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="costo_medio_futuro_13"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="costo_medio_futuro_14"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="data_validita_a"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CREATE_PROJECTION" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="DWH__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_1">
+      <column comment="" key="false" length="2" name="codice_azienda" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="codice_raggruppamento" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="codice_articolo" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="data_validita_da" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="base_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="riga_documento_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="documento_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="fuori_fattura_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_fa_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="nettissimo_fa_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="commerciale_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="amministrativo_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="logistico_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="premi_fornitori_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="base_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="riga_documento_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="documento_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="fuori_fattura_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_fa_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="nettissimo_fa_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="commerciale_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="amministrativo_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="logistico_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="premi_fornitori_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="codice_annullamento" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_12" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_13" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_14" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_12" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_13" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_14" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="data_validita_a" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="2" name="codice_azienda" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="codice_raggruppamento" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="codice_articolo" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="data_validita_da" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="base_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="riga_documento_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="documento_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="fuori_fattura_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_fa_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="nettissimo_fa_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="commerciale_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="amministrativo_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="logistico_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="premi_fornitori_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_progressivi" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="base_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="riga_documento_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="documento_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="fuori_fattura_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_fa_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="nettissimo_fa_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="commerciale_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="amministrativo_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="logistico_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="premi_fornitori_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="std_anno" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="codice_annullamento" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_12" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_13" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_progr_futuro_14" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_12" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_13" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="costo_medio_futuro_14" nullable="false" originalLength="-1" pattern="" precision="5" sourceType="DOUBLE PRECISION" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="data_validita_a" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBClose_1" offsetLabelX="0" offsetLabelY="0" source="tDBClose_1" target="tDBClose_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_2" offsetLabelX="0" offsetLabelY="0" source="tPostjob_2" target="tDBClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBConnection_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="LWCN14"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCN13"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCDAR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCL10"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCL12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCN10"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCL11"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCL14"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCN12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCL13"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCN11"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWDTIN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCL05"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCN03"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCL04"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCN02"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCL07"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCN05"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCL06"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCN04"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCL09"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCN07"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCL08"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCN06"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWANNU"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCN09"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCN08"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCL01"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCL03"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCN01"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCL02"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCDAZ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LWCRCM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tHashInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="Out1" lineStyle="0" metaname="Out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tSortRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Out1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tSortRow_1" offsetLabelX="0" offsetLabelY="0" source="tSortRow_1" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tHashOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tMap_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="commerciale_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="logistico_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="amministrativo_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="amministrativo_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fuori_fattura_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fuori_fattura_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="base_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="commerciale_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="std_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="costo_medio_futuro_12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="costo_medio_futuro_13"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="documento_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="costo_medio_futuro_14"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="nettissimo_fa_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="riga_documento_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="codice_azienda"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="documento_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="nettissimo_fa_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="codice_articolo"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="premi_fornitori_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="riga_documento_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="premi_fornitori_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="costo_progr_futuro_12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RowNo"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="std_fa_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="std_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="std_fa_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="base_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="logistico_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="costo_progr_futuro_14"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="costo_progr_futuro_13"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="codice_raggruppamento"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="codice_annullamento"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="data_validita_da"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tDBCommit_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+  </connection>
+  <connection connectorName="FLOW" label="out3" lineStyle="0" metaname="out3" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out3"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="8" metaname="tHashInput_2" offsetLabelX="0" offsetLabelY="0" source="tHashInput_2" target="tMap_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="commerciale_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="logistico_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="amministrativo_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="amministrativo_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fuori_fattura_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fuori_fattura_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="base_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="commerciale_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="std_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="costo_medio_futuro_12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="costo_medio_futuro_13"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="documento_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="costo_medio_futuro_14"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="nettissimo_fa_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="riga_documento_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="codice_azienda"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="documento_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="nettissimo_fa_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="codice_articolo"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="premi_fornitori_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="riga_documento_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="premi_fornitori_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="costo_progr_futuro_12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RowNo"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="std_fa_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="std_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="std_fa_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="base_anno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="logistico_progressivi"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="costo_progr_futuro_14"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="costo_progr_futuro_13"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="codice_raggruppamento"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="codice_annullamento"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="data_validita_da"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <note opaque="true" posX="960" posY="192" sizeHeight="129" sizeWidth="449" text="Starting job Costi at 11:17 11/12/2020.&#13;&#10;[statistics] connecting to socket on port 3442&#13;&#10;[statistics] connected&#13;&#10;[statistics] disconnected&#13;&#10;&#13;&#10;Job Costi ended at 11:44 11/12/2020. [Exit code  = 0]">
+    <elementParameter field="COLOR" name="NOTE_COLOR" value="225;225;135"/>
+    <elementParameter field="COLOR" name="NOTE_LINECOLOR" value="225;225;135"/>
+  </note>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCommit_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHashInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9cb6cebb-ad75-417d-ba60-97fa0d71ce72"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yXBtsiNW1vWGFheaMvVhQgL15LoGqkboEjcP3dG/wf/eaL9Eni7aXZWUkxjXfy7MLb42DALTO4XN
+bAJo039pow==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3f4bdf4d-24bb-4925-9256-2b6a49b3ca40"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1yOlP8KLw0V5cVo1L+coGn83+PPOGhWR0wPcJs6pKIUqgpnAXhfobwot2JkdWUxTQr7qxfgDOoMc
+zRz13w1b9g==</DigestValue></Reference></SignedInfo><SignatureValue>jclWuulMNivVxeeZsvrVm7kZJm+IUVtO/cCjJbt4uaW7x6DAnipakEjda6YWiFaGSUR8U+xSzuDn
+tEf5c8B6akCtaKB7rdJ9gj/kTS9tpwgy3T2o+5SQRDkUYHkxR28fL3VeMZoBHu8GsoU/hHQ1W3aE
+K4F84p9VpU2BJlZxzuk+MNMJxSGz/87sDEBe/Jb1YjyobmNvu0yyYItk94CLvleRXC8off1mCPhv
+Vzu6h8bI5tZyq9zFYB0BuFugYyKb4OoOTuzXVO5Oxg3B+paxaC+x+Pv+G5cRacetlhd35FJMwQV1
+OcY7xtR0qpWc/FFmXC/bGw90AocVlbChnV5FaQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3f4bdf4d-24bb-4925-9256-2b6a49b3ca40" Target="#_9cb6cebb-ad75-417d-ba60-97fa0d71ce72"><Timestamp>2021-01-11 15:03:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
