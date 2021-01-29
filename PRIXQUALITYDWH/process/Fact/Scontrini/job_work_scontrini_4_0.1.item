@@ -4,7 +4,7 @@
     <contextParameter comment="" name="VerticaDWH_Login" prompt="VerticaDWH_Login?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="horsadmin"/>
     <contextParameter comment="" name="VerticaDWH_Database" prompt="VerticaDWH_Database?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="vertica01"/>
     <contextParameter comment="" name="VerticaDWH_AdditionalParams" prompt="VerticaDWH_AdditionalParams?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value=""/>
-    <contextParameter comment="" name="VerticaDWH_Password" prompt="VerticaDWH_Password?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:SOqHsIMgCvAxtuv0bp8j8X4RTBtPYX5xEdGeLRg6UEDqZRdjAw=="/>
+    <contextParameter comment="" name="VerticaDWH_Password" prompt="VerticaDWH_Password?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:zL6d4U2J73VP3KaYeVN8cl9ozY4pzzbcURltJvlXIqIO8lkjXQ=="/>
     <contextParameter comment="" name="VerticaDWH_Server" prompt="VerticaDWH_Server?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="10.0.1.217"/>
     <contextParameter comment="" name="VerticaDWH_Port" prompt="VerticaDWH_Port?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="5433"/>
   </context>
@@ -50,7 +50,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:NoN8nP/+8BBocwCQ44lEeML5t1erCZnIniAr/QLP"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:f5cTiuqqNi8Ylx+7ARuCtNVF3Q8FKZ+r+4neAxna"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -85,7 +85,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:0k0yqxAKnX7vdOCNTVwS1Y76/Ig/a1x6lxpzGG/E"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:BjJOtY6aev5DOt7CwlIM0EWxWWvF5d/oW0jtqzoS"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -104,11 +104,6 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
-    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
-    <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
-    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE" value=""/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value=""/>
     <routinesParameter id="_QhonIDo1EeuTtMZ8L3C03g" name="DQTechnical"/>
     <routinesParameter id="_QhDYUDo1EeuTtMZ8L3C03g" name="DataMasking"/>
     <routinesParameter id="_QczKcDo1EeuTtMZ8L3C03g" name="DataOperation"/>
@@ -127,18 +122,18 @@
   </parameters>
   <node componentName="tVerticaInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_IFGvICpwEeutodfUG7h-rA"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="VERTICA_9_0"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="TEXT" name="HOST" value="context.VerticaDWH_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="VERTICA_9_0"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.VerticaDWH_Server"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="VERTICA"/>
-    <elementParameter field="TEXT" name="PORT" value="context.VerticaDWH_Port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.VerticaDWH_Database"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.VerticaDWH_Schema"/>
-    <elementParameter field="TEXT" name="USER" value="context.VerticaDWH_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Umynrja2lwBr1TEn8Imny8PevrREp3BbVjSQt3sdDBgcX3Lbxzvn7jkw3mVMUos2Am6p6svKVQ=="/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.VerticaDWH_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaDWH_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaDWH_Schema"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaDWH_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:9qXDObXQMuJuCn+16cgyuU9/a0Evwrcfl6o9s7w5Q955IMwI6Lq1vX9MnNWWh5Z8CuvyAKivJA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;work_scontrini_3&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -146,7 +141,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.tipo_record,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.data_vendita,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.ean,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.aliquota_iva,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.listino_vendita,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.prezzo_vendita,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.descrizione,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.qta_venduto,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.valore_venduto_netto,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.valore_venduto_lordo,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.qta_offerte_automatiche,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.valore_offerte_automatiche,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.qta_offerte_clienti,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.valore_offerte_clienti,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.qta_resi,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.valore_resi,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.qta_storni,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.valore_storni,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.reparto,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.codice_interno,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.codice_fornitore,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.codice_negozio,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.file_tracciato,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.file_zip,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.codice_articolo,&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.costo_key,&#13;&#10;&#9;&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3.listino_key&quot;&#10;+&quot;&#10;FROM&#9;\&quot;&quot;+context.VerticaDWH_Schema+&quot;\&quot;.work_scontrini_3&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="vertica_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.VerticaDWH_AdditionalParams"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.VerticaDWH_AdditionalParams"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
       <elementValue elementRef="SCHEMA_COLUMN" value="tipo_record"/>
@@ -453,7 +448,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:monv8Xi3vosicikFhD+2zwBr4m9zKcGxeFmooV2d"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:w3tiHJZ3sYu1KqciptJO7HqhOTQ3xqz3dq+fUbvb"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;work_storni_1&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="USE_CASCADE" value="true"/>
@@ -873,12 +868,12 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.VerticaDWH_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.VerticaDWH_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.VerticaDWH_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TSKR00iXZcy6IAS+lJTsNSiRgQ4FuhDYSWuw1gvmQDhJIv4klSItGrt7w94xvL24xP1gxsIIjQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:nkfOTdkAuHhru2xMLJvegBeSiS8VyHKDY6DLJYXYIVBxkN5o3qbexU7HleklAoAPYB+6F8OZPQ=="/>
     <elementParameter field="TEXT" name="PROPERTIES" value="context.VerticaDWH_AdditionalParams"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="&quot;shared_dwh_connection&quot;"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="VerticaDWH"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -967,7 +962,7 @@
       <column comment="" key="false" length="96" name="listino_key" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out3" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row6.tipo_record " name="tipo_record" nullable="true" type="id_String"/>
@@ -1149,7 +1144,7 @@
       <column comment="" key="false" length="96" name="listino_key" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out4" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row7.tipo_record " name="tipo_record" nullable="true" type="id_String"/>
@@ -1297,7 +1292,7 @@
       <column comment="" key="false" length="96" name="listino_key" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out5" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row8.tipo_record " name="tipo_record" nullable="true" type="id_String"/>
@@ -1372,7 +1367,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:wgOvj7kwUPWYcxOlLqUUjaaWySyVXxqNg4f3rTDL"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:oLBNCeaqKokj+jgFITCZK1hLgosUghsjSlD7qlH3"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;work_scontrini_4&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="USE_CASCADE" value="true"/>
@@ -1609,7 +1604,7 @@
   <node componentName="tVerticaCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCommit_1"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
-    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBCommit_1"/>
   </node>
@@ -1733,32 +1728,32 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e3378ee2-c6db-4af5-bc71-b4220a914d05"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XoB7AWf/oAg6C5oEXmOFchPJd/BE05FpbH9Xe6Sb/HZp/tIfGrMu8ZPZrl8oWCSBFYrGZnUAGNye&#13;
-XEVE5jztGw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d2001ebe-edf7-42ee-a3a4-af300db30dc2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dDoBRs4XLkdMvWLxS+3bNWKWsqMxfTQNzaR0PTzCq3cCDd5r+CSqLaU8HWOwTYqlATnWIEEDtCPx&#13;
-qhdQcVGZqw==</DigestValue></Reference></SignedInfo><SignatureValue>hGGR0VDE7yI+Y7HGsCeIyza6H+k4111BkorMwBEYC7KvdX387p+mC7hUIU16qXUxYHBnKzx3muqM&#13;
-t4bp9DJ91wrfwRmrruoiOTSbSBthP9GRUk2A4oipLkEv5S/szWwupUrTM/ZfaeqESLE8XzJI/rkd&#13;
-aksXJCX0MgpVZaPFZ3E83cQiJfOYpLkpW3u5P5VETR4EwryOi7LGbL4nZ20e/jc3tP4H6gRIcpIc&#13;
-GM98M30djddg1DCzlyO5WMhP3p1nZznxbKIOYyJZGNMUSCEdse1vuKM8eJpx8DbEh+9lHk91iHd9&#13;
-EqlyhaTgaMTGVTbgSUjqTKlK34uU2RMfsBj5Fw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
-DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
-VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
-QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
-YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
-bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
-IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
-DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
-alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
-e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
-CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
-TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
-BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
-gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
-eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
-f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
-G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
-mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
-hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
-WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
-gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
-qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d2001ebe-edf7-42ee-a3a4-af300db30dc2" Target="#_e3378ee2-c6db-4af5-bc71-b4220a914d05"><Timestamp>2021-01-21 10:06:25</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8774ca5f-675f-4848-bf22-42a825f17f9f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>17d0Yr3ibZzia/+XVQM7sv32DadUhDbcTZhPLu2AoktcDDD2pfH3YLuaxTfM4CVtTWCuAN3AOHmE
+mMl/y4Bifg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_78afb72e-1941-49ca-baa1-47eb5df87bda"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VfLCK+YapNHHw6EuG7DRcHvId2JocTzDhb8e2z15Q4ZzSfARDvxS/uis4d4ur77DbN5V32q4BWNd
+eGyn4CjsVA==</DigestValue></Reference></SignedInfo><SignatureValue>L9BjXhhg4IwdKCDwxT2jw4YyNh3I2ZjKExwoPvWoKQh0pNN6UYT7NgnSJH0EN//gEKnkoi3F87/V
+lG3WJ3B/Gt5w4jCFcPVVsDb9GxAwOV0B+LTWogzjNLqVsEVA8sTh6Wh3GHRCczhNYIaaQX6cOZgs
+LIIwagW4hEA8F5YCNoVtZ1VDNVlJ34AoYUcl/DtooyA+GBl6qO7H9SMhB23g7OQrzB+446zidbRw
+RJTkUUTn4uvc5CXSI8SrjZTktVInCpl22qxjPGQB/WNDVfVMIJo2Han88kAS/tzxZ8XFT1GucNpa
+favMC8BNZ2fKIrFQVQlzHoZaYpEjtWxVd0dCOA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_78afb72e-1941-49ca-baa1-47eb5df87bda" Target="#_8774ca5f-675f-4848-bf22-42a825f17f9f"><Timestamp>2021-01-29 11:46:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
