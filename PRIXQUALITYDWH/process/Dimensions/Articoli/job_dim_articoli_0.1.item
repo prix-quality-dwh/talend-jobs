@@ -4,13 +4,13 @@
     <contextParameter comment="" name="VerticaDWH_Login" prompt="VerticaDWH_Login?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="horsadmin"/>
     <contextParameter comment="" name="VerticaDWH_Database" prompt="VerticaDWH_Database?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="vertica01"/>
     <contextParameter comment="" name="VerticaDWH_AdditionalParams" prompt="VerticaDWH_AdditionalParams?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value=""/>
-    <contextParameter comment="" name="VerticaDWH_Password" prompt="VerticaDWH_Password?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:8OROnsvPLj85dRy0+TKpEo12lnpNV/xFZFFHzndYkPaBTlUr9Q=="/>
+    <contextParameter comment="" name="VerticaDWH_Password" prompt="VerticaDWH_Password?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:kmvbYPJ108VBo7t/vZQVkAlpWImdseBDahwjFq5UjAmLGTd2qQ=="/>
     <contextParameter comment="" name="VerticaDWH_Server" prompt="VerticaDWH_Server?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="10.0.1.217"/>
     <contextParameter comment="" name="VerticaDWH_Port" prompt="VerticaDWH_Port?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="5433"/>
     <contextParameter comment="" name="VerticaStaging_Login" prompt="VerticaStaging_Login?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="horsadmin"/>
     <contextParameter comment="" name="VerticaStaging_AdditionalParams" prompt="VerticaStaging_AdditionalParams?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value=""/>
     <contextParameter comment="" name="VerticaStaging_Database" prompt="VerticaStaging_Database?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="vertica01"/>
-    <contextParameter comment="" name="VerticaStaging_Password" prompt="VerticaStaging_Password?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:I6Cp684wgVMC2GmzPc3tCNi3zYqZYUek1XI50K+bnOTra6gRWg=="/>
+    <contextParameter comment="" name="VerticaStaging_Password" prompt="VerticaStaging_Password?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:R42fTMkZDpbhO7qgluGUuQfAjqztH8PGE5z6Myq8ZOZJLBtQ0g=="/>
     <contextParameter comment="" name="VerticaStaging_Schema" prompt="VerticaStaging_Schema?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="DWH_int"/>
     <contextParameter comment="" name="VerticaStaging_Server" prompt="VerticaStaging_Server?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="10.0.1.217"/>
     <contextParameter comment="" name="VerticaStaging_Port" prompt="VerticaStaging_Port?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="5433"/>
@@ -57,7 +57,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:BfxX7sQRZJEOnwez4Dau4eiOHskFzomOEx+ohvIZ"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:tlppBv9YnyyWRn8vcu156NrDa7aQZxZKOFXi1U7Z"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,25 +78,27 @@
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
-    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
-    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" show="false" value="_EnPBcCptEeutodfUG7h-rA"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="VERTICA_9_0"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.VerticaStaging_Server"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.VerticaStaging_Port"/>
     <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+wK+IHu9seCaLCULzdSRf1tFqMPMr9r9YPXi+vfQ"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.VerticaStaging_Database"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.VerticaStaging_AdditionalParams"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.VerticaStaging_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8UlKX6dE0yBUM1VlL94TyzWNUo6ovbXs/YCl921bt2ACe1JUl4pIznY3OO1UftHSuq0CMw5+wIYMF/g="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;talend_stats&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;talend_logs&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;talend_metrics&quot;"/>
     <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
     <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
     <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
@@ -138,7 +140,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:E1WwsEHVASGqGiRHir2V74W/xjZwX1S5wMpkQ7Fp4MuTk8XwH33j3AUwSQlmeSWUyBgEdtb41x0/3As="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:dULFsIaDqqtUT9xJbmh6BOlB9BQc84KS100v/Wz4OP3GcxgwCJY8W3t/Kyll+c51HMLhj/DH3/3ArRo="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;work_Articoli&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -295,69 +297,69 @@
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
     <elementParameter field="TABLE" name="VALUES">
       <elementValue elementRef="SCHEMA_COLUMN" value="A0ADOC"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0AEXP"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0ATCA"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0CCFV"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0CDAR"/>
       <elementValue elementRef="VALUE" value="&quot;.&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0CFAM"/>
       <elementValue elementRef="VALUE" value="&quot;9999&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0CGRU"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0CIVA"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="&quot;22&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0CMRC"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0CPVE"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0CSET"/>
       <elementValue elementRef="VALUE" value="&quot;099&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0CSGR"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0CSOF"/>
       <elementValue elementRef="VALUE" value="&quot;9999&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0DEAR"/>
       <elementValue elementRef="VALUE" value="&quot;ARTICOLO GENERICO&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0GISC"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="0f"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0GITM"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="0f"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0GRUA"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="&quot;99&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0SPNO"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0TIAR"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0UMVE"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0ANNU"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0CSAR"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0FL10"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0APEN"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="0f"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A0APES"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="0f"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="hashID"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="0L"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="dataInserimentoDWH"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,&quot;2001-01-01&quot;)"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="dataUltimaModificaDWH"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,&quot;2001-01-01&quot;)"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="codice_reparto_pos"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="&quot;10&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="reparto_pos"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="&quot;ALIMENTARI&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="confezione_vendita"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="aliquota_iva"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="22f"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
     <elementParameter field="TABLE" name="INTABLE" show="false"/>
@@ -464,7 +466,7 @@
       <column comment="" defaultValue="" key="false" length="15" name="aliquota_iva" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="work_Articoli" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="StringHandling.TRIM(row12.A0CDAR) " name="codice_articolo" nullable="true" type="id_String"/>
@@ -625,7 +627,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:114w9Gy9LrVtW04q34NCQKxiLus6ak5m7Cv3hkvknfPefgnHzAkMiUODgB5kGAB5ivFvbizOv8oMc8E="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:4d53V2HV02bHQlDUI5Vg/7HzTNB8yqKFaMzGsFNHZyspltGr1gxgWqJyGyqP16xNjlBseoFqI8jtu9c="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;TBSET07F&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -661,7 +663,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:UHFwdmN0j72iDzoDSk7jd51ZPXOwYBRXu78G8K4ahgLvDfz1+77fnVfZyJo1BKK+6Z90rtDyVLd96Eo="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:J6jr8V95b+b5+yR9oAVqQBLcei7FhBqph9qddYJgqpHz16Hr38yNl7RGQ1eOxn7HlokCROHurCnUiuI="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;B2FAMDDF&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -697,7 +699,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:CsrkzxNUIaDfXQisa3xxJnD2FMHUk6+uBxVjc9N7hQw+ijN/RbBl05kYtWci6kLUh8F9PlsJpF0cw3Y="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:4912ZrKA41//mp22xjwMj11pZ53Mmc2YIA1awDUi+9pGw2bEBZ1pYCzzW6F9kRW5ociHchXLgULLObw="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;B3SOFDDF&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -736,7 +738,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:SWXKIezRFqLrxacAP9wTV6kCMnNwctwJiwRuipMandFNuFTxYNit3H1k+aLgYiPQ+NF8ZHrHD5rBUX0="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:UDJHKUR/FKnbrhqQblOjzwF35U4dURUmNozmHiCU5fVIR9Ghydk6A71Mo3u8DwtGlJDwlxlwUBBy/Zk="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;GHGRU00F&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -778,7 +780,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:UjqQPhGcrQ99vtXUabD0nY04xa+XV+XznnSlVu8L4nLBfu5yEtfcLW67haBhEyGhviY/z4yDn7qEj5Q="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+ceca/p4Jj1tyocuypGcUolGVInN3I4r+/ayeVAybXYA8LCX8cxQEIHzcqBWW7OMNYWpQ2TqjeXGnk8="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;GISGR00F&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -823,7 +825,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:a/i8WExBdJ+U4p1/wg87LNe0S8MZY9I3ZTkyXfOQGP1NyspTPMIPdksiZj2QzMs1K8Tai3VNtFZAinU="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:DY5tvxx+yzcmLRdiluAb0q2tglIPXrinB9zwedhNdQ8skqUPGVtX5Id0iVCZWxNbxJzbUarLKY+NsSw="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;TBPVE01L&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -859,7 +861,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:lzMMwggcfn6NBec6mHflB3mqyxKvnXxyYdQPwl5Co0BI+1gO6vr1J0EvWDpPMeqvMndugX7dRJ5Xg8E="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:kfdq1HgzYsHrtOFONiFKxLbELieQIN77AqxQiKlaxDTjxJ/FwyMnOAiAyZCyBKhck9kOG6wERZtBlkQ="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;TBCFV01L&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -895,7 +897,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Aesd8sMqOr8k2DWzqPSYcgfffSQDnBo8LLJLy9Bs8A2kaoUTM1WbT9h/T382oee3n8J8uObi29B0CVw="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:PlBhYT1BAC7ifqJJGknSJ3ic5b1e4rOfL221HZLdDtJHnSDejQoKAR2GDzpXZSafhQYx26Yo/4PDCFE="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;TBGAF20F&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -932,7 +934,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Xb1fa+YsgoAgZsGbvC7Z/CAH6WnRk0TGsmwzSANz"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:kBeXEpxQ2NFZeUv7xonHIPRwddMC8S20V5c1ZKzy"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;TBMRC01L&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -971,7 +973,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaDWH_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaDWH_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaDWH_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:mcofxtD98Jbefb+H1F+40ghpU8YnDlP8NQlSmTqhW4AwrYza2Czl3lFjTS4m3DZ596X/iGBe9Q=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:4xBbI7s5h4StMFvBcddcfEe4fUzNCpfPfwtFQwT+S3f+XnFIJiOEdv5LHaJ/aQUlct7S0VlfcQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;dim_articoli&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CHECK" name="USE_CASCADE" value="true"/>
@@ -1335,7 +1337,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:M8An/VAsKF9BLkbhn1OLQxe1boMVjc18snTslosB"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:J3vzzxtJILhioej2UYaaS558scz9+HDhG6nJmKlo"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;A1ARMDDF&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1392,7 +1394,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.VerticaDWH_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.VerticaDWH_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.VerticaDWH_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uYjdt/n22+4sQyv3HC25gX7FpR7V2TmokaPiH8Z0VHpW/TE+cgIM7Uczjc3kGaYJTLyYHAWgfQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ZiAuPIBsT3M+q0VdKa1JUtGkSLcv1o5b5SYJFwxJKNl1bQNmz/Q3sApmn21JN1oWjes8rS6csw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1428,7 +1430,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.VerticaDWH_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.VerticaDWH_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.VerticaDWH_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fD8xh92x974N2JBW9+KxitAmHTbC9VqmXEGFf1uOwbKQcMUot6P4fQL6dN53Ulretkkj/rMPsQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:z7G+yIyzowdlDzx1tQU3o2OqaCDgP9rHNObMiQxWnhrUy+cZOB74kvI8Ik2csIVPNWyJu/nBxg=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1469,7 +1471,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.VerticaDWH_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.VerticaDWH_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.VerticaDWH_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:/7wsnJUXJrHvugckX1DI10QsmIq0+pAmTqmXa3rPWQBUU3LOeqCdBE/ZMtT9wF4zViofYsASLQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:tIggKzY/apBKorNyvQFWNMbWRxB40YF/sWvGdvHUdfGFV0hHTUP4YsVA7tT62EFvdtvQoQaa4g=="/>
     <elementParameter field="TEXT" name="PROPERTIES" value="context.VerticaDWH_AdditionalParams"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -1494,7 +1496,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wEeUH1l+bfk60uZ21aOFaLRDBgFTndpp/Fj8Gn99J+DdKXxmr7d4oEzDzA29LgcdLiq05kiaZnfDRPI="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:DtKZ6l4IaP5O6bfO20bCXjst3ujrZ8sKrIr6SgurG95lohpd9dqsqloYaYS+Zq0t3OZ+0tfQ+/80pAo="/>
     <elementParameter field="TEXT" name="PROPERTIES" value="context.VerticaStaging_AdditionalParams"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -1906,13 +1908,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c7139772-2c9d-4ddb-972f-07128ae3d008"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/V88eCR8bTLaXola85Tna2MKAZZlr67TQSiGDNHc9tq0VBT1twMu9RjDJ3EMunNBH/YaI1tenMO/
-34LZaAHJ/g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_935e1892-fb9c-4e88-9511-517e331e2c97"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vZgtCRkq5cVwtPDl+Z6bTJZiSPs/6H34fJQQz2aF7VXuaT3nOyeAnrbjCXcinGvcmrGATQabUSHA
-palC9JbjdA==</DigestValue></Reference></SignedInfo><SignatureValue>aX6qFLcv9PYHMWUzuKmD4bmvrjOg+yX9Qv52QWrOz4vYn590R6HdtJKF4Mo8uTsWXcrlCdl4H8WQ
-SKGkEyLNJ+axlufnqF/CIwgDNB5V2ISUv/FgBM1Mt4tB3SqF5x06OiBgH0bUkHPeQ6Zrrht2Dr5z
-jriejRoH2k8uX8hfUfz+P6DyKzF4YXtOltFwqTUWkqaH+Rd3DEdpGtVLa/RzrsUxbJBZdMvwIu5z
-IukbZFvq3UaAphbcqgHmCrm+H9SRpAaI+70rGV1G5mjmW17D4RHuCKlsy0Ptw56G7S42PneJ2CDy
-a1fR7HxFELbjrCPl6+8vxihomyYUjZu88UohKg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9e0171e8-2f03-47dd-8a0f-080ca0ab726c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tcOO/hc8S+ePImeW1r2SuuhifPW1k+KDCzhIxuK1IxB0Jol5oRRoyUW2sTX9QCHhqVmQx5DTr7n2
+0INp3iLS7g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e7d7e53e-7559-4fc5-9fc0-6eb058d75ea0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>o0T1rAXl8CcDLifrVMsDR5p4jir7PH6RZKjZ+85uvsSlN+6JoVShpSNGyhNyAVaQQ9PntUdpXYzq
+PQKnH4nBxw==</DigestValue></Reference></SignedInfo><SignatureValue>mF/gLEoHAmz5QE47Iwbz8ChzAleoNdG+A63VqpSlWhzIdllpwPE6e1RnYfu3S7RMNItsAu8mp6ji
+ofmHG97W8gvgyOJHVoUgDTmpcVoftcymProVKk7kq8hbwKp3pmneP0URMv0RSOBXxUBrjQJISox+
+XErm2iwYjQdxcbJsJa1QNlLnvuviaNdj94p246QBNPv025GXMYBpVT95FwKx2+GPvzo3gS6WCanE
+aznfX6z1CQ/Xo1+K7gia3qsnpWmrkBkwcAvmqSJlNmycoqhsOVSQJHwX3FoAkwv+jT3n2/fPW2kt
+gdQUKIipFnuc1D3DWrs/Y4iWxW/zJnATQo8aWw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -1934,4 +1936,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_935e1892-fb9c-4e88-9511-517e331e2c97" Target="#_c7139772-2c9d-4ddb-972f-07128ae3d008"><Timestamp>2021-03-17 15:43:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e7d7e53e-7559-4fc5-9fc0-6eb058d75ea0" Target="#_9e0171e8-2f03-47dd-8a0f-080ca0ab726c"><Timestamp>2021-03-23 13:14:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
