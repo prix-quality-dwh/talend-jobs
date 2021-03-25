@@ -22,6 +22,9 @@
     <module>jobs/process/Staging/Articoli/stg_main_articoli_0.1</module>
     <module>jobs/process/Dimensions/work_articoli_1_0.1</module>
     <module>jobs/process/Dimensions/work_articoli_2_0.1</module>
+    <module>jobs/joblets/log_end_0.1</module>
+    <module>jobs/joblets/log_start_0.1</module>
+    <module>jobs/joblets/log_error_0.1</module>
     <module>jobs/process/Staging/Costi/stg_lwall00f_0.1</module>
     <module>jobs/process/Dimensions/copy_of_work_articoli_1_0.1</module>
     <module>jobs/process/Staging/Articoli/stg_tbgaf20f_0.1</module>
@@ -54,10 +57,8 @@
     <module>jobs/process/Dimensions/job_dim_negozi_0.1</module>
     <module>jobs/process/Dimensions/job_dim_listini_0.1</module>
     <module>jobs/process/Dimensions/Articoli/work_articoli_0.1</module>
-    <module>jobs/process/Dimensions/Articoli/work_ean_to_codart_0.1</module>
     <module>jobs/process/Main/job_main_dimensions_0.1</module>
     <module>jobs/process/Main/job_main_staging_0.1</module>
-    <module>jobs/process/Main/job_main_0.1</module>
     <module>jobs/process/Main/job_main_facts_0.1</module>
     <module>jobs/process/Fact/job_work_scontrini_1_oold_0.1</module>
     <module>jobs/process/Staging/Costi/stg_b0pre00f_0.1</module>
@@ -112,21 +113,23 @@
     <module>jobs/process/Staging/Articoli/stg_tbiva02f_0.1</module>
     <module>jobs/process/Staging/Articoli/stg_h9sosddf_0.1</module>
     <module>jobs/process/Dimensions/Articoli/job_dim_articoli_collegate_0.1</module>
-    <module>jobs/joblets/log_end_0.1</module>
-    <module>jobs/joblets/log_error_0.1</module>
-    <module>jobs/joblets/log_start_0.1</module>
-    <module>jobs/process/Staging/Logistica/old_load_staging_0.1</module>
+    <module>jobs/process/Dimensions/Articoli/job_fact_ean_0.1</module>
+    <module>jobs/process/Dimensions/Articoli/work_ean_to_codart_1_0.1</module>
+    <module>jobs/process/Dimensions/Articoli/work_ean_to_codart_2_0.1</module>
+    <module>jobs/process/Main/job_main_vendite_0.1</module>
+    <module>jobs/process/Dimensions/job_dim_fornitori_preferenziali_0.1</module>
     <module>jobs/process/Staging/Logistica/load_staging_0.1</module>
-    <module>jobs/process/Staging/Logistica/work_timbrature_fase1_0.1</module>
     <module>jobs/process/Staging/Logistica/work_timbrature_anomalia_fase2_0.1</module>
-    <module>jobs/process/Staging/Logistica/fact_ore_timbrature_commesse_0.1</module>
+    <module>jobs/process/Staging/Logistica/dim_timbrature_0.1</module>
+    <module>jobs/process/Staging/Logistica/work_timbrature_fase1_0.1</module>
+    <module>jobs/process/Main/job_main_tracciati_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
     <talend.project.name>PRIXQUALITYDWH</talend.project.name>
     <encoding>UTF-8</encoding>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
