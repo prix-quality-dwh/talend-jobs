@@ -9,9 +9,9 @@
     <relativePath>../../../../../</relativePath>
   </parent>
   <groupId>org.example.prixqualitydwh.job</groupId>
-  <artifactId>Load_staging</artifactId>
+  <artifactId>fact_ore_timbrature_commesse</artifactId>
   <version>0.1.0</version>
-  <name>PRIXQUALITYDWH Load_staging-0.1.0 (0.1,Job Designs)</name>
+  <name>PRIXQUALITYDWH fact_ore_timbrature_commesse-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -24,19 +24,19 @@
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>PRIXQUALITYDWH</talend.project.name>
     <talend.product.version>7.3.1.20200219_1130</talend.product.version>
-    <talend.job.finalName>load_staging_0_1</talend.job.finalName>
+    <talend.job.finalName>fact_ore_timbrature_commesse_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.prixqualitydwh.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.prixqualitydwh.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.jvmargs>-Xms1024M -Xmx4096M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
-    <talend.job.context>Production</talend.job.context>
+    <talend.job.context>Default</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>Load_staging</talend.job.name>
-    <talend.job.id>_1ueZJojBEeuAOME6Qv9GOQ</talend.job.id>
+    <talend.job.name>fact_ore_timbrature_commesse</talend.job.name>
+    <talend.job.id>_BKvGcIjVEeuYroEJGnGzFA</talend.job.id>
     <talend.project.id>0</talend.project.id>
-    <talend.job.folder>staging/logistica/</talend.job.folder>
+    <talend.job.folder>fact/logistica/</talend.job.folder>
     <talend.job.framework></talend.job.framework>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.type>Standard</talend.job.type>
@@ -93,16 +93,6 @@
       <version>2.2.1</version>
     </dependency>
     <dependency>
-      <groupId>net.sf.jt400</groupId>
-      <artifactId>jt400</artifactId>
-      <version>9.8</version>
-    </dependency>
-    <dependency>
-      <groupId>net.sourceforge.jtds</groupId>
-      <artifactId>jtds</artifactId>
-      <version>1.3.1-patch-20190523</version>
-    </dependency>
-    <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
       <version>2.12.1</version>
@@ -131,11 +121,6 @@
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>1.7.25</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.components.lib</groupId>
-      <artifactId>talend_DB_mssqlUtil</artifactId>
-      <version>1.4</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>

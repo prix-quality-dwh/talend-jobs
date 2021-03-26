@@ -6,12 +6,12 @@
     <groupId>org.example.prixqualitydwh</groupId>
     <artifactId>code.Master</artifactId>
     <version>7.3.1</version>
-    <relativePath>../../../../../</relativePath>
+    <relativePath>../../../../</relativePath>
   </parent>
   <groupId>org.example.prixqualitydwh.job</groupId>
-  <artifactId>Dim_timbrature</artifactId>
+  <artifactId>job_main_tracciati</artifactId>
   <version>0.1.0</version>
-  <name>PRIXQUALITYDWH Dim_timbrature-0.1.0 (0.1,Job Designs)</name>
+  <name>PRIXQUALITYDWH job_main_tracciati-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -24,19 +24,19 @@
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>PRIXQUALITYDWH</talend.project.name>
     <talend.product.version>7.3.1.20200219_1130</talend.product.version>
-    <talend.job.finalName>dim_timbrature_0_1</talend.job.finalName>
+    <talend.job.finalName>job_main_tracciati_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.prixqualitydwh.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.prixqualitydwh.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.jvmargs>-Xms1024M -Xmx4096M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms512M -Xmx2048M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
     <talend.job.context>Default</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>Dim_timbrature</talend.job.name>
-    <talend.job.id>_BKvGcIjVEeuYroEJGnGzFA</talend.job.id>
+    <talend.job.name>job_main_tracciati</talend.job.name>
+    <talend.job.id>_JfxhcIyIEeuwxe0FH5S3ag</talend.job.id>
     <talend.project.id>0</talend.project.id>
-    <talend.job.folder>staging/logistica/</talend.job.folder>
+    <talend.job.folder>main/</talend.job.folder>
     <talend.job.framework></talend.job.framework>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.type>Standard</talend.job.type>
@@ -128,14 +128,24 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
-      <groupId>com.vertica</groupId>
-      <artifactId>vertica-jdbc</artifactId>
-      <version>9.3.1-0</version>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>talendcsv</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.example.prixqualitydwh.code</groupId>
       <artifactId>routines</artifactId>
       <version>7.3.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.prixqualitydwh.job</groupId>
+      <artifactId>Stg_Main_Tracciati</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.prixqualitydwh.job</groupId>
+      <artifactId>job_main_facts</artifactId>
+      <version>0.1.0</version>
     </dependency>
   </dependencies>
   <build>
