@@ -4,7 +4,7 @@
     <contextParameter comment="" name="VerticaStaging_Login" prompt="VerticaStaging_Login?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="horsadmin"/>
     <contextParameter comment="" name="VerticaStaging_Database" prompt="VerticaStaging_Database?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="vertica01"/>
     <contextParameter comment="" name="VerticaStaging_AdditionalParams" prompt="VerticaStaging_AdditionalParams?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value=""/>
-    <contextParameter comment="" name="VerticaStaging_Password" prompt="VerticaStaging_Password?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:0NVM3NVpAGph1gtLPwE3jsq8wEStv+av7Iu6TZDX9rw8fdG0FQ=="/>
+    <contextParameter comment="" name="VerticaStaging_Password" prompt="VerticaStaging_Password?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:/VtAOL5Xzdvn7gbUaav6vAeqKHe8nDr2GcB993W1KQR1H0+BGQ=="/>
     <contextParameter comment="" name="VerticaStaging_Server" prompt="VerticaStaging_Server?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="10.0.1.217"/>
     <contextParameter comment="" name="VerticaStaging_Port" prompt="VerticaStaging_Port?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="5433"/>
     <contextParameter comment="" name="VerticaStaging_FullMonthToReload" prompt="VerticaStaging_FullMonthToReload?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Integer" value="2"/>
@@ -53,7 +53,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:+0hOavWIQq8uL60+GHTLq/FJFtH5bgAy5gTW1JYr"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:WuqIfa6BtdzmzD0Uxpy3Elx6TR4ypSZBNvaRCmQY"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -90,7 +90,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.VerticaStaging_AdditionalParams"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:m/sO0KpzlgRUT3wpploXOXbp91vyybNGy4j7QdUv4dvEds5g5qycRuNpmAAr6choi7vK+eKwspmuzk4="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:FXOdU32QihM4dczQhTUVWoTIF7eGOvah8ByYY4QmhHOegbeNo90L214Vsrkfd8Fr9bsNbQs/f/cCiGI="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;talend_stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;talend_logs&quot;"/>
@@ -140,7 +140,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0862Fn7vnSTOvU/nlBAnxq6SRqPBu1Em2CMvsv5uNmSe+mzdTjplZK4pVNR5J1Em0w8pObEbGoTfG3Q="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HiCKk9/lIJ1X61DpMwEpoEY/rSsFplq3QdFc8XvfyfeO15kWdcTNaIUGUwU42Uc19c++ebCCY9VilqM="/>
     <elementParameter field="TEXT" name="PROPERTIES" value="context.VerticaStaging_AdditionalParams"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -152,7 +152,6 @@
   </node>
   <node componentName="tVerticaRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="VERTICA_9_0"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
@@ -162,12 +161,12 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="VERTICA"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Y5eTBnILbTuCMA6xXt3oyEw+yMpjaI1fuQqgsbAo"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;work_produttivita_magazzino_fase0&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:jCc+hoYL6xg0AWvoNKa/pcmP5qnpePNawJ6N092E"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;work_produttivita_magazzino_fase3&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;TRUNCATE TABLE dwh_int.work_produttivita_magazzino_fase0&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;TRUNCATE TABLE dwh_int.work_produttivita_magazzino_fase3&quot;"/>
     <elementParameter field="CLOSED_LIST" name="USE_NB_LINE" value="NONE"/>
     <elementParameter field="LABEL" name="USE_NB_LINE_NOTE" value="* Only used if the query is an insert, an update or a delete."/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
@@ -207,7 +206,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:qIkauKXv7Mxs07qXh2TBAyZb0Atf4nMMi6QJH3Mu"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:TL/QsCrvAhNZSwh71gkvkJZpncq7X+DSOFAU391I"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;work_produttivita_magazzino_fase2&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -643,7 +642,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:bgk35u+0myxV3tMZm+rWXY4VtfSAgFJe1fC0kwaV"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:M1Qz5t8OUlG45+tYxgCOJgO2HMXZTqTAoAmRS+q0"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;work_produttivita_magazzino_fase3&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -900,7 +899,6 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_2" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_2" target="tDBRow_1">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tDBClose_2">
@@ -976,13 +974,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cbd13d50-6d2b-4349-bf75-b90929abf5d5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hBWRcvsIriMg/d3yjhByOqIEZBoZtKULR8PTqFRF1pOj9NnHTaL0+Q/+M5jurt7Ur/AOB1yV/5i7
-PdMRuPgM/Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cca6fd3b-59b1-49ce-a505-65d2f2cab44a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Oz7T5r9APfWfsKAn1R7hNhdg/lqtYMZ8JtxKVwrTQgIDxdaL8hEvsZifUY3S5fvUcvCcyiPOL+YU
-PM0yFoadsg==</DigestValue></Reference></SignedInfo><SignatureValue>Bfv15Esco5BjZHYFXeGCB7LxImnPuFkM+8l9AIlzjto/LNU6tEy49RkfmzkS4hfpLLm9jznFoebX
-CUAnS+QThHxd/n4O/XpVvpN2XtEzo62tX+VEKnVugxjwPtNszLedcZxArQELXgFub0ZpfqCVph4w
-ZPZoA/bPdkKe4CAyFrdh8m2QdsCzChc8DLwtSvLEys6lNoSbqszxBARKTaxKyy10fRha3Y/IPQ8t
-Be1nO3j33skv+Wv2evwOT4/dxx32f9z4gE18wzeLVPH1Zp+XKUwEPAJn3FjQdKsZAJjArV+3Shht
-XbW8lw5n4LsxlIo7HRp6kayMSRG048HgRLUy4A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3a747dad-3527-44c8-9a1f-6dbb255d4262"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9Fp1e4jW4l2AzLaKRmGAvAIntIC282GutoEgX1b9Wr2Ov8NTImqcxdXIX0Iq0lFJupPjXFc/uIeP
+m752wbSbIA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d311bb14-fb26-4b1b-8612-116bdd5a6d72"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gsWukh1HqHqILruox9UvGowg8/cK/AqWgGqr9mHtp8Uveu6tsk0lzIYh2br56P00TUTwiLX3cxE6
+zJJxZavyJA==</DigestValue></Reference></SignedInfo><SignatureValue>lS83la8H/CS5CrLfn8ummJHZsGi61JSJ0G2G56QyQF0F2+t7qMVjgzomv9C2/0KY3Mk4cFeT/ecT
+itROksMxPDubHxtERe5IacJ0RzDEdoitG5XzELY0twGBcyLOn7fQMg2DcRyHnGvFnOsoBWC4qZE9
+OnKB2TnO+QSRD3nq0P9rjss3b1Ie0bURsE04XBHlq5vLbD3bC6wEDZ/K7B/TacXo4Y2aUKnJ89uB
+QGuKvk6nsTA6mShKjU3AnwMwo6XgHjuOZIyVuXwXcIzIloW8Q0mO5fw6FmGBgFueQ+JqkaoKkp4J
+wnYHrcYE1sgzjJyR2otGYf04yO0/NBWQ9NeEWw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -1004,4 +1002,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cca6fd3b-59b1-49ce-a505-65d2f2cab44a" Target="#_cbd13d50-6d2b-4349-bf75-b90929abf5d5"><Timestamp>2021-04-13 17:37:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d311bb14-fb26-4b1b-8612-116bdd5a6d72" Target="#_3a747dad-3527-44c8-9a1f-6dbb255d4262"><Timestamp>2021-04-13 17:37:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
