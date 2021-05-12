@@ -1,5 +1,37 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Production" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Production">
+    <contextParameter comment="" name="flag_source" prompt="flag_source?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" name="tag" prompt="tag?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value="'hr','as'"/>
+    <contextParameter comment="" name="load_param" prompt="load_param?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" name="tipo_azione" prompt="tipo_azione?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" name="filtro_azione_temp" prompt="filtro_azione_temp?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" name="filtro_attivita" prompt="filtro_attivita?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" name="filtro_azione" prompt="filtro_azione?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" name="filtro_azione_da_escludere" prompt="filtro_azione_da_escludere?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" name="delete_param" prompt="delete_param?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" name="flag_inizio_turno" prompt="flag_inizio_turno?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Long" value=""/>
+    <contextParameter comment="" name="data_turno" prompt="data_turno?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" name="id" prompt="id?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Long" value=""/>
+    <contextParameter comment="" name="qta_ore_inizio_turno" prompt="qta_ore_inizio_turno?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Long" value=""/>
+    <contextParameter comment="" name="percorso_cartella" prompt="percorso_cartella?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value="/opt/samba/shared/"/>
+    <contextParameter comment="" name="load_month" prompt="load_month?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Integer" value="3"/>
+    <contextParameter comment="" name="VerticaStaging_Login" prompt="VerticaStaging_Login?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="horsadmin"/>
+    <contextParameter comment="" name="VerticaStaging_AdditionalParams" prompt="VerticaStaging_AdditionalParams?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value=""/>
+    <contextParameter comment="" name="VerticaStaging_Database" prompt="VerticaStaging_Database?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="vertica01"/>
+    <contextParameter comment="" name="VerticaStaging_Password" prompt="VerticaStaging_Password?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:l3ImPsnnZ86BSUJkRshELf6jkPk30X3ibgGGcweZaK+2FzoIzA=="/>
+    <contextParameter comment="" name="VerticaStaging_Schema" prompt="VerticaStaging_Schema?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="DWH_int"/>
+    <contextParameter comment="" name="VerticaStaging_FullMonthToReload" prompt="VerticaStaging_FullMonthToReload?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Integer" value="2"/>
+    <contextParameter comment="" name="VerticaStaging_Server" prompt="VerticaStaging_Server?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="10.0.1.217"/>
+    <contextParameter comment="" name="VerticaStaging_Port" prompt="VerticaStaging_Port?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="5433"/>
+    <contextParameter comment="" name="VerticaDWH_Login" prompt="VerticaDWH_Login?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="horsadmin"/>
+    <contextParameter comment="" name="VerticaDWH_Password" prompt="VerticaDWH_Password?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:/ULdt+SSj4dcDjK5LHxVj7PSqh5niQ5KdaT4UeIKyVoPVPnb+A=="/>
+    <contextParameter comment="" name="VerticaDWH_Database" prompt="VerticaDWH_Database?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="vertica01"/>
+    <contextParameter comment="" name="VerticaDWH_Schema" prompt="VerticaDWH_Schema?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="DWH"/>
+    <contextParameter comment="" name="VerticaDWH_AdditionalParams" prompt="VerticaDWH_AdditionalParams?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value=""/>
+    <contextParameter comment="" name="VerticaDWH_Server" prompt="VerticaDWH_Server?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="10.0.1.217"/>
+    <contextParameter comment="" name="VerticaDWH_Port" prompt="VerticaDWH_Port?" promptNeeded="false" repositoryContextId="_a78SQCpwEeutodfUG7h-rA" type="id_String" value="5433"/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
@@ -42,7 +74,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:P7ltHAJDijZ/t4eMpVRgF+htqEmbmcEr5mS3GIth"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:ax6LBXLjNzgY0Nx2H6mEncp8TUz8mIIO2HiLzEx0"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -79,7 +111,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.VerticaStaging_AdditionalParams"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:tzY5dFWCotCuPqgl2oS1jKBbjwbmMC6BwO9GteY+BDiU9Z+hmsyQw5CCkgpsDQuRi6pQ/mtY+w/Vv0E="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:p5ny7yQO/iu2JB6Eq8JOx71Ajw7T8QNgK+dPHyZNj4L+pYSVijpBigdodv5NlGB0Nkfz8QWVHZJBiOo="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;talend_stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;talend_logs&quot;"/>
@@ -173,13 +205,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3530f261-2d2e-4bf3-b064-8fc12ef3579f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YHG5orwB+/FCtVixP8/L5o+qYtrDcf0HsD6kAdNBvBSbyP8TKDYISvsIBDN9l9dUKdTxCkQNX81g
-CiLeyMIEDQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c669aaf8-cbda-4c10-a124-255cd2ba0387"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XLbxkN0FLK5SSRpLra+gj0TDHOUYRMIxLKIwPqLxSfbZIsFQkxMBsobb398yAwasRzBye9Yfi0Qd
-8K74Th2tzg==</DigestValue></Reference></SignedInfo><SignatureValue>GbSReKlGqmD0Lj9ovnemjOOhx84FPWGRK+rYrMBgRy5uj9bW+0X7a7MWIyPjL144W47W/DCO5B1j
-1swo+HCJmBbf/I7CUduFsEUMKKiQw+au8NxYHXiiC7jHvAehvVZJ8Z7OLgWEsTI8K4Sv5cZ1lEn/
-4heA3igWnpFfbSdrn0WLfmm6rIAJxQDWjS/69zpAbjqCXDnhzKnlZnO68lIj0gVyNOY84dvONvA5
-kdvoGaHqNSAESQXiV0shW7ngwcVabomieJW9Y2vvJadX0o1upZ5+Od7clD9PKgQ8VhWMqB5Lepqc
-JO5TKHe20uCIAM/kiuZyHcNlHdFxzbNnFChalg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5d029021-1e91-4e64-aa28-3d7afcf64880"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AWoozYWb0ebPXh8eA+Vh9M7R6IwPNUQu8hWq/FFfUkQGelIlybawpuK+FvS++NJ+XEWTQHORkGy+
+suTPv12ZoA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7f85dac5-70e6-47a9-aa93-74bd85d0cd6a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+jK9B+1IbM5OzxChQjpYX1zQ7dhrUzK19uBMo9AczMDnKQUyNL7Pd+yYN9+74koE1NI+vx4zqgY8
+u5VH1FbuFw==</DigestValue></Reference></SignedInfo><SignatureValue>NZDxZ1G4VMW0Z7cpU0l0imMxRMc8DHlUvV70oqV5YKaxlSO2B8muLJNfrvv8Lcf7UT8iK1ioT81W
+8IZC7LZo6Uj8dYOOuj4F7mcw5Cp6jgjMXoKtWaH7/HIZ1pSmeSszrUhJhNjWyq51BCsryDrfaIC7
+QjH94nsgCxEfT4theu2DDzHd/eU5I2Ooqaru2ZVPBr7dSM796Zy6dWiG988BC8mjOI1DwrkVhWFc
+k+5TS1QbJ0vwjbpT9nBU4BSCiDMNLFpaJHLbMRlMLuMkkCKyqiBR8sRvnRpxzZ25StSCQHAVPmRB
+r39R6UtwTyfG6xYqwZR6QIzAVOn2c6Xk8iehcg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -201,4 +233,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c669aaf8-cbda-4c10-a124-255cd2ba0387" Target="#_3530f261-2d2e-4bf3-b064-8fc12ef3579f"><Timestamp>2021-05-12 13:51:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7f85dac5-70e6-47a9-aa93-74bd85d0cd6a" Target="#_5d029021-1e91-4e64-aa28-3d7afcf64880"><Timestamp>2021-05-12 13:53:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
