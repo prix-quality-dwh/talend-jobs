@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:HDf8eRx/+iVo12ZY9FFlFs7X7qWdUBtP+pDLh4Dq"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:wHJ88nBlgKya7kqLHfX9OZodArkvQa5h5+0XVOWy"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.VerticaStaging_AdditionalParams"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:A/Hg5s1HqcMV/tgQS1dDtaJ7Lv9mVTjLZK/jGNmRipe1lrkjqkBegiPO8xRxZhJn1ydWjr5O27TsGKI="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Sb8Ly0qlFmw4O1S0oWA84TKVG05m5Ar3SZ1VQP0UKmVZ1xRwknFc6BzhK70kcczF6g0B8g0llJ37RJU="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;talend_stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;talend_logs&quot;"/>
@@ -202,8 +202,6 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_sDzIgCpwEeynn6fV0RaqfA"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_sDzIgCpwEeynn6fV0RaqfA - metadata"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend/PRIXQUALITY/temp_file/EXPORT_1623752751704.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -228,8 +226,6 @@
     <elementParameter field="TEXT" name="NB_RANDOM" show="false" value="10"/>
     <elementParameter field="CHECK" name="TRIMALL" value="false"/>
     <elementParameter field="TABLE" name="TRIMSELECT">
-      <elementValue elementRef="SCHEMA_COLUMN" value=""/>
-      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="_1TNM_MURALE_FV_BERLINO_ADR_1_010_MATR_0TAF220001"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="_1TNS1_MURALE_FV_BERLINO_ADR_1_011_MATR_0TAF220101"/>
@@ -292,8 +288,6 @@
     <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
     <elementParameter field="TABLE" name="DECODE_COLS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value=""/>
-      <elementValue elementRef="DECODE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="_1TNM_MURALE_FV_BERLINO_ADR_1_010_MATR_0TAF220001"/>
       <elementValue elementRef="DECODE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="_1TNS1_MURALE_FV_BERLINO_ADR_1_011_MATR_0TAF220101"/>
@@ -354,7 +348,7 @@
     <elementParameter field="TEXT" name="LABEL" value="frigo"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
-      <column comment="" key="false" length="21" name="" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="false"/>
       <column comment="" key="false" length="19" name="_1TNM_MURALE_FV_BERLINO_ADR_1_010_MATR_0TAF220001" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="19" name="_1TNS1_MURALE_FV_BERLINO_ADR_1_011_MATR_0TAF220101" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="19" name="_2TNM_MURALE_SL_ULM_ADR_1_012_MATR_0TAF195301" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -384,7 +378,6 @@
       <column comment="" key="false" length="1" name="Column27" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
-      <column comment="" key="false" length="21" name="" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="19" name="_1TNM_MURALE_FV_BERLINO_ADR_1_010_MATR_0TAF220001" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="19" name="_1TNS1_MURALE_FV_BERLINO_ADR_1_011_MATR_0TAF220101" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="19" name="_2TNM_MURALE_SL_ULM_ADR_1_012_MATR_0TAF195301" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -414,6 +407,7 @@
       <column comment="" key="false" length="1" name="Column27" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="false"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="288">
@@ -438,11 +432,10 @@
       <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out1" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="&quot;1TNM_MURALE_FV_BERLINO_ADR_1_010_MATR_0TAF220001&quot; " name="frigo_name" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2._1TNM_MURALE_FV_BERLINO_ADR_1_010_MATR_0TAF220001 " name="temp" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="&quot;1TNS1_MURALE_FV_BERLINO_ADR_1_011_MATR_0TAF220101&quot; " name="frigo_name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2._1TNS1_MURALE_FV_BERLINO_ADR_1_011_MATR_0TAF220101 " name="temp" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="" nullable="true" type="id_Date"/>
         <mapperTableEntries name="_1TNM_MURALE_FV_BERLINO_ADR_1_010_MATR_0TAF220001" nullable="true" type="id_String"/>
         <mapperTableEntries name="_1TNS1_MURALE_FV_BERLINO_ADR_1_011_MATR_0TAF220101" nullable="true" type="id_String"/>
         <mapperTableEntries name="_2TNM_MURALE_SL_ULM_ADR_1_012_MATR_0TAF195301" nullable="true" type="id_String"/>
@@ -535,13 +528,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f029577a-301c-49fd-a81c-eb763304d439"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>I3/v8rstNjonNJFGnQjYQl8Ao/oUuzUDkB2mJrd7cNPfsQXrBpLrG6W93JPDrFeOsMdx8RRb0s8p&#13;
-JO/2YrFLZA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_03aac084-612e-4b38-ba4a-31bb755e30ea"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JCyNnc+8WWNue2R7ysF6ccG1Th8Hy3AZXEGLaywoE6B3XQOMd8DuBvlnhoOQlsEyevGfX+V8Reda&#13;
-q+b6jBfV1g==</DigestValue></Reference></SignedInfo><SignatureValue>V1PwfFuKtmnSUoFZKTkmg/pFudC+ON8sr4ah3QMv0PHlN5biQY0TyjN7v1ASGWaO3WGqtG2UQZf7&#13;
-SDfuwxSn5wcr1tDpml4aFS11N8HcO7Sozk5V58XTCi2JBjAmo3aKAD66/iDw0b5v3OBVlIfpPr60&#13;
-q2GvkBtpAsbh78h5KJsy/IkIZ4PY5cSX/Ya3tl1TksE7fphtIeZ2B4Gb62ZbL30F4lxC35RFfU32&#13;
-bmpXS/wkstTiIaguZRpIMmchp9HBgTxTVQPqa8WOxENYir16Rku9DhFgZQbc0S18ofVqNwOlQGY3&#13;
-VmDUkxId7jwpqkLm0SSMI3nksufxqZohlqcnHg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2f9322be-3f7b-4fca-a671-68460b00c715"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KD1vDrApDx2FVXWktvVMA2k2QwyIWVRhtfOXwFHr+WVrG/g9L6TccXtMWCcfn3kLzBxfMsUVu4wK&#13;
+4ZoZzo5+0A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_45de3814-d129-4514-b73b-960b720494ab"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SXcWUn4AJlAvZWapY39M4DQzFwEqzlbnq01XR1ai9jsXRg/hKbb9nz8B42rOIV5/QgjezxHtSCya&#13;
+OxFXw8Eczw==</DigestValue></Reference></SignedInfo><SignatureValue>JiFiOHO4B3h+4TbI3wYhrIkTq41sPCYLwaW2zBRpYlbSRlTQiAA058umygQCkekf+ep4EcN6K/km&#13;
+5Po592ntp3WOhczFP2xHHanakun/oMmiblyz5gE5ia6GgqhlLosKlu2hJALCN+CpYZn7CiTpUhn2&#13;
+kCRh/3BkocQAPJkyduWzTaz+/5m/EjY1mpoBwvaixaSWfedN9vwVLrGGH6UqpcAn2s/mfS0Svo7K&#13;
+U8VliHlijLr/44sa1Nc9KBC5UVw8JXMHQ/CX0PTfAtGgme0aVqxUjUYWDWjxHXcnV8YBnhwV6Rsf&#13;
+AOA0l3/zbG3MeXx2ysDFtO0xbsSkf1yOAtGclQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -563,4 +556,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_03aac084-612e-4b38-ba4a-31bb755e30ea" Target="#_f029577a-301c-49fd-a81c-eb763304d439"><Timestamp>2021-10-11 08:58:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_45de3814-d129-4514-b73b-960b720494ab" Target="#_2f9322be-3f7b-4fca-a671-68460b00c715"><Timestamp>2021-10-11 08:59:17</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
