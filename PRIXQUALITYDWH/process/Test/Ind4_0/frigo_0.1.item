@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:LnqeWoI7t/YC7mbP08bdWpCqxJFVxEtGCRjLLEC9"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:HDf8eRx/+iVo12ZY9FFlFs7X7qWdUBtP+pDLh4Dq"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.VerticaStaging_AdditionalParams"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:SKnSL3IDhsZhvdsqfQec/vbeBeFb81xqZvUAzodcl7I0bJa88lqJbM8MIgEFPeMZi2kULUrCR5nbqms="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:A/Hg5s1HqcMV/tgQS1dDtaJ7Lv9mVTjLZK/jGNmRipe1lrkjqkBegiPO8xRxZhJn1ydWjr5O27TsGKI="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;talend_stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;talend_logs&quot;"/>
@@ -116,6 +116,7 @@
   </parameters>
   <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/Talend/PRIXQUALITY/temp_file&quot;"/>
     <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
     <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
@@ -136,19 +137,20 @@
     <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="192">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
   </node>
-  <node componentName="tFileInputPositional" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="96">
+  <node componentName="tFileInputPositional" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputPositional_1"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" show="false" value=""/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/gabriele.decesare/Documents/Talend/PRIXQUALITY/Talend-Studio-20200219_1130-V7.3.1/workspace/in.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="CHECK" name="ADVANCED_OPTION" value="false"/>
     <elementParameter field="TEXT" name="PATTERN" value="&quot;5,4,5&quot;"/>
@@ -196,15 +198,332 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1"/>
   </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_sDzIgCpwEeynn6fV0RaqfA"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_sDzIgCpwEeynn6fV0RaqfA - metadata"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend/PRIXQUALITY/temp_file/EXPORT_1623752751704.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="5"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_sDzIgCpwEeynn6fV0RaqfA - metadata"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" show="false" value="&quot;C:/Users/gabriele.decesare/Documents/Talend/PRIXQUALITY/Talend-Studio-20200219_1130-V7.3.1/workspace&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" show="false" value="10"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value=""/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_1TNM_MURALE_FV_BERLINO_ADR_1_010_MATR_0TAF220001"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_1TNS1_MURALE_FV_BERLINO_ADR_1_011_MATR_0TAF220101"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_2TNM_MURALE_SL_ULM_ADR_1_012_MATR_0TAF195301"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_2TNS1_MURALE_SL_ULM_ADR_1_013_MATR_0TAF195601"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_2TNS2_MURALE_SL_ULM_ADR_1_014_MATR_0TAF195001"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_3TNM_MURALE_SL_ULM_ADR_1_015_MATR_0TAF195101"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_3TNS1_MURALE_SL_ULM_ADR_1_016_MATR_0TAF195201"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_4TNM_MURALE_CARNE_BERLINO_ADR_1_017_MATR_0TAF225101"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_5BTM_ARMADIO_SURGELATI_ASTANA_ADR_1_027_MATR_0TAF244301"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_5BTS1_ARMADIO_SURGELATI_ASTANA_ADR_1_028_MATR_0TAF244401"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_6BTM_ARMADIO_SURGELATI_ASTANA_ADR_1_029_MATR_0TAF244101"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_6BTS1_ARMADIO_SURGELATI_ASTANA_ADR_1_030_MATR_0TAF244201"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_1TNM_MURALE_FV_BERLINO_ADR_1_010_MATR_0TAF2200011"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_1TNS1_MURALE_FV_BERLINO_ADR_1_011_MATR_0TAF2201011"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_2TNM_MURALE_SL_ULM_ADR_1_012_MATR_0TAF1953011"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_2TNS1_MURALE_SL_ULM_ADR_1_013_MATR_0TAF1956011"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_2TNS2_MURALE_SL_ULM_ADR_1_014_MATR_0TAF1950011"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_3TNM_MURALE_SL_ULM_ADR_1_015_MATR_0TAF1951011"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_3TNS1_MURALE_SL_ULM_ADR_1_016_MATR_0TAF1952011"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_4TNM_MURALE_CARNE_BERLINO_ADR_1_017_MATR_0TAF2251011"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_5BTM_ARMADIO_SURGELATI_ASTANA_ADR_1_027_MATR_0TAF2443011"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_5BTS1_ARMADIO_SURGELATI_ASTANA_ADR_1_028_MATR_0TAF2444011"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_6BTM_ARMADIO_SURGELATI_ASTANA_ADR_1_029_MATR_0TAF2441011"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_6BTS1_ARMADIO_SURGELATI_ASTANA_ADR_1_030_MATR_0TAF2442011"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_7BTM_CELLA_BT_PANE_ADR_1_035_MATR_200910"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_7BTM_CELLA_BT_PANE_ADR_1_035_MATR_2009101"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Column27"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value=""/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_1TNM_MURALE_FV_BERLINO_ADR_1_010_MATR_0TAF220001"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_1TNS1_MURALE_FV_BERLINO_ADR_1_011_MATR_0TAF220101"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_2TNM_MURALE_SL_ULM_ADR_1_012_MATR_0TAF195301"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_2TNS1_MURALE_SL_ULM_ADR_1_013_MATR_0TAF195601"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_2TNS2_MURALE_SL_ULM_ADR_1_014_MATR_0TAF195001"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_3TNM_MURALE_SL_ULM_ADR_1_015_MATR_0TAF195101"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_3TNS1_MURALE_SL_ULM_ADR_1_016_MATR_0TAF195201"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_4TNM_MURALE_CARNE_BERLINO_ADR_1_017_MATR_0TAF225101"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_5BTM_ARMADIO_SURGELATI_ASTANA_ADR_1_027_MATR_0TAF244301"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_5BTS1_ARMADIO_SURGELATI_ASTANA_ADR_1_028_MATR_0TAF244401"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_6BTM_ARMADIO_SURGELATI_ASTANA_ADR_1_029_MATR_0TAF244101"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_6BTS1_ARMADIO_SURGELATI_ASTANA_ADR_1_030_MATR_0TAF244201"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_1TNM_MURALE_FV_BERLINO_ADR_1_010_MATR_0TAF2200011"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_1TNS1_MURALE_FV_BERLINO_ADR_1_011_MATR_0TAF2201011"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_2TNM_MURALE_SL_ULM_ADR_1_012_MATR_0TAF1953011"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_2TNS1_MURALE_SL_ULM_ADR_1_013_MATR_0TAF1956011"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_2TNS2_MURALE_SL_ULM_ADR_1_014_MATR_0TAF1950011"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_3TNM_MURALE_SL_ULM_ADR_1_015_MATR_0TAF1951011"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_3TNS1_MURALE_SL_ULM_ADR_1_016_MATR_0TAF1952011"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_4TNM_MURALE_CARNE_BERLINO_ADR_1_017_MATR_0TAF2251011"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_5BTM_ARMADIO_SURGELATI_ASTANA_ADR_1_027_MATR_0TAF2443011"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_5BTS1_ARMADIO_SURGELATI_ASTANA_ADR_1_028_MATR_0TAF2444011"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_6BTM_ARMADIO_SURGELATI_ASTANA_ADR_1_029_MATR_0TAF2441011"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_6BTS1_ARMADIO_SURGELATI_ASTANA_ADR_1_030_MATR_0TAF2442011"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_7BTM_CELLA_BT_PANE_ADR_1_035_MATR_200910"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_7BTM_CELLA_BT_PANE_ADR_1_035_MATR_2009101"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Column27"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="frigo"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
+      <column comment="" key="false" length="21" name="" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_1TNM_MURALE_FV_BERLINO_ADR_1_010_MATR_0TAF220001" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_1TNS1_MURALE_FV_BERLINO_ADR_1_011_MATR_0TAF220101" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_2TNM_MURALE_SL_ULM_ADR_1_012_MATR_0TAF195301" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_2TNS1_MURALE_SL_ULM_ADR_1_013_MATR_0TAF195601" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_2TNS2_MURALE_SL_ULM_ADR_1_014_MATR_0TAF195001" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_3TNM_MURALE_SL_ULM_ADR_1_015_MATR_0TAF195101" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_3TNS1_MURALE_SL_ULM_ADR_1_016_MATR_0TAF195201" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_4TNM_MURALE_CARNE_BERLINO_ADR_1_017_MATR_0TAF225101" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_5BTM_ARMADIO_SURGELATI_ASTANA_ADR_1_027_MATR_0TAF244301" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_5BTS1_ARMADIO_SURGELATI_ASTANA_ADR_1_028_MATR_0TAF244401" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_6BTM_ARMADIO_SURGELATI_ASTANA_ADR_1_029_MATR_0TAF244101" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_6BTS1_ARMADIO_SURGELATI_ASTANA_ADR_1_030_MATR_0TAF244201" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_1TNM_MURALE_FV_BERLINO_ADR_1_010_MATR_0TAF2200011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_1TNS1_MURALE_FV_BERLINO_ADR_1_011_MATR_0TAF2201011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_2TNM_MURALE_SL_ULM_ADR_1_012_MATR_0TAF1953011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_2TNS1_MURALE_SL_ULM_ADR_1_013_MATR_0TAF1956011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_2TNS2_MURALE_SL_ULM_ADR_1_014_MATR_0TAF1950011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_3TNM_MURALE_SL_ULM_ADR_1_015_MATR_0TAF1951011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_3TNS1_MURALE_SL_ULM_ADR_1_016_MATR_0TAF1952011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_4TNM_MURALE_CARNE_BERLINO_ADR_1_017_MATR_0TAF2251011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_5BTM_ARMADIO_SURGELATI_ASTANA_ADR_1_027_MATR_0TAF2443011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_5BTS1_ARMADIO_SURGELATI_ASTANA_ADR_1_028_MATR_0TAF2444011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_6BTM_ARMADIO_SURGELATI_ASTANA_ADR_1_029_MATR_0TAF2441011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_6BTS1_ARMADIO_SURGELATI_ASTANA_ADR_1_030_MATR_0TAF2442011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="_7BTM_CELLA_BT_PANE_ADR_1_035_MATR_200910" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="_7BTM_CELLA_BT_PANE_ADR_1_035_MATR_2009101" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Column27" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="21" name="" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_1TNM_MURALE_FV_BERLINO_ADR_1_010_MATR_0TAF220001" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_1TNS1_MURALE_FV_BERLINO_ADR_1_011_MATR_0TAF220101" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_2TNM_MURALE_SL_ULM_ADR_1_012_MATR_0TAF195301" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_2TNS1_MURALE_SL_ULM_ADR_1_013_MATR_0TAF195601" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_2TNS2_MURALE_SL_ULM_ADR_1_014_MATR_0TAF195001" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_3TNM_MURALE_SL_ULM_ADR_1_015_MATR_0TAF195101" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_3TNS1_MURALE_SL_ULM_ADR_1_016_MATR_0TAF195201" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_4TNM_MURALE_CARNE_BERLINO_ADR_1_017_MATR_0TAF225101" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_5BTM_ARMADIO_SURGELATI_ASTANA_ADR_1_027_MATR_0TAF244301" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_5BTS1_ARMADIO_SURGELATI_ASTANA_ADR_1_028_MATR_0TAF244401" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_6BTM_ARMADIO_SURGELATI_ASTANA_ADR_1_029_MATR_0TAF244101" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_6BTS1_ARMADIO_SURGELATI_ASTANA_ADR_1_030_MATR_0TAF244201" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_1TNM_MURALE_FV_BERLINO_ADR_1_010_MATR_0TAF2200011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_1TNS1_MURALE_FV_BERLINO_ADR_1_011_MATR_0TAF2201011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_2TNM_MURALE_SL_ULM_ADR_1_012_MATR_0TAF1953011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_2TNS1_MURALE_SL_ULM_ADR_1_013_MATR_0TAF1956011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_2TNS2_MURALE_SL_ULM_ADR_1_014_MATR_0TAF1950011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_3TNM_MURALE_SL_ULM_ADR_1_015_MATR_0TAF1951011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_3TNS1_MURALE_SL_ULM_ADR_1_016_MATR_0TAF1952011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_4TNM_MURALE_CARNE_BERLINO_ADR_1_017_MATR_0TAF2251011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_5BTM_ARMADIO_SURGELATI_ASTANA_ADR_1_027_MATR_0TAF2443011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_5BTS1_ARMADIO_SURGELATI_ASTANA_ADR_1_028_MATR_0TAF2444011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_6BTM_ARMADIO_SURGELATI_ASTANA_ADR_1_029_MATR_0TAF2441011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_6BTS1_ARMADIO_SURGELATI_ASTANA_ADR_1_030_MATR_0TAF2442011" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="_7BTM_CELLA_BT_PANE_ADR_1_035_MATR_200910" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="_7BTM_CELLA_BT_PANE_ADR_1_035_MATR_2009101" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Column27" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_yVuoUCpqEeynn6fV0RaqfA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="-1" name="frigo_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="temp" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out1" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="&quot;1TNM_MURALE_FV_BERLINO_ADR_1_010_MATR_0TAF220001&quot; " name="frigo_name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2._1TNM_MURALE_FV_BERLINO_ADR_1_010_MATR_0TAF220001 " name="temp" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="_1TNM_MURALE_FV_BERLINO_ADR_1_010_MATR_0TAF220001" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_1TNS1_MURALE_FV_BERLINO_ADR_1_011_MATR_0TAF220101" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_2TNM_MURALE_SL_ULM_ADR_1_012_MATR_0TAF195301" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_2TNS1_MURALE_SL_ULM_ADR_1_013_MATR_0TAF195601" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_2TNS2_MURALE_SL_ULM_ADR_1_014_MATR_0TAF195001" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_3TNM_MURALE_SL_ULM_ADR_1_015_MATR_0TAF195101" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_3TNS1_MURALE_SL_ULM_ADR_1_016_MATR_0TAF195201" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_4TNM_MURALE_CARNE_BERLINO_ADR_1_017_MATR_0TAF225101" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_5BTM_ARMADIO_SURGELATI_ASTANA_ADR_1_027_MATR_0TAF244301" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_5BTS1_ARMADIO_SURGELATI_ASTANA_ADR_1_028_MATR_0TAF244401" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_6BTM_ARMADIO_SURGELATI_ASTANA_ADR_1_029_MATR_0TAF244101" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_6BTS1_ARMADIO_SURGELATI_ASTANA_ADR_1_030_MATR_0TAF244201" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_1TNM_MURALE_FV_BERLINO_ADR_1_010_MATR_0TAF2200011" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_1TNS1_MURALE_FV_BERLINO_ADR_1_011_MATR_0TAF2201011" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_2TNM_MURALE_SL_ULM_ADR_1_012_MATR_0TAF1953011" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_2TNS1_MURALE_SL_ULM_ADR_1_013_MATR_0TAF1956011" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_2TNS2_MURALE_SL_ULM_ADR_1_014_MATR_0TAF1950011" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_3TNM_MURALE_SL_ULM_ADR_1_015_MATR_0TAF1951011" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_3TNS1_MURALE_SL_ULM_ADR_1_016_MATR_0TAF1952011" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_4TNM_MURALE_CARNE_BERLINO_ADR_1_017_MATR_0TAF2251011" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_5BTM_ARMADIO_SURGELATI_ASTANA_ADR_1_027_MATR_0TAF2443011" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_5BTS1_ARMADIO_SURGELATI_ASTANA_ADR_1_028_MATR_0TAF2444011" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_6BTM_ARMADIO_SURGELATI_ASTANA_ADR_1_029_MATR_0TAF2441011" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_6BTS1_ARMADIO_SURGELATI_ASTANA_ADR_1_030_MATR_0TAF2442011" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_7BTM_CELLA_BT_PANE_ADR_1_035_MATR_200910" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_7BTM_CELLA_BT_PANE_ADR_1_035_MATR_2009101" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Column27" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="frigo_name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="temp"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="frigo_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="temp" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tJava_1">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate2"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tFileInputPositional_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputPositional_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputPositional_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
@@ -212,17 +531,17 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputPositional_1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_44b9c62c-1800-43e8-9a48-61a327d5d556"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IYT8YNmM1MJqLx2+UNpm5fqPWnCSs23dZmrRgwJyU1Y4Lr0qsZsGliBfdmx94dH2E71gDYerQWdU&#13;
-M3bpxNJyeQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b0613b44-835a-491e-9dce-f62209921ff7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QkBUsphFCBuvl3BZq0lCewpd2c5zpbOO42IbHtOIzCcilYtgBuIOVSEsfE4PHpIFpm6I7kEod0T6&#13;
-vrTxlUzALg==</DigestValue></Reference></SignedInfo><SignatureValue>EjVHPjmYhsfK5NfB7rs0QOxRkgflMJpOEGoXaxR3rr5h2yFl/2LGtj4Vru7I/C/bioge+HpIMWeW&#13;
-Tk4tNtxbfkyFayh5JbeADfXCrSRQjv8y4V/HEVri/zbvnefuOH2q3awAkhx7l2gqUyj/4fJ4YY3C&#13;
-mjvFAgNUZmBSLRt+AxOT7LwApnukJ1ALZJdDaFW2n51X9wWANd4XGqaiwf3BjDgckp7WfAXEQoKx&#13;
-Xo0KGPeY/uRisncx6Ztfle/jCOkHxv6918+pTduufgL7Ul5fEJmdjmJIhQfDBJnhE+ay7Q7eteI0&#13;
-5EyQ6Ng5U32iZd8hZyuc6FDUB1qpqcWJw5ytpQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f029577a-301c-49fd-a81c-eb763304d439"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>I3/v8rstNjonNJFGnQjYQl8Ao/oUuzUDkB2mJrd7cNPfsQXrBpLrG6W93JPDrFeOsMdx8RRb0s8p&#13;
+JO/2YrFLZA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_03aac084-612e-4b38-ba4a-31bb755e30ea"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JCyNnc+8WWNue2R7ysF6ccG1Th8Hy3AZXEGLaywoE6B3XQOMd8DuBvlnhoOQlsEyevGfX+V8Reda&#13;
+q+b6jBfV1g==</DigestValue></Reference></SignedInfo><SignatureValue>V1PwfFuKtmnSUoFZKTkmg/pFudC+ON8sr4ah3QMv0PHlN5biQY0TyjN7v1ASGWaO3WGqtG2UQZf7&#13;
+SDfuwxSn5wcr1tDpml4aFS11N8HcO7Sozk5V58XTCi2JBjAmo3aKAD66/iDw0b5v3OBVlIfpPr60&#13;
+q2GvkBtpAsbh78h5KJsy/IkIZ4PY5cSX/Ya3tl1TksE7fphtIeZ2B4Gb62ZbL30F4lxC35RFfU32&#13;
+bmpXS/wkstTiIaguZRpIMmchp9HBgTxTVQPqa8WOxENYir16Rku9DhFgZQbc0S18ofVqNwOlQGY3&#13;
+VmDUkxId7jwpqkLm0SSMI3nksufxqZohlqcnHg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -244,4 +563,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b0613b44-835a-491e-9dce-f62209921ff7" Target="#_44b9c62c-1800-43e8-9a48-61a327d5d556"><Timestamp>2021-10-11 08:28:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_03aac084-612e-4b38-ba4a-31bb755e30ea" Target="#_f029577a-301c-49fd-a81c-eb763304d439"><Timestamp>2021-10-11 08:58:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
