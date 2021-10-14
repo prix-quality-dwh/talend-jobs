@@ -2,7 +2,7 @@
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="file_name" prompt="file_name?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;EXPORT_*"/>
     <contextParameter comment="UserName" name="MailPrixUserName" prompt="MailPrixUserName?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;prix.banchi-frigo&quot;"/>
-    <contextParameter comment="Password" name="MailPrixPassword" prompt="MailPrixPassword?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Password" value="enc:system.encryption.key.v1:Onw/USJiP+mBLgYTwyG6cc+RQAgemqsUz4l1gauoVconbLzqFnqJSe30CBC4"/>
+    <contextParameter comment="Password" name="MailPrixPassword" prompt="MailPrixPassword?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Password" value="enc:system.encryption.key.v1:rdS+LpHSH9H2Ri2zijqwUZtxbTbZVzr4YrK7hGL2KFvJOKZDO+/O3EJ0rsv6"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -46,7 +46,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:IRZjPtJwMSPY9LtX7uDGHyl7RcIRe/E5KsN6Lv6l"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:+dpUomlezej3miW/U5Ee7QcoDMqLzrjYtnTyiwAl"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -83,7 +83,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.VerticaStaging_AdditionalParams"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:/DVhMN30CQ6Ud++LAMS4nOnUve5yflVYaI+WH/wDOCzSsnx57VMSbax6PGuzqaHwhaifxD1qxASF4uo="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:uBUA9YmBmFPwh6IxPAJWN0eA0JgqRn3+KGSztI5i4WttyIpGYlbmNRl+JxTz1qaCmRrNtWrU8Tf3BTY="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;talend_stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;talend_logs&quot;"/>
@@ -121,9 +121,9 @@
   <node componentName="tPOP" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPOP_1"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;mail.prixquality.com&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="25"/>
+    <elementParameter field="TEXT" name="PORT" value="143"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;prix.banchi-frigo&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:FBfhcOlx7FYRsiTjnzK6j6mmAEiIrJJgupuHNcBcl7I87uNpn+dncd6zlwxxmU8="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:1i0qhdFDQJKJKtvUCnRfz6vYVDq8LWxrg6+50kiwq+PKacls84ZFoQBwBHqV"/>
     <elementParameter field="DIRECTORY" name="OUTPUT_DIRECTORY" value="&quot;C:/Talend/PRIXQUALITY/temp_file&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_PATTERN" value="TalendDate.getDate(&quot;yyyyMMdd-hhmmss&quot;) + &quot;_&quot; + (counter_tPOP_1 + 1) + &quot;.mail&quot;"/>
     <elementParameter field="CHECK" name="ALL_EMAILS" value="true"/>
@@ -133,7 +133,7 @@
     <elementParameter field="CLOSED_LIST" name="PROTOCOL" value="imap"/>
     <elementParameter field="CHECK" name="SPECIFY_MAIL_FOLDER" value="false"/>
     <elementParameter field="TEXT" name="MAIL_FOLDER" show="false" value="&quot;INBOX&quot;"/>
-    <elementParameter field="CHECK" name="USE_SSL" value="false"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
     <elementParameter field="TABLE" name="ADVANCED_FILTER"/>
     <elementParameter field="CLOSED_LIST" name="FILTER_RELATION" value="&amp;&amp;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -173,7 +173,7 @@
     <elementParameter field="TEXT" name="HOST" value="&quot;smtp.gmail.com&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="995"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;asdtmagenta&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:mBD5ntPtOJne8zm78X4eEIW1PrND1Q3T0fi/GsPieNwsq37nAcU="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:Urfmto/DNVCPzd4ZQCzj4NOge61HrOZlPkh3qNRl3lFejZzIBy0="/>
     <elementParameter field="DIRECTORY" name="OUTPUT_DIRECTORY" value="&quot;C:/Users/gabriele.decesare/Documents/Talend/PRIXQUALITY/Talend-Studio-20200219_1130-V7.3.1/workspace&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_PATTERN" value="TalendDate.getDate(&quot;yyyyMMdd-hhmmss&quot;) + &quot;_&quot;  + &quot;.mail&quot;"/>
     <elementParameter field="CHECK" name="ALL_EMAILS" value="true"/>
@@ -194,7 +194,7 @@
     <elementParameter field="TEXT" name="HOST" value="&quot;mail.horsa.it&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="995"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;gabriele.decesare@horsa.it&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:noMnNpjDdKAtP7PyGeRVLrtTL4qKkvvjqGB0f+gQSnLE3SHU/aRP9w=="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:KWeHqAoT8Q4LNU89XB4lOu80A+hBQGSLbdOmyCP2IqNkM4gR9jlzgQ=="/>
     <elementParameter field="DIRECTORY" name="OUTPUT_DIRECTORY" value="&quot;C:/Talend/PRIXQUALITY/temp_file&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_PATTERN" value="TalendDate.getDate(&quot;yyyyMMdd-hhmmss&quot;) + &quot;_&quot; + (counter_tPOP_3 + 1) + &quot;.mail&quot;"/>
     <elementParameter field="CHECK" name="ALL_EMAILS" value="false"/>
@@ -312,13 +312,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3a26bee5-383e-4378-b7b4-e15e89ca1845"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>to1Wy27qnGXglqNg2U8zBi//RwTEdq6OpGj5X9/nOO4geeq0qRz03mVVqIgEKJ42xLhxONl7Vuwf&#13;
-KmQen5qmbw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6b4a9e33-2a03-4733-b51e-321879ee23f7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KyLA62BXXAStjGEck4Orc3n85l3n6gSRbqA9vUeSKhvFWhkKsNpRdH2ETim8zexbpsQZaNtoEHlj&#13;
-ymp1VAB+jw==</DigestValue></Reference></SignedInfo><SignatureValue>MwSx237522Hn9eqWglFsFJj8jT3vaDnRjasPxnOM3LHcvpc16vf6rX32ziD4XWMGtvdj/KIw/90Z&#13;
-YrU569BxWUuIWOVSii9waUIqfslap99tfczqcEOnCnNv4ipA4YhqddzeR3mJS94670Q7Fpbr1Q3l&#13;
-4ej4JeiGazEltgAzVPdDM/MUlzDu6pR+cM0RR0LUxCc+xZGOipByaMr07Jq4o1lmGupDqc05SlU6&#13;
-8Y/UYiQGRT5rFipsyzC2giDmJR2mE70RYtmk9IXM1ZEn32DcCSc7iUWTUtc0S/ENR38EjoEL0aqq&#13;
-u8wfj8rKC7s50qtthj4KDzquHFtM1jNvWzeASQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b9bd6f6e-703c-4d57-9608-21e82d72bf85"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4LPZKD4e5AtMsbXrR7OM07VqsHrqp+YO+4VzFaPC5wG1QMa7ms8QwxvsL4StZQJfBGRTYdH2JRJg&#13;
+k9kZD7h3/g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8f970d28-f5f5-4b01-81e7-d121be1412ec"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5MwREZQaFWN+/7v4MtJyjLRBvE7v/3BlLIIHY2vjM7KOIJ2l8N0RL2wvkreHuRG9CTniK3oIRjua&#13;
+R5NZ8dfNOg==</DigestValue></Reference></SignedInfo><SignatureValue>R+lDD7Spyo6rQR2Pqr0Jsm58ls2E+Lj+R2uXa1rltaVTeOMyXQ8qdwhT3/fAHHp7S3Nvwd5gI2j2&#13;
+cIdK7mEqcWI+coorF6PxFBr+oSsChJTs8RzYBeXvLkhOiFu06sPQ1xaP1cliYjiMo059zCl2vWIw&#13;
+aq63flgmC0566Z3uBE3wNEL0obHN3kOabyqcNKus45F/q1xZD7duTtoAP6CUeq1+CsKiu5DOsWuI&#13;
+DANJX39zJ5dnwt2KgufWvjGbbRwKm22t1+2CsApJpjmlZAiuXnf4BNucORmbWPNOesgIVaD5uc9A&#13;
+LZwaagCHvpRfBCq7HueImpXPKqJ6ZD7GMX0bbA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -340,4 +340,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6b4a9e33-2a03-4733-b51e-321879ee23f7" Target="#_3a26bee5-383e-4378-b7b4-e15e89ca1845"><Timestamp>2021-10-14 15:11:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8f970d28-f5f5-4b01-81e7-d121be1412ec" Target="#_b9bd6f6e-703c-4d57-9608-21e82d72bf85"><Timestamp>2021-10-14 15:12:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
