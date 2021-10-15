@@ -2,7 +2,7 @@
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="file_name" prompt="file_name?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;EXPORT_*"/>
     <contextParameter comment="UserName" name="MailPrixUserName" prompt="MailPrixUserName?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;prix.banchi-frigo&quot;"/>
-    <contextParameter comment="Password" name="MailPrixPassword" prompt="MailPrixPassword?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Password" value="enc:system.encryption.key.v1:0aheM0a5VJxFazyBCZtW219zcsl28UkZdjeHFZlW4yZ1jewQwrmIul2UEtW7"/>
+    <contextParameter comment="Password" name="MailPrixPassword" prompt="MailPrixPassword?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Password" value="enc:system.encryption.key.v1:5dxSx8A2ukezV3TnVzk9efgDT06EnbEu4l7lQDJ2j6RThWZFqA8XAUzBSaed"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -46,7 +46,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:EspaZKA4Ueu+gh7hucYB5ddsgh9E/cQJLBpIC/7/"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:3MbZNSPgB/fu/sqrmqDaMmyMKKRzDjbsp6XHALm3"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -83,7 +83,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.VerticaStaging_AdditionalParams"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:O1E1N4UxTeWX9ZK4UPHsoue/ROg+7nGVfR7FWkumScsxK1TqihDadSbJ0sM1ZVZVyDIpVy//3YB0lMs="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:r+xC+TF2soHze+OilG2zPDjnmgxQvvwaj5sSskyCBTa6mzyW4m+1YH0cxk6d7SIkdfPHmRs/ja43mEg="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;talend_stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;talend_logs&quot;"/>
@@ -120,16 +120,15 @@
   </parameters>
   <node componentName="tPOP" componentVersion="0.101" offsetLabelX="7" offsetLabelY="1" posX="288" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPOP_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;10.0.1.211&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="143"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;prix.banchi-frigo@prixquality.com&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:kPXHuFJ1LIfZ1SBzBqFkj2rHCUwmEV2WJI27LRWggQtyjokoFBkB8DrQ3qUvox8="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:zVfBOkk7JkI+CpRd9G9l70wCBxq6s2gJPaCmxwjeu88IIojgNqGpfwP8Xrp7+VA="/>
     <elementParameter field="DIRECTORY" name="OUTPUT_DIRECTORY" value="&quot;C:/Talend/PRIXQUALITY/temp_file&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_PATTERN" value="TalendDate.getDate(&quot;yyyyMMdd-hhmmss&quot;) + &quot;_&quot; + (counter_tPOP_1 + 1) + &quot;.mail&quot;"/>
-    <elementParameter field="CHECK" name="ALL_EMAILS" value="true"/>
-    <elementParameter field="CHECK" name="NEWER_EMAILS" show="false" value="false"/>
-    <elementParameter field="TEXT" name="MAX_EMAILS" show="false" value="10"/>
+    <elementParameter field="CHECK" name="ALL_EMAILS" value="false"/>
+    <elementParameter field="CHECK" name="NEWER_EMAILS" value="false"/>
+    <elementParameter field="TEXT" name="MAX_EMAILS" value="10"/>
     <elementParameter field="CHECK" name="DELETE_FROM_SERVER" value="false"/>
     <elementParameter field="CLOSED_LIST" name="PROTOCOL" value="imap"/>
     <elementParameter field="CHECK" name="SPECIFY_MAIL_FOLDER" value="true"/>
@@ -141,7 +140,6 @@
   </node>
   <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/Talend/PRIXQUALITY/temp_file&quot;"/>
     <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
     <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
@@ -164,7 +162,6 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -176,7 +173,7 @@
     <elementParameter field="TEXT" name="HOST" value="&quot;smtp.gmail.com&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="995"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;asdtmagenta&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:xNzO8q9BpdQWdpDeMoAHsJWzZ+Y2FEP9xbLD5E12zxXZuTWY/24="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:NaYeUpRf1rv1k0R8u111pSKxZO3Ju6Y8JImCt1KG4S+PbagfkJc="/>
     <elementParameter field="DIRECTORY" name="OUTPUT_DIRECTORY" value="&quot;C:/Users/gabriele.decesare/Documents/Talend/PRIXQUALITY/Talend-Studio-20200219_1130-V7.3.1/workspace&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_PATTERN" value="TalendDate.getDate(&quot;yyyyMMdd-hhmmss&quot;) + &quot;_&quot;  + &quot;.mail&quot;"/>
     <elementParameter field="CHECK" name="ALL_EMAILS" value="true"/>
@@ -195,6 +192,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="MailMailEmitter_1"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" show="false" value="bWFpbGlvI01haWwjTWFpbEVtaXR0ZXI"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_METADATA_TYPE_ID" show="false" value="bWFpbGlvI01haWwjZGF0YXN0b3JlI01haWxDb25uZWN0aW9u"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Zp1LsC2eEeygyKwtUgnyYQ"/>
     <elementParameter field="TEXT" name="configuration.dataset.connection.host" value="&quot;10.0.1.211&quot;"/>
@@ -202,7 +200,7 @@
     <elementParameter field="CHECK" name="configuration.dataset.connection.tls" value="true"/>
     <elementParameter field="CHECK" name="configuration.dataset.connection.auth" value="true"/>
     <elementParameter field="TEXT" name="configuration.dataset.connection.username" value="&quot;prix.banchi-frigo@prixquality.com&quot;"/>
-    <elementParameter field="PASSWORD" name="configuration.dataset.connection.password" value="enc:system.encryption.key.v1:WlILfceO8IUJtOv1JjbBLWvcmdfCX9QC40tgb+83Ny+2XMvEQoh13kOrcmQbszE="/>
+    <elementParameter field="PASSWORD" name="configuration.dataset.connection.password" value="enc:system.encryption.key.v1:gjLSnOy6YzReIrSPGo/ZBkGez/mTU8n1C0A+D4siNx7s14jPSLJu6Z7bzKloZbk="/>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.inbox" value="&quot;INBOX&quot;"/>
     <elementParameter field="TABLE" name="configuration.terms">
       <elementValue elementRef="configuration.terms[].type" value="FROM"/>
@@ -234,6 +232,7 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -282,17 +281,16 @@
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tPOP_1" offsetLabelX="0" offsetLabelY="0" source="tPOP_1" target="tFileList_1">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate3"/>
   </connection>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tJava_1">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate2"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="MailMailEmitter_1" offsetLabelX="0" offsetLabelY="0" source="MailMailEmitter_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <subjob>
@@ -315,13 +313,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_736e759a-90c0-41ac-a0a6-78212b9d7e2e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wk8sLpm0mqhQBI+tGQjO92A4rB0ixkpVOt9Gl1z6OFK1NeD35/SXIY8IhGZbnJF6R3MM92wRDlIK&#13;
-XG4VY0NHjg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e0131496-808e-4f04-a6fc-e0ff28f5fac2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cJ8Ckabz7qGRR7kk/9ckIr4sR+mXBFTnWv47WB3q9sQ3tiPvXEnvHKe5EGEd27wraTgsVORhZEcV&#13;
-vmjArY08Cw==</DigestValue></Reference></SignedInfo><SignatureValue>lC+8MOzU+rgzWhKKEpkRMHRajIEH/uPJQo0hp1Voc/O7MG9coHBvvwf8rAI7cS5jQgZ2UZa7fwd1&#13;
-gZ33cMDX8dhB9GLLbcbMo5vFa9JUHD3zlNCjVD7fJVC2zPyAFCLLpEplq6zO/qpxynLaCGl8eEKD&#13;
-ghaZOnrvkLeEYtrUb5Ql9RB/clnb1NRgEz+wE4Vzqio9tk7KR7xn4q0Qg/i+1KLakeXB+MD4WEAd&#13;
-bf9bZjtysz/ukMUXcxqs9Jg5gXyXBmEfO1IAPVt3pThfD2ymiAOuEia2YnJfQI13jKkn4qMB0MQW&#13;
-3Q+xhTjdUuCJ/qpU6IuVUG5m4cn5Ou15N7Ys5g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_13dec009-a388-4ca7-8902-e993b0c4d979"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cJul9Nb65diL30V5iDe7pJxKgfb9EdtNzqrclu8jk+GXkhT6z3ttLoAEA/gDAq5H0zg8w8b7e9CN&#13;
+lWuHeDjmnQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e38e324b-19bc-4cf3-a0c8-b1330ee7b98b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>oSjIUq86SZMJ+QOySqF3wZnmQCQxbms73kkQxVVtd6DsK2AN3MJ9k44vQ5tkehaU3JFUtgzfJw/m&#13;
+0lHWWE2MLA==</DigestValue></Reference></SignedInfo><SignatureValue>CZFNnszrITtqumOF8o3oRQHpnvcGp+AZExOnGPjW100f52+bgv1G/hyOJxgFA+2XlAWDMwyvnxZt&#13;
+ViYqbbMXwE9SIkfJtMcS3K7oGQdiyOR1xQDEsGsGGIKkC0rdyMl95c/+uyV8H2ne2qww5iSKc4Us&#13;
+SKbif6cvLMN+R3XKC1bu6hWw28eupNmJsGsEbGtCCmelORhk1qviMBsBvMHJKcNK6Xn1oEglPI+E&#13;
+QiZJFpaTBjgsaku6lhQGtL126aIboPGXlbTmUR5n17akgDiCmNBhzvIS/qEuFZpIxQ0o8Y0cRFX7&#13;
+ihTowDpRZFN72gL0TVRr2ZUw+5hNWCIjie3jIQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -343,4 +341,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e0131496-808e-4f04-a6fc-e0ff28f5fac2" Target="#_736e759a-90c0-41ac-a0a6-78212b9d7e2e"><Timestamp>2021-10-15 13:27:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e38e324b-19bc-4cf3-a0c8-b1330ee7b98b" Target="#_13dec009-a388-4ca7-8902-e993b0c4d979"><Timestamp>2021-10-15 13:42:15</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
