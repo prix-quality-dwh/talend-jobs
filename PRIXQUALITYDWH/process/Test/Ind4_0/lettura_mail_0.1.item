@@ -2,7 +2,7 @@
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="AttachmentArnegEpta" prompt="AttachmentArnegEpta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;EXPORT_*"/>
     <contextParameter comment="UserName" name="MailPrixUserName" prompt="MailPrixUserName?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;prix.banchi-frigo&quot;"/>
-    <contextParameter comment="Password" name="MailPrixPassword" prompt="MailPrixPassword?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Password" value="enc:system.encryption.key.v1:OBdVwfj/oWos74txOVIDL5gNqg29yYIBRD+iHx2dDZ4w6A88G6jAYm9DFrrn"/>
+    <contextParameter comment="Password" name="MailPrixPassword" prompt="MailPrixPassword?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Password" value="enc:system.encryption.key.v1:3EqoggkJaeb9RR7IKtVnUnqWItWRTVR8ESJljJ3F0muL8IP9u5VcRSarGqBN"/>
     <contextParameter comment="" name="condition" prompt="condition?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Boolean" value=""/>
     <contextParameter comment="" name="MailPath" prompt="MailPath?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail&quot;"/>
     <contextParameter comment="" name="MailAttachment" prompt="MailAttachment?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment&quot;"/>
@@ -52,7 +52,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:8HKOHK//oF7W+nLscXho/bpUGI0bACqbgekVOFJP"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:YYVwFrF96QSJzlw6IWtjbmFFs4yk8pOFAZaDthDw"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -89,7 +89,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.VerticaStaging_AdditionalParams"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:txkN115Vbc5wfdvwfRzWwpAgys77UVMLlHrIFZ05yNyf1HjEBDf/0AyEje99bS59sw3fMf8mBPG9wZ0="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:TJ/fzOMDwFFS2S0PTxtAoqnd12FMk63L4gtlxlHhfFLr8CRCFbte4vatQsbHJmwP/G1YNZNZdTFzxrg="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;talend_stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;talend_logs&quot;"/>
@@ -129,7 +129,7 @@
     <elementParameter field="TEXT" name="HOST" value="&quot;10.0.1.211&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="993"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;prix.banchi-frigo&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:XT7bxAC5SvgD8U6wMgMLT9tSZHfkE6mwGLMhVbKOLtftmwVyr3InwaKK0AOWBEM="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:hlKbh0nzdyf8dJVr7akZQ+cviWQ61jTt0d9GCiZ0+u0of2YdrUz27HvL3dTvYvU="/>
     <elementParameter field="DIRECTORY" name="OUTPUT_DIRECTORY" value="context.MailPath"/>
     <elementParameter field="TEXT" name="FILENAME_PATTERN" value="TalendDate.getDate(&quot;yyyyMMdd-hhmmss&quot;) + &quot;_&quot; + (counter_tPOP_1 + 1) + &quot;.mail&quot;"/>
     <elementParameter field="CHECK" name="ALL_EMAILS" value="true"/>
@@ -143,35 +143,6 @@
     <elementParameter field="TABLE" name="ADVANCED_FILTER"/>
     <elementParameter field="CLOSED_LIST" name="FILTER_RELATION" value="&amp;&amp;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.MailPath"/>
-    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
-    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
-    <elementParameter field="CHECK" name="ERROR" value="false"/>
-    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
-    <elementParameter field="TABLE" name="FILES">
-      <elementValue elementRef="FILEMASK" value="context.MailFile"/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
-    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
-    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
-    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
-    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
-    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
-    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
-    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
-    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;));"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_1"/>
   </node>
   <node componentName="tFileInputMail" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputMail_1"/>
@@ -258,18 +229,37 @@
       <column comment="" key="false" length="-1" name="attachment" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tPOP_1" offsetLabelX="0" offsetLabelY="0" source="tPOP_1" target="tFileList_1">
-    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
-    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate3"/>
-  </connection>
-  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tJava_1">
-    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
-    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate2"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tFileInputMail_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.MailPath"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="context.MailFile"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;));"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPOP_1" offsetLabelX="0" offsetLabelY="0" source="tPOP_1" target="tFileList_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputMail_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputMail_1" target="tLogRow_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -292,6 +282,14 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tJava_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate2"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tFileInputMail_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPOP_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
@@ -302,13 +300,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2ec5dd9f-9d1a-4469-b57e-69e8120c55c5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WrkDzQTm3mmQAIysNJRxQdEOednGiyQoKItpb4VOtVDxdj63XaDPeBofbmXmr+x88wRnW8Q4zkW6&#13;
-bi9q8BdpLw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_60a3549d-1356-4c11-ac13-917c1436513e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>q/fvMY+BLeSIqz0oPlMZptQ9K/00KBaQAK+fLxz5Zrukj60b7pjYTch3dZS1pyZ07sCOaeIuTvTH&#13;
-AQbChZBHzw==</DigestValue></Reference></SignedInfo><SignatureValue>QR4ivD1OsQBmd83ZvSTY6T6ZDI2JfJuvgo0gXZdJA97CyvYeJyHQriLjXZ9q13fktPY4d1QkQ3Gj&#13;
-0eKFBswRQsOhDVkSbWEWRiQZNgAJoH3RoSCcTRlB9aRPC/qJR6242LUykFxNh3zLO4+PQ2NjLqvd&#13;
-xwdXTdCwM9yrpufjiktAX/NoDb1Vr0jK5XskcU58EvWnSS7n2fAavqiU3HqLnm9qjNghOfC+ovw/&#13;
-GVwdf4S2WQamamcl+oIfnFQ4FK+glFQuivXrEmvbDYFPiiTYjXOeItMnElutrKyDsYPKQ6AU20zB&#13;
-Lrr+T9X9odMz+E+F/kwptBp3OwwPtjuifia1hg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_265a4826-2d10-4801-8bba-ad0d7ff691b8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>x/KtxPcEaiMtSIPa8LCXmNxWzl6qd95FdxZYzXI27D8j8Wyf7oRHMheuMG62ISxGJVJSV/oBdkJT&#13;
+PfvAJUUdVQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a3ced622-8cc8-4306-9fcc-3ef85f3dc276"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>myWfEP+d4jKKUT3o8HG/9mWCu4JWas4Zmo0PEdCScBNxDPsotbUkLKVHC6k/Q3tD0FQyegzy1+ps&#13;
+h4eM5gNzdw==</DigestValue></Reference></SignedInfo><SignatureValue>CnBaoxGqfWMCFNgYFqq5rllaBZbQCkU2SbM7D0Ac5ZmKjxMdjFb9ojPIXrOLyAvFR4p5dazhkc++&#13;
+XJDmMHtvdCfEFNZqe2sFHjTEpHuk6lTuZYMetGDWVsh/pKL7SsjVJWME2mkI4HymOaIOethou5TC&#13;
+RpV15JnP4cH7tKlAvQWsN9suNRVKFWEt6RcLAWBrYmFVHp6NmyM+eYz6dGi/0dEZFR087w/lpyoK&#13;
+ELyKprpmsoOwaWnnBF4HWtrFd92JI2+rIKeyAQEqEFSy8995lBR6MkgxFbognXZAMeAGUdy/NTIv&#13;
+7vgGXo1kBJD7l3al/3vaIVG9bD1QuizV29RocQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -330,4 +333,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_60a3549d-1356-4c11-ac13-917c1436513e" Target="#_2ec5dd9f-9d1a-4469-b57e-69e8120c55c5"><Timestamp>2021-10-19 14:09:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a3ced622-8cc8-4306-9fcc-3ef85f3dc276" Target="#_265a4826-2d10-4801-8bba-ad0d7ff691b8"><Timestamp>2021-10-19 14:13:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
