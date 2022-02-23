@@ -23,12 +23,12 @@
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>PRIXQUALITYDWH</talend.project.name>
-    <talend.product.version>7.3.1.20200219_1130</talend.product.version>
+    <talend.product.version>7.3.1.20220105_1637-patch</talend.product.version>
     <talend.job.finalName>work_produttivita_magazzino_fase4_data_turno_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.prixqualitydwh.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.prixqualitydwh.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.jvmargs>-Xms1024M -Xmx4096M -Dfile.encoding=UTF-8</talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms1024M -Xmx4096M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
     <talend.job.context>Production</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
@@ -36,7 +36,7 @@
     <talend.job.name>Work_produttivita_magazzino_fase4_data_turno</talend.job.name>
     <talend.job.id>_Sw2nALlFEeu8Jr3X7Ol2Gw</talend.job.id>
     <talend.project.id>0</talend.project.id>
-    <talend.job.folder>staging/logistica/</talend.job.folder>
+    <talend.job.folder>test/</talend.job.folder>
     <talend.job.framework></talend.job.framework>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.type>Standard</talend.job.type>
@@ -45,7 +45,7 @@
     <dependency>
       <groupId>net.minidev</groupId>
       <artifactId>accessors-smart</artifactId>
-      <version>1.1</version>
+      <version>2.4.7</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -55,32 +55,32 @@
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm</artifactId>
-      <version>5.0.3</version>
+      <version>9.1</version>
     </dependency>
     <dependency>
       <groupId>org.talend.daikon</groupId>
       <artifactId>audit-common</artifactId>
-      <version>1.8.0</version>
+      <version>1.16.1</version>
     </dependency>
     <dependency>
       <groupId>org.talend.daikon</groupId>
       <artifactId>audit-log4j2</artifactId>
-      <version>1.8.0</version>
+      <version>1.16.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
-      <version>3.8.1</version>
+      <version>3.10</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
+      <groupId>org.talend.daikon</groupId>
       <artifactId>crypto-utils</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
+      <version>0.31.12</version>
     </dependency>
     <dependency>
       <groupId>org.dom4j</groupId>
       <artifactId>dom4j</artifactId>
-      <version>2.1.1</version>
+      <version>2.1.3</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -88,34 +88,34 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
+      <groupId>org.talend.components.lib</groupId>
       <artifactId>job-audit</artifactId>
-      <version>1.1</version>
+      <version>1.4</version>
     </dependency>
     <dependency>
       <groupId>net.minidev</groupId>
       <artifactId>json-smart</artifactId>
-      <version>2.2.1</version>
+      <version>2.4.7</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
-      <version>2.12.1</version>
+      <version>2.16.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
-      <version>2.12.1</version>
+      <version>2.16.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-slf4j-impl</artifactId>
-      <version>2.12.1</version>
+      <version>2.16.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.daikon</groupId>
       <artifactId>logging-event-layout</artifactId>
-      <version>1.8.0</version>
+      <version>1.16.1</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -128,9 +128,9 @@
       <version>1.7.25</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>talend_file_enhanced_20070724</artifactId>
-      <version>6.0.0</version>
+      <groupId>org.talend.components.lib</groupId>
+      <artifactId>talend_file_enhanced</artifactId>
+      <version>1.1</version>
     </dependency>
     <dependency>
       <groupId>com.vertica</groupId>
@@ -196,6 +196,13 @@
                 </goals>
               </execution>
             </executions>
+            <dependencies>
+              <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.15</version>
+              </dependency>
+            </dependencies>
           </plugin>
         </plugins>
       </build>
@@ -254,8 +261,8 @@
       <properties>
         <talend.pigudf.excludes.set>org.talend.pigudf.${talend.project.name.lowercase}:*</talend.pigudf.excludes.set>
         <talend.libraries.excludes.set>${talend.libraries.includes.set}</talend.libraries.excludes.set>
-        <talend.jobs.excludes.set>${project.groupId}:*</talend.jobs.excludes.set>
         <talend.code.excludes.set>org.talend.code.${talend.project.name.lowercase}:*</talend.code.excludes.set>
+        <talend.jobs.excludes.set>${project.groupId}:*</talend.jobs.excludes.set>
         <talend.libraries.includes.set>org.talend.libraries:*</talend.libraries.includes.set>
         <current.job.binaries.include>${project.groupId}:${project.artifactId}:${project.version}</current.job.binaries.include>
       </properties>
@@ -348,6 +355,60 @@
       <properties>
         <microservice.running.configs.dir>${current.int-resources.dir}/</microservice.running.configs.dir>
       </properties>
+    </profile>
+    <profile>
+      <id>include-microservice-em-dependencies</id>
+      <activation>
+        <property>
+          <name>studio.prometheus.metrics</name>
+          <value>true</value>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <executions>
+              <execution>
+                <phase>package</phase>
+                <goals>
+                  <goal>single</goal>
+                </goals>
+                <configuration>
+                  <descriptors>
+                    <descriptor>${basedir}/src/main/assemblies/assembly.xml</descriptor>
+                  </descriptors>
+                  <tarLongFileMode>gnu</tarLongFileMode>
+                  <appendAssemblyId>false</appendAssemblyId>
+                  <finalName>${talend.job.finalName}</finalName>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+      <properties>
+        <microservice.configs.dir>${current.resources.dir}/</microservice.configs.dir>
+        <contexts.running.dir>${current.resources.dir}/</contexts.running.dir>
+        <microservice.running.configs.dir>${current.int-resources.dir}/</microservice.running.configs.dir>
+      </properties>
+      <dependencies>
+        <dependency>
+          <groupId>io.micrometer</groupId>
+          <artifactId>micrometer-registry-prometheus</artifactId>
+          <version>1.1.1</version>
+        </dependency>
+        <dependency>
+          <groupId>io.prometheus.jmx</groupId>
+          <artifactId>collector</artifactId>
+          <version>0.13.0</version>
+        </dependency>
+        <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-security</artifactId>
+          <version>2.2.13.RELEASE</version>
+        </dependency>
+      </dependencies>
     </profile>
   </profiles>
 </project>
