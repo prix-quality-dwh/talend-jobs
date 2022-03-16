@@ -190,8 +190,8 @@
     <signer.version>7.3.2</signer.version>
     <talend.project.name>PRIXQUALITYDWH</talend.project.name>
     <encoding>UTF-8</encoding>
-    <talend.docker.tag>${project.version}</talend.docker.tag>
     <maven.deploy.skip>true</maven.deploy.skip>
+    <talend.docker.tag>${project.version}</talend.docker.tag>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
@@ -379,6 +379,11 @@
               <groupId>commons-codec</groupId>
               <artifactId>commons-codec</artifactId>
               <version>1.15</version>
+            </dependency>
+            <dependency>
+              <groupId>org.apache.maven.shared</groupId>
+              <artifactId>maven-shared-utils</artifactId>
+              <version>3.3.3</version>
             </dependency>
           </dependencies>
         </plugin>
