@@ -208,6 +208,8 @@
     <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
     <elementParameter field="CHECK" name="FAILON" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
+    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
     <metadata connector="FLOW" name="tFileCopy_1">
       <column comment="" key="true" length="21" name="DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FV_0TAF220001" nullable="true" pattern="" precision="0" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true"/>
@@ -1186,6 +1188,8 @@
     <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
     <elementParameter field="CHECK" name="FAILON" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
+    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
     <metadata connector="FLOW" name="tFileCopy_2">
       <column comment="" key="true" length="21" name="DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FV_0TAF220001" nullable="true" pattern="" precision="0" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true"/>
@@ -1686,6 +1690,8 @@
     <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
     <elementParameter field="CHECK" name="FAILON" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
+    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
     <metadata connector="FLOW" name="tFileCopy_3">
       <column comment="" key="true" length="21" name="DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FV_0TAF220001" nullable="true" pattern="" precision="0" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true"/>
@@ -2177,6 +2183,8 @@
     <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
     <elementParameter field="CHECK" name="FAILON" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
+    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
     <metadata connector="FLOW" name="tFileCopy_4">
       <column comment="" key="true" length="21" name="DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FV_0TAF220001" nullable="true" pattern="" precision="0" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true"/>
@@ -2632,13 +2640,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_eeccf833-0d66-41ca-a161-81bc6b695e39"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7ry2Rrp8DctkhbIg2/pGy0wON+XispC7fCXsCocHVIyQKi5kapHJ+ZnnyhyBZ09cvOw13V3+Eh0s&#13;
-AHn3uqkVQQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fe70191f-a209-40ad-86ec-c74665c5375c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Eu7b6M2Yov+8Tbd+WGLBHp2Xx1AZgvPD8HZqeTCbdzeJBXOXxwzG4dxYeEweNdy/sRppcWRFdf3I&#13;
-uJOwN6h3JA==</DigestValue></Reference></SignedInfo><SignatureValue>cv0E0UvJ3DAMmcH0h86ojcKgCBR26VgB/UEpVdESUdN/sOlOk4dwlYhZZsvYzoTPxVCQoCGEomAN&#13;
-rk0zeIP7+LSoEmBAapMtTmiO7DV9IKYJIKI7amM7t4tN80x+Z1hXYnd78/SRWAhuYbD9rZc8r2rx&#13;
-HUVFvoHVXrCJkBXXMlKyKIfAz70hHCqNWFjWkxUnLjJ7IxDAJdU0k6TWbCMhkHQ4lQ+sWNLehCJZ&#13;
-034/XvstXVocsh+P7hMixbBddM4hFZvUIMt6ZacR9Yo5QW0IqU+COt117G5ELPb50M+xtOWeFJIG&#13;
-S/EasEKXZHeekIZz+DWHDz+mGWtJmGy8PU+PHg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5fe5b51f-69b2-471e-a771-4769a905143a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dBSikBKZqB15/jge5cUW/Gz761iHCSUrF/ZBh3nHXEErUKUdKyC+ERI3LnqKoJW91eeNP+uIfTjo&#13;
+tFiroU91+w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d51610cb-5d2c-4b62-9c07-a90334889376"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VBRrKtJhW18YjJKmXn2M+VGkjVTC+yDR4J6+t7844NsOpoj38C2k0HV601iZJoHuL6HDrDy6I57y&#13;
+50SwXtQcoQ==</DigestValue></Reference></SignedInfo><SignatureValue>WlrC+WglAkf0oV/Z/gglsxgO52O1zINBCuyuerDBu9hL8iL8hy70ggx7ZVyEV+mIpnNxZR6Cuo65&#13;
+Lnuw4wxkK5xzhR0xyraLTtqxnzvaZ9TGb8ysDDVrQssTvEzuQS94fxiQnZGScwgGktprWPZaakog&#13;
+FCPHTt4GuED+jjg9w2rWBG3HIDYnqZThACsR6FB15ameOrewiJxtzkJKRmfbzh0GRkQU1X/SX/3A&#13;
+K7+2X+MYuxgvOV2G+usb0Y9DsbQQ/B+g7Zb0ELag/kxAucvSG8L+yN7N8e7I39JlvfJ361M1mFWB&#13;
+xKv9mjgtE30pwBLwVmDwl3K3Es1LzpxPVh2HAA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2660,4 +2668,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fe70191f-a209-40ad-86ec-c74665c5375c" Target="#_eeccf833-0d66-41ca-a161-81bc6b695e39"><Timestamp>2021-10-19 19:16:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d51610cb-5d2c-4b62-9c07-a90334889376" Target="#_5fe5b51f-69b2-471e-a771-4769a905143a"><Timestamp>2022-03-21 08:29:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
