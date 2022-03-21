@@ -1,55 +1,30 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" internalId="_TRMbEKkjEey3dL8ev2fJBQ" name="VerticaStaging_Login" prompt="VerticaStaging_Login?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="horsadmin"/>
-    <contextParameter comment="" internalId="_TRMbEakjEey3dL8ev2fJBQ" name="VerticaStaging_AdditionalParams" prompt="VerticaStaging_AdditionalParams?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_TRMbEqkjEey3dL8ev2fJBQ" name="VerticaStaging_Database" prompt="VerticaStaging_Database?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="vertica01"/>
-    <contextParameter comment="" internalId="_TRMbE6kjEey3dL8ev2fJBQ" name="VerticaStaging_Password" prompt="VerticaStaging_Password?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:XjvTKM2jul/QRcEEYYyo3LfEX9V/adxHAOT26KFeKB8kjNOsYA=="/>
-    <contextParameter comment="" internalId="_TRMbFKkjEey3dL8ev2fJBQ" name="VerticaStaging_Schema" prompt="VerticaStaging_Schema?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="DWH_int"/>
-    <contextParameter comment="" internalId="_TRMbFakjEey3dL8ev2fJBQ" name="VerticaStaging_Server" prompt="VerticaStaging_Server?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="10.0.1.217"/>
-    <contextParameter comment="" internalId="_TRMbFqkjEey3dL8ev2fJBQ" name="VerticaStaging_Port" prompt="VerticaStaging_Port?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="5433"/>
-    <contextParameter comment="" internalId="_TRMbF6kjEey3dL8ev2fJBQ" name="AttachmentArnegEpta" prompt="AttachmentArnegEpta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;EXPORT_*"/>
-    <contextParameter comment="" internalId="_TRMbGKkjEey3dL8ev2fJBQ" name="AttachmentFrigoVenetaRename" prompt="AttachmentFrigoVenetaRename?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;*_haccp_*&quot;"/>
-    <contextParameter comment="" internalId="_TRMbGakjEey3dL8ev2fJBQ" name="MailFile" prompt="MailFile?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;*.mail&quot;"/>
-    <contextParameter comment="" internalId="_TRMbGqkjEey3dL8ev2fJBQ" name="AttachmentFrigoVeneta" prompt="AttachmentFrigoVeneta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;haccp_*&quot;"/>
-    <contextParameter comment="" internalId="_TRMbG6kjEey3dL8ev2fJBQ" name="PathAttachmentArchiveArneg" prompt="PathAttachmentArchiveArneg?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment/archive/arneg/&quot;"/>
-    <contextParameter comment="" internalId="_TRMbHKkjEey3dL8ev2fJBQ" name="PathAttachment" prompt="PathAttachment?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment/&quot;"/>
-    <contextParameter comment="" internalId="_TRMbHakjEey3dL8ev2fJBQ" name="PathAttachmentArchiveEpta" prompt="PathAttachmentArchiveEpta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment/archive/epta/&quot;"/>
-    <contextParameter comment="" internalId="_TRMbHqkjEey3dL8ev2fJBQ" name="condition" prompt="condition?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Boolean" value=""/>
-    <contextParameter comment="" internalId="_TRMbH6kjEey3dL8ev2fJBQ" name="MailServer" prompt="MailServer?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;10.0.1.211&quot;"/>
-    <contextParameter comment="" internalId="_TRMbIKkjEey3dL8ev2fJBQ" name="PathMailArchive" prompt="PathMailArchive?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/archive/&quot;"/>
-    <contextParameter comment="" internalId="_TRMbIakjEey3dL8ev2fJBQ" name="MailServerPort" prompt="MailServerPort?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Integer" value="993"/>
-    <contextParameter comment="" internalId="_TRMbIqkjEey3dL8ev2fJBQ" name="PathMail" prompt="PathMail?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail&quot;"/>
-    <contextParameter comment="" internalId="_TRMbI6kjEey3dL8ev2fJBQ" name="AttachmentArnegOthersCorsico" prompt="AttachmentArnegOthersCorsico?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;*CORSIC*&quot;"/>
-    <contextParameter comment="Password" internalId="_TRMbJKkjEey3dL8ev2fJBQ" name="MailPrixPassword" prompt="MailPrixPassword?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Password" value="enc:system.encryption.key.v1:DGVyjD1t6vAVRl/xG8tbRD/He0FOgyDXRkS4jHVMvxGg+Jm8/zGe2GTw/EMD"/>
-    <contextParameter comment="" internalId="_TRMbJakjEey3dL8ev2fJBQ" name="AttachmentArnegOthersArzignano" prompt="AttachmentArnegOthersArzignano?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;*ARZIG2*&quot;"/>
-    <contextParameter comment="UserName" internalId="_TRMbJqkjEey3dL8ev2fJBQ" name="MailPrixUserName" prompt="MailPrixUserName?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;prix.banchi-frigo&quot;"/>
-    <contextParameter comment="" internalId="_TRMbJ6kjEey3dL8ev2fJBQ" name="PathAttachmentArchiveFrigoVeneta" prompt="PathAttachmentArchiveFrigoVeneta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment/archive/frigoveneta/&quot;"/>
-  </context>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Production" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Production">
-    <contextParameter comment="" internalId="_TRMbKKkjEey3dL8ev2fJBQ" name="VerticaStaging_Schema" prompt="VerticaStaging_Schema?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="DWH_int"/>
-    <contextParameter comment="" internalId="_TRMbKakjEey3dL8ev2fJBQ" name="VerticaStaging_Login" prompt="VerticaStaging_Login?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="horsadmin"/>
-    <contextParameter comment="" internalId="_TRMbKqkjEey3dL8ev2fJBQ" name="VerticaStaging_Database" prompt="VerticaStaging_Database?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="vertica01"/>
-    <contextParameter comment="" internalId="_TRMbK6kjEey3dL8ev2fJBQ" name="VerticaStaging_AdditionalParams" prompt="VerticaStaging_AdditionalParams?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_TRMbLKkjEey3dL8ev2fJBQ" name="VerticaStaging_Password" prompt="VerticaStaging_Password?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:sZmhwcGwrLKNVsCsYgx29xSDDwHJ0OLQgrKruL/dX7tURSNGug=="/>
-    <contextParameter comment="" internalId="_TRMbLakjEey3dL8ev2fJBQ" name="VerticaStaging_Server" prompt="VerticaStaging_Server?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="10.0.1.217"/>
-    <contextParameter comment="" internalId="_TRMbLqkjEey3dL8ev2fJBQ" name="VerticaStaging_Port" prompt="VerticaStaging_Port?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="5433"/>
-    <contextParameter comment="" internalId="_TRMbL6kjEey3dL8ev2fJBQ" name="AttachmentArnegEpta" prompt="AttachmentArnegEpta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;EXPORT_*"/>
-    <contextParameter comment="" internalId="_TRMbMKkjEey3dL8ev2fJBQ" name="AttachmentFrigoVenetaRename" prompt="AttachmentFrigoVenetaRename?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;*_haccp_*&quot;"/>
-    <contextParameter comment="" internalId="_TRMbMakjEey3dL8ev2fJBQ" name="MailFile" prompt="MailFile?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;*.mail&quot;"/>
-    <contextParameter comment="" internalId="_TRMbMqkjEey3dL8ev2fJBQ" name="AttachmentFrigoVeneta" prompt="AttachmentFrigoVeneta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;haccp_*&quot;"/>
-    <contextParameter comment="" internalId="_TRMbM6kjEey3dL8ev2fJBQ" name="PathAttachmentArchiveArneg" prompt="PathAttachmentArchiveArneg?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment/archive/arneg/&quot;"/>
-    <contextParameter comment="" internalId="_TRMbNKkjEey3dL8ev2fJBQ" name="PathAttachment" prompt="PathAttachment?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment/&quot;"/>
-    <contextParameter comment="" internalId="_TRMbNakjEey3dL8ev2fJBQ" name="PathAttachmentArchiveEpta" prompt="PathAttachmentArchiveEpta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment/archive/epta/&quot;"/>
-    <contextParameter comment="" internalId="_TRMbNqkjEey3dL8ev2fJBQ" name="condition" prompt="condition?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Boolean" value=""/>
-    <contextParameter comment="" internalId="_TRMbN6kjEey3dL8ev2fJBQ" name="MailServer" prompt="MailServer?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;10.0.1.211&quot;"/>
-    <contextParameter comment="" internalId="_TRMbOKkjEey3dL8ev2fJBQ" name="PathMailArchive" prompt="PathMailArchive?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/archive/&quot;"/>
-    <contextParameter comment="" internalId="_TRMbOakjEey3dL8ev2fJBQ" name="MailServerPort" prompt="MailServerPort?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Integer" value="993"/>
-    <contextParameter comment="" internalId="_TRMbOqkjEey3dL8ev2fJBQ" name="PathMail" prompt="PathMail?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail&quot;"/>
-    <contextParameter comment="" internalId="_TRMbO6kjEey3dL8ev2fJBQ" name="AttachmentArnegOthersCorsico" prompt="AttachmentArnegOthersCorsico?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;*CORSIC*&quot;"/>
-    <contextParameter comment="Password" internalId="_TRR6oKkjEey3dL8ev2fJBQ" name="MailPrixPassword" prompt="MailPrixPassword?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Password" value="enc:system.encryption.key.v1:o6FXbhrKIqGgB8+3n5ZxapGKdLBXbZs0MxtV8odyY8pjcU3k85dBiK6cXs+J"/>
-    <contextParameter comment="" internalId="_TRR6oakjEey3dL8ev2fJBQ" name="AttachmentArnegOthersArzignano" prompt="AttachmentArnegOthersArzignano?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;*ARZIG2*&quot;"/>
-    <contextParameter comment="UserName" internalId="_TRR6oqkjEey3dL8ev2fJBQ" name="MailPrixUserName" prompt="MailPrixUserName?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;prix.banchi-frigo&quot;"/>
-    <contextParameter comment="" internalId="_TRR6o6kjEey3dL8ev2fJBQ" name="PathAttachmentArchiveFrigoVeneta" prompt="PathAttachmentArchiveFrigoVeneta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment/archive/frigoveneta/&quot;"/>
+    <contextParameter comment="" internalId="_TIsokKkyEeyTe8uJWNlzFg" name="VerticaStaging_Schema" prompt="VerticaStaging_Schema?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="DWH_int"/>
+    <contextParameter comment="" internalId="_TIsokakyEeyTe8uJWNlzFg" name="VerticaStaging_Login" prompt="VerticaStaging_Login?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="horsadmin"/>
+    <contextParameter comment="" internalId="_TIsokqkyEeyTe8uJWNlzFg" name="VerticaStaging_Database" prompt="VerticaStaging_Database?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="vertica01"/>
+    <contextParameter comment="" internalId="_TIsok6kyEeyTe8uJWNlzFg" name="VerticaStaging_AdditionalParams" prompt="VerticaStaging_AdditionalParams?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_TIsolKkyEeyTe8uJWNlzFg" name="VerticaStaging_Password" prompt="VerticaStaging_Password?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:WuMc1Nm0bwaHTv2uq0me4hYfRxDkkvq4iLP8yV5cXbgX1oFfJg=="/>
+    <contextParameter comment="" internalId="_TIsolakyEeyTe8uJWNlzFg" name="VerticaStaging_Server" prompt="VerticaStaging_Server?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="10.0.1.217"/>
+    <contextParameter comment="" internalId="_TIsolqkyEeyTe8uJWNlzFg" name="VerticaStaging_Port" prompt="VerticaStaging_Port?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="5433"/>
+    <contextParameter comment="" internalId="_TIsol6kyEeyTe8uJWNlzFg" name="VerticaStaging_FullMonthToReload" prompt="VerticaStaging_FullMonthToReload?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Integer" value="2"/>
+    <contextParameter comment="" internalId="_TItPoKkyEeyTe8uJWNlzFg" name="AttachmentArnegEpta" prompt="AttachmentArnegEpta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;EXPORT_*"/>
+    <contextParameter comment="" internalId="_TItPoakyEeyTe8uJWNlzFg" name="AttachmentFrigoVenetaRename" prompt="AttachmentFrigoVenetaRename?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;*_haccp_*&quot;"/>
+    <contextParameter comment="" internalId="_TItPoqkyEeyTe8uJWNlzFg" name="MailFile" prompt="MailFile?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;*.mail&quot;"/>
+    <contextParameter comment="" internalId="_TItPo6kyEeyTe8uJWNlzFg" name="AttachmentFrigoVeneta" prompt="AttachmentFrigoVeneta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;haccp_*&quot;"/>
+    <contextParameter comment="" internalId="_TItPpKkyEeyTe8uJWNlzFg" name="PathAttachmentArchiveArneg" prompt="PathAttachmentArchiveArneg?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment/archive/arneg/&quot;"/>
+    <contextParameter comment="" internalId="_TItPpakyEeyTe8uJWNlzFg" name="PathAttachment" prompt="PathAttachment?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment/&quot;"/>
+    <contextParameter comment="" internalId="_TItPpqkyEeyTe8uJWNlzFg" name="PathAttachmentArchiveEpta" prompt="PathAttachmentArchiveEpta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment/archive/epta/&quot;"/>
+    <contextParameter comment="" internalId="_TItPp6kyEeyTe8uJWNlzFg" name="condition" prompt="condition?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Boolean" value=""/>
+    <contextParameter comment="" internalId="_TItPqKkyEeyTe8uJWNlzFg" name="MailServer" prompt="MailServer?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;10.0.1.211&quot;"/>
+    <contextParameter comment="" internalId="_TItPqakyEeyTe8uJWNlzFg" name="PathMailArchive" prompt="PathMailArchive?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/archive/&quot;"/>
+    <contextParameter comment="" internalId="_TItPqqkyEeyTe8uJWNlzFg" name="MailServerPort" prompt="MailServerPort?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Integer" value="993"/>
+    <contextParameter comment="" internalId="_TItPq6kyEeyTe8uJWNlzFg" name="PathMail" prompt="PathMail?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail&quot;"/>
+    <contextParameter comment="" internalId="_TItPrKkyEeyTe8uJWNlzFg" name="AttachmentArnegOthersCorsico" prompt="AttachmentArnegOthersCorsico?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;*CORSIC*&quot;"/>
+    <contextParameter comment="Password" internalId="_TItPrakyEeyTe8uJWNlzFg" name="MailPrixPassword" prompt="MailPrixPassword?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Password" value="enc:system.encryption.key.v1:t8hgy7XePJlvzzG/l/PxzzHYC0s/gebP+3ITC9u9GGUQzPjqp5f+LtTQcStO"/>
+    <contextParameter comment="" internalId="_TItPrqkyEeyTe8uJWNlzFg" name="AttachmentArnegOthersArzignano" prompt="AttachmentArnegOthersArzignano?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;*ARZIG2*&quot;"/>
+    <contextParameter comment="UserName" internalId="_TItPr6kyEeyTe8uJWNlzFg" name="MailPrixUserName" prompt="MailPrixUserName?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;prix.banchi-frigo&quot;"/>
+    <contextParameter comment="" internalId="_TItPsKkyEeyTe8uJWNlzFg" name="PathAttachmentArchiveFrigoVeneta" prompt="PathAttachmentArchiveFrigoVeneta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment/archive/frigoveneta/&quot;"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -94,7 +69,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:X6+Uw6JDumkpnIl9MCiF+J0znG2ozUipFrQqnXu/"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:wBT6s5JCnVRf6+dx5Tt9H5GMrCFbDucVNoy1E5Wx"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -131,7 +106,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.VerticaStaging_AdditionalParams"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:u+jSHtG0F9oPS6XyER68ibAR3tMrVmfLxvPysQkFnReNMMjiAKtS2XKcFWzlfwJB6MsO9MyMml5FjdQ="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:2XNiTzrYyy90brVMIj9MjLJUsp+FQXNfy7KsFFkWhHZAWfGDZcRnCW3NJqCu8KdbU/mvFlEL+OOnf6Q="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;talend_stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;talend_logs&quot;"/>
@@ -183,7 +158,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:KDdZuSGXEOj4eHxVMAPRLgxTcD0tqP1Ipjj2D0+KweByLHiUlGg+gyN+WZdwjDZKDjM2ervayEeV4GE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jg6cTcOibxeM+BR12WOoeIuqBhNeR261Ap6IGbovboT1rWAp6r+ZdgABIYVuQfd/e1HEeg93s8S6wiU="/>
     <elementParameter field="TEXT" name="PROPERTIES" value="context.VerticaStaging_AdditionalParams"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -661,7 +636,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:gNWqqVrWgRXixa3L9AmTyNaxNOvvMDbxbhRKaua3XIhLbltKHkGUvmAEEXDgyBkHAwEuL8FSdQxsres="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:dBcZfsTsa6jM0ci7Je73/M8fCVKWI4qFu1Lx/6F17Z4Kvu/Ax43+eYJYvSyN69z6Uben28fBML2aXJ8="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -1231,7 +1206,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:i+JlW2hNtiEd6W4ae/CrFMrux3NADR/k1zeDJd/YWJ4GqjiV9Ulfvsk2OIx3vX8uZuX58ZAkSQFLPfc="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:aKSMPr8VB9Eh+qLKcuoBW0PMX90TgFHhfiHHKtCDekbfy0K+WUBUCyQu6z7/wrzstQCmyBFHPclEAE4="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -1768,7 +1743,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:het815VUQVmQh5PzBLGSO8ADGcrVw9+NGO1nHBW2ZAmQMm2ceDXw7mZXyitv8d8kL4BYn+rTIO0nCJU="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:oPqzYT4jcuxamx+dF7zacCzxIRw8ta4h4SLXEu+uuaiqSQQMxlpZtNMA/9EZ7zqeM2ihzX9Y1O2IilE="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -2305,7 +2280,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:/cJCCAJByuQffAd20Gz0AHXesdlUgYr7d6/ArtaCfdpoFVV36SLaIOYIVsiu0qVPKZIo/EUicYuJR7g="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:etx6rg1lmKq2DzSnbHb/EBM8VKR/ePyGMPZjieMfhfUTmv4ZXDQbcn4QQpq6A4sGQ3wK2eMbgn9IlsA="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -2848,7 +2823,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:WHEyjlQ3LZ11Kb5c2Qhsu6oEqMOIcFa1Mk75YhQX8yrIFHYoNlHrQ4S/I43lcTo/488WZ/8noEwtPLk="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:DMpB9eBzjqRa+8AMZdM5gJkCTfTbGxBV2STPPRqhC//niqI94puwvoA0/kvysoPNaAv5+7PXvE7ucPk="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -3515,7 +3490,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:alxaHRfU1hQeOSTgGlwzqaJ8wtTbzwMpYdRAfnEYMb3iDIBnWiHhX0E613zJAX+Eg3AzuU9vKtfXTlI="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:hQvNc3OEAFvpGocjwHm9zBFLm9PU/zoIy0R6KaklCNaRevfi7XBu4zjwgMtaMA6PpGTPBiIAeG1R5FY="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -4289,7 +4264,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:RhPcBaSeXFQKnHZodFZJRmisJCQrrdXMTynqH4GRgLWzcKfv7ru0Llm9eS15co8gHMIsrIINURA1C2s="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:QdKP0CP4E60lcbCwIJzqVhvxpcXg3//Kvq2/A6ReYKhYbdkuPyr2P8/61DSz2Q6s6xrj54svaUwvqek="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -4752,7 +4727,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:xBkmd+o6W9uIonjriD6tCQ3qsKONShnHTuhBfv72zMCDn5jxh+fvhLtV3ruw9SnC918l15XPR94h9oY="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:z+/tAP5FqysMl4HzmAUphv+IZUk8cgiVQzg6s/h0OFqxEQieSp7H7+WKZ8CMm6DkeEfiyH35JswFoEY="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -5217,7 +5192,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:xMZpyq4Lv4sl1fR25O5R20v9I575eksvIpEVCA7pZxWwUavnN5tjWpJCB9tCiOGauoBWPhmXB1nq2+o="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:bVJyAhI2JiYSvAaz0jKnFFH84Ax4s+fNgVHXskhhcMAqWREL4GCDLzu01YeU7dvXfOLm1+SPVu4NG4w="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -5754,7 +5729,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:r1UrwEB01L5XrRvkgm3TJBhbVxeFBt+NovvLPTvTg5Ip913U8AfsJRHFw8zoVN9vzXIaDpqEoxWZaQU="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:fJ5KxzyeVZxxhIFwrrZeAPaek+F1GeTiwpcKkw1kMD+3olrmRYgCOBXMxU538szvFRwqAaWNGOcMWXk="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -6233,7 +6208,7 @@
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="copyOfout19" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss.sss&quot;,row32.Column0) " name="data_rilevazione" nullable="true" type="id_String"/>
@@ -6324,7 +6299,7 @@
       <column comment="" key="false" length="50" name="file_name" nullable="true" originalLength="50" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="copyOfout20" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row33.punto_vendita " name="punto_vendita" nullable="true" type="id_String"/>
@@ -6355,7 +6330,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:7rJi0yNzgnekDdG5sQABxKr08L7sD2a6m6s0ErPtzeP1L3pY8RRXe5akQ4+adkEOTKp94386LbDSjjo="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:7DZ2/+CvRuARd9yn+2sxL6hEfu3EYqLmdLo4hnbzlD83zQ65jAHudbt7Hx1ew5I1BlRvu9PPJHqYoL8="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -9013,13 +8988,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d37493f1-82e8-43fa-92e5-9f35b40df76d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9lO9UzZQ0EC70ZlJJ7sPlY1bcMtV1/gaUMwH9lxhmmxHNR3bMpIKSfE0T3vEQIQdSFtv5sNpfr7w&#13;
-oMjsykmoIA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_54dd5642-8dee-488b-8758-130af6accbe2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>km2SK3s6WxUg8sS4eznehOJr4iO8+KOY3rHZLrDFiUTOLV7aRvCCJrCCV5G2BgJgLWILJP0Qoy9H&#13;
-Cf79c7CN2g==</DigestValue></Reference></SignedInfo><SignatureValue>mJfZCHYJTpulJm1ZHGz3VKua1Cb7lFDRlXOizoJNZFqwtLXa7vJ3MtFgNCwpXtLF+lRsSZCrlVnz&#13;
-xf1hS+yfh8dVs1TBEIpclbBfGDRe03gZltRhNBmYuZSv/HXGTeRg4dXEbr/jvjKItbu4gi9Txujl&#13;
-sqU2g4j+37oVvekQse/8CrTjH06dq/RAvDChxvkplouUAW73JA6xBjVrkGJBmc8KyYOmXe4KutMf&#13;
-c580GNanaaLawSaJAI2MrHU8NtRRYRHZnG9kIL03TUWKzkzSJE+ZCm7eV2zjDcvSmlSaFbEovW11&#13;
-aq5+/dblhmAI/mlaWMldMXfTuJFg8RztXo8c3w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_46d70adb-08bb-4d1d-9500-61a988f5902b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ymMnjDhcF7FbIMDbSw5r24zSsullQf7kztd/U3IrCeP6q4otc+Gk4nIxYqho8DAqBtGsTbV926BO&#13;
+t3C42hV7Iw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4ad8ab79-4c0a-41b8-940c-4527033c8094"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xacF+I2EPk7IX7QgFantMqsvBSuk5OV4ormKoiPh2yJw4J/3mmj/EAmpftDiUMem4NIi/G2bWzaK&#13;
+9a/szUHxXA==</DigestValue></Reference></SignedInfo><SignatureValue>a4o2B/3BWn8FNdSb0XSQe8D8FpepA46dCJxNdw0BD9rTm2lxhGb+ppca5CppaBSi2CuGQ+K78tCM&#13;
+2H4J/1F2tlbZnhoXU0NvfsCercxf6PC71iJmfppxKk7hPSGP6NixKLGPxsfHBblwSf1Z5EvEv+qT&#13;
+3WWUcOqL47gVBO6n+glQKu5+cTrrwuHBMqhY0t4Sjdu7IwPulj6K69CZgCDkTrzZdd3P9jbo5Z18&#13;
+VxXe0tcJo1ls7zKGX+G0B/SfcBDKb7gzBPAeYx+1PWYBl0glTYemO0X097jfkMNPw38a7j2vtbVZ&#13;
+kf0Vg3QiocHU1YhBBoYRBvaQdjdBC7Uifnf6/Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -9041,4 +9016,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_54dd5642-8dee-488b-8758-130af6accbe2" Target="#_d37493f1-82e8-43fa-92e5-9f35b40df76d"><Timestamp>2022-03-21 14:29:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4ad8ab79-4c0a-41b8-940c-4527033c8094" Target="#_46d70adb-08bb-4d1d-9500-61a988f5902b"><Timestamp>2022-03-21 16:16:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
