@@ -1,32 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="VerticaStaging_Login" prompt="VerticaStaging_Login?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="horsadmin"/>
-    <contextParameter comment="" name="VerticaStaging_AdditionalParams" prompt="VerticaStaging_AdditionalParams?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value=""/>
-    <contextParameter comment="" name="VerticaStaging_Database" prompt="VerticaStaging_Database?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="vertica01"/>
-    <contextParameter comment="" name="VerticaStaging_Password" prompt="VerticaStaging_Password?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:RQXM3gNUC3dFnXq9elu0puvCHaHZSKfErFexFAfiOTbih9+1PA=="/>
-    <contextParameter comment="" name="VerticaStaging_Schema" prompt="VerticaStaging_Schema?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="DWH_int"/>
-    <contextParameter comment="" name="VerticaStaging_FullMonthToReload" prompt="VerticaStaging_FullMonthToReload?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Integer" value="2"/>
-    <contextParameter comment="" name="VerticaStaging_Server" prompt="VerticaStaging_Server?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="10.0.1.217"/>
-    <contextParameter comment="" name="VerticaStaging_Port" prompt="VerticaStaging_Port?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="5433"/>
-    <contextParameter comment="" name="AttachmentArnegEpta" prompt="AttachmentArnegEpta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;EXPORT_*"/>
-    <contextParameter comment="" name="AttachmentFrigoVenetaRename" prompt="AttachmentFrigoVenetaRename?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;*_haccp_*&quot;"/>
-    <contextParameter comment="" name="MailFile" prompt="MailFile?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;*.mail&quot;"/>
-    <contextParameter comment="" name="AttachmentFrigoVeneta" prompt="AttachmentFrigoVeneta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;haccp_*&quot;"/>
-    <contextParameter comment="" name="PathAttachmentArchiveArneg" prompt="PathAttachmentArchiveArneg?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment/archive/arneg/&quot;"/>
-    <contextParameter comment="" name="PathAttachment" prompt="PathAttachment?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment/&quot;"/>
-    <contextParameter comment="" name="PathAttachmentArchiveEpta" prompt="PathAttachmentArchiveEpta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment/archive/epta/&quot;"/>
-    <contextParameter comment="" name="condition" prompt="condition?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Boolean" value=""/>
-    <contextParameter comment="" name="MailServer" prompt="MailServer?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;10.0.1.211&quot;"/>
-    <contextParameter comment="" name="PathMailArchive" prompt="PathMailArchive?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/archive/&quot;"/>
-    <contextParameter comment="" name="MailServerPort" prompt="MailServerPort?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Integer" value="993"/>
-    <contextParameter comment="" name="PathMail" prompt="PathMail?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail&quot;"/>
-    <contextParameter comment="" name="AttachmentArnegOthersCorsico" prompt="AttachmentArnegOthersCorsico?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;*CORSIC*&quot;"/>
-    <contextParameter comment="Password" name="MailPrixPassword" prompt="MailPrixPassword?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Password" value="enc:system.encryption.key.v1:PevUAHRlAVBCKNS2ZnD9jQGo/dLAKWhrPh4ezCSNhomt/+BocazXHx7hl0Lb"/>
-    <contextParameter comment="" name="AttachmentArnegOthersArzignano" prompt="AttachmentArnegOthersArzignano?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;*ARZIG2*&quot;"/>
-    <contextParameter comment="UserName" name="MailPrixUserName" prompt="MailPrixUserName?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;prix.banchi-frigo&quot;"/>
-    <contextParameter comment="" name="PathAttachmentArchiveFrigoVeneta" prompt="PathAttachmentArchiveFrigoVeneta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment/archive/frigoveneta/&quot;"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Production" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Production">
+    <contextParameter comment="" internalId="_-fnrwKkxEeyTe8uJWNlzFg" name="VerticaStaging_Schema" prompt="VerticaStaging_Schema?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="DWH_int"/>
+    <contextParameter comment="" internalId="_-fnrwakxEeyTe8uJWNlzFg" name="VerticaStaging_Login" prompt="VerticaStaging_Login?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="horsadmin"/>
+    <contextParameter comment="" internalId="_-fnrwqkxEeyTe8uJWNlzFg" name="VerticaStaging_Database" prompt="VerticaStaging_Database?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="vertica01"/>
+    <contextParameter comment="" internalId="_-fnrw6kxEeyTe8uJWNlzFg" name="VerticaStaging_AdditionalParams" prompt="VerticaStaging_AdditionalParams?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_-fnrxKkxEeyTe8uJWNlzFg" name="VerticaStaging_Password" prompt="VerticaStaging_Password?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:PzX21c+go4kJhDfd2ZyhMg3Raf6BTsPdwXn02JC6FirjL0dnUg=="/>
+    <contextParameter comment="" internalId="_-fnrxakxEeyTe8uJWNlzFg" name="VerticaStaging_Server" prompt="VerticaStaging_Server?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="10.0.1.217"/>
+    <contextParameter comment="" internalId="_-fnrxqkxEeyTe8uJWNlzFg" name="VerticaStaging_Port" prompt="VerticaStaging_Port?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="5433"/>
+    <contextParameter comment="" internalId="_-fnrx6kxEeyTe8uJWNlzFg" name="VerticaStaging_FullMonthToReload" prompt="VerticaStaging_FullMonthToReload?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Integer" value="2"/>
+    <contextParameter comment="" internalId="_-fo54KkxEeyTe8uJWNlzFg" name="AttachmentArnegEpta" prompt="AttachmentArnegEpta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;EXPORT_*"/>
+    <contextParameter comment="" internalId="_-fo54akxEeyTe8uJWNlzFg" name="AttachmentFrigoVenetaRename" prompt="AttachmentFrigoVenetaRename?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;*_haccp_*&quot;"/>
+    <contextParameter comment="" internalId="_-fo54qkxEeyTe8uJWNlzFg" name="MailFile" prompt="MailFile?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;*.mail&quot;"/>
+    <contextParameter comment="" internalId="_-fo546kxEeyTe8uJWNlzFg" name="AttachmentFrigoVeneta" prompt="AttachmentFrigoVeneta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;haccp_*&quot;"/>
+    <contextParameter comment="" internalId="_-fo55KkxEeyTe8uJWNlzFg" name="PathAttachmentArchiveArneg" prompt="PathAttachmentArchiveArneg?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment/archive/arneg/&quot;"/>
+    <contextParameter comment="" internalId="_-fo55akxEeyTe8uJWNlzFg" name="PathAttachment" prompt="PathAttachment?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment/&quot;"/>
+    <contextParameter comment="" internalId="_-fo55qkxEeyTe8uJWNlzFg" name="PathAttachmentArchiveEpta" prompt="PathAttachmentArchiveEpta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment/archive/epta/&quot;"/>
+    <contextParameter comment="" internalId="_-fo556kxEeyTe8uJWNlzFg" name="condition" prompt="condition?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Boolean" value=""/>
+    <contextParameter comment="" internalId="_-fo56KkxEeyTe8uJWNlzFg" name="MailServer" prompt="MailServer?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;10.0.1.211&quot;"/>
+    <contextParameter comment="" internalId="_-fo56akxEeyTe8uJWNlzFg" name="PathMailArchive" prompt="PathMailArchive?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/archive/&quot;"/>
+    <contextParameter comment="" internalId="_-fo56qkxEeyTe8uJWNlzFg" name="MailServerPort" prompt="MailServerPort?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Integer" value="993"/>
+    <contextParameter comment="" internalId="_-fo566kxEeyTe8uJWNlzFg" name="PathMail" prompt="PathMail?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail&quot;"/>
+    <contextParameter comment="" internalId="_-fo57KkxEeyTe8uJWNlzFg" name="AttachmentArnegOthersCorsico" prompt="AttachmentArnegOthersCorsico?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;*CORSIC*&quot;"/>
+    <contextParameter comment="Password" internalId="_-fpg8KkxEeyTe8uJWNlzFg" name="MailPrixPassword" prompt="MailPrixPassword?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_Password" value="enc:system.encryption.key.v1:jWVErZCd4rn+zfe0SE7yy/KTUWtkE+ad45GWMiQ/9wn3Is4pGKaAQxDUngLj"/>
+    <contextParameter comment="" internalId="_-fpg8akxEeyTe8uJWNlzFg" name="AttachmentArnegOthersArzignano" prompt="AttachmentArnegOthersArzignano?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;*ARZIG2*&quot;"/>
+    <contextParameter comment="UserName" internalId="_-fpg8qkxEeyTe8uJWNlzFg" name="MailPrixUserName" prompt="MailPrixUserName?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;prix.banchi-frigo&quot;"/>
+    <contextParameter comment="" internalId="_-fpg86kxEeyTe8uJWNlzFg" name="PathAttachmentArchiveFrigoVeneta" prompt="PathAttachmentArchiveFrigoVeneta?" promptNeeded="false" repositoryContextId="_eDpBwCtzEeyrjdoCeKkm5g" type="id_String" value="&quot;/opt/mail/attachment/archive/frigoveneta/&quot;"/>
   </context>
   <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="704"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="224"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
@@ -68,7 +69,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:gAAFeaY36sIdnYbFw5B+1X+2z/3L2es2jCfeU87q"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:QB2VzRdB9fZ6ppUhKlSNC9/vXUG45Ftv4Xk1EbKn"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -105,7 +106,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.VerticaStaging_AdditionalParams"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:n8tzSnkHLE5LXkGKsdsJWgvG+WwlbnI5tlBJ1cd0Md+JQkS5LuUmr+rtb08G1WyAd8J1nsiia6SRXwk="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ul2SnkwopafqWCnU1ptluYZeT3ZxgQhn/DKjre89IVAr1p2hYWhXCtC27haQn0ECBbxo4BWr/TgkA2Q="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;talend_stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;talend_logs&quot;"/>
@@ -142,6 +143,8 @@
   </parameters>
   <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-672" posY="-160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tVerticaConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-512" posY="-160">
@@ -155,7 +158,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:rluIT4zrd6/u6xQnCyPrApQdX2R6uxukBN7pzO+eJJ1eb5VxJCcz8HAYIQBOYKSQ0+u4KWWflXbG8WE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5rslbHeTpO2kDyhCADnOkBLegrOoFk9/ZjmIFCWcZByUR0XN/RjzX8Bh+JCWslLLfrhLfrp8flpE7Es="/>
     <elementParameter field="TEXT" name="PROPERTIES" value="context.VerticaStaging_AdditionalParams"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -163,6 +166,7 @@
     <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;VerticaStaging"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-608" posY="32">
@@ -185,23 +189,30 @@
     <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
     <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
     <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-512" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
   </node>
   <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="-160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tVerticaClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="-160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_1"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
     <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;__CONNECTION__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-320" posY="32">
@@ -248,6 +259,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_2">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -262,6 +274,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(input_row.pdv);&#10;if(input_row.pdv.equals(&quot;207viadelcorso&quot;)){&#10;System.out.println (&quot;true&quot;);&#10;context.condition=true;&#10;} else {&#10;System.out.println (&quot;false&quot;);&#10;context.condition=false;&#10;}&#10;&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1"/>
   </node>
@@ -415,6 +429,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="metadata1"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_3">
       <column comment="" key="false" length="-1" name="newColumn1" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -492,6 +507,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out1">
       <column comment="" key="false" length="-1" name="data_rilevazione" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -571,6 +588,8 @@
       <elementValue elementRef="COLUMN" value="punto_vendita"/>
     </elementParameter>
     <elementParameter field="CHECK" name="INCLUDE_EMPTY_VALUES" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tUnpivotRow_2">
       <column key="false" length="0" name="pivot_key" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -592,6 +611,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out2">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -664,6 +685,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_9">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -687,7 +709,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:WwC5isAxSgmR810hTh80kWz35H4ZvDHhSoRagcAEToyT4ROagn9t9DrZjMzg5D0NYzG1AlnruEseWhM="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:DsT3jVR5AProlZwf4pzIvYxDZ2uUNRK0BC87fAyGSY4MW0RPms/wz3BDwjoe2AR1gB11XtUt5EotdUY="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -747,6 +769,7 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="CHECK" name="CREATE_PROJECTION" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_1">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -917,6 +940,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="metadata1"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
       <column comment="" key="false" length="-1" name="newColumn1" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -994,6 +1018,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="out3">
       <column comment="" key="false" length="-1" name="FV_ADR_1010_MATR_0TAF220001" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
@@ -1075,6 +1101,8 @@
       <elementValue elementRef="COLUMN" value="punto_vendita"/>
     </elementParameter>
     <elementParameter field="CHECK" name="INCLUDE_EMPTY_VALUES" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tUnpivotRow_1">
       <column key="false" length="0" name="pivot_key" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -1096,6 +1124,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out4">
       <column comment="" key="false" length="10" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -1168,6 +1198,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_7">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1191,7 +1222,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:vo0qU3I/oFXw3kl8JkWvzb1n/nhQA3/RM4J6RZKX2yyorgLMqx5al+KiQ2TZ0i2tCH4zGt8obBH2ZSw="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:MZc62fGBueXX3qcVLxCil1qQncEIu1QNkPgEeXyIcf00TNL1E5gzjnK3H9pgr8X3NrF/Fe+vB5CS84A="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -1251,6 +1282,7 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="CHECK" name="CREATE_PROJECTION" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_2">
       <column comment="" key="false" length="10" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -1291,12 +1323,16 @@
     <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
     <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
     <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-512" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println((String)globalMap.get(&quot;tFileList_2_CURRENT_FILE&quot;));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_2"/>
   </node>
@@ -1344,6 +1380,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_4">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1358,6 +1395,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_2"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(input_row.pdv);&#10;if(input_row.pdv.equals(&quot;788PIAZZOLA&quot;)){&#10;System.out.println (&quot;true&quot;);&#10;context.condition=true;&#10;} else {&#10;System.out.println (&quot;false&quot;);&#10;context.condition=false;&#10;}&#10;&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_2"/>
   </node>
@@ -1381,12 +1420,16 @@
     <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
     <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
     <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-512" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println((String)globalMap.get(&quot;tFileList_3_CURRENT_FILE&quot;));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_3"/>
   </node>
@@ -1434,6 +1477,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_5">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1448,6 +1492,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_3"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(input_row.pdv);&#10;if(input_row.pdv.equals(&quot;578_SARMEOLA&quot;)){&#10;System.out.println (&quot;true&quot;);&#10;context.condition=true;&#10;} else {&#10;System.out.println (&quot;false&quot;);&#10;context.condition=false;&#10;}&#10;&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_3"/>
   </node>
@@ -1601,6 +1647,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="metadata1"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_6">
       <column comment="" key="false" length="-1" name="newColumn1" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -1678,6 +1725,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="out5">
       <column comment="" key="false" length="-1" name="FV_ADR_1002_MATR_0SZH149901" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
@@ -1765,6 +1814,8 @@
       <elementValue elementRef="COLUMN" value="punto_vendita"/>
     </elementParameter>
     <elementParameter field="CHECK" name="INCLUDE_EMPTY_VALUES" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tUnpivotRow_3">
       <column key="false" length="0" name="pivot_key" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -1786,6 +1837,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out6">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -1858,6 +1911,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_8">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1881,7 +1935,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:HvdgaGzRH0/OIhRdyRLaIgVXxS1uDtzrWaUEE/K28xiUF0/05nvWXEIJBLrhx1Opm9WQg8/Zpl0W7F0="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:kV/QoLJGXM3FT9DvchwbJBuEKKuWamD00JLzp40IPJxTZFi19OEPmznEOzazNvc9d+ZXBCBbx97K/LE="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -1941,6 +1995,7 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="CHECK" name="CREATE_PROJECTION" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_3">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -1981,12 +2036,16 @@
     <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
     <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
     <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-512" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_4"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println((String)globalMap.get(&quot;tFileList_4_CURRENT_FILE&quot;));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_4"/>
   </node>
@@ -2034,6 +2093,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_10">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -2048,6 +2108,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_4"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(input_row.pdv);&#10;if(input_row.pdv.equals(&quot;224_BADIA&quot;)){&#10;System.out.println (&quot;true&quot;);&#10;context.condition=true;&#10;} else {&#10;System.out.println (&quot;false&quot;);&#10;context.condition=false;&#10;}&#10;&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_4"/>
   </node>
@@ -2201,6 +2263,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="metadata1"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_11">
       <column comment="" key="false" length="-1" name="newColumn1" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -2278,6 +2341,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="out7">
       <column comment="" key="false" length="-1" name="FV_ADR_1002_MATR_0TAF265601" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
@@ -2393,6 +2458,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_12">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -2411,6 +2477,8 @@
       <elementValue elementRef="COLUMN" value="punto_vendita"/>
     </elementParameter>
     <elementParameter field="CHECK" name="INCLUDE_EMPTY_VALUES" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tUnpivotRow_4">
       <column key="false" length="0" name="pivot_key" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -2432,6 +2500,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out8">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -2473,7 +2543,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:BiZokVXeirH4+KMLXckBMg2XopQqRWvv/LLqVSGntUt7fbcOD/F7pvqXeH2Gtzi+wubVWa1siTDrlgw="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:7krDdaWgafKpq/UYXnS/LaOkBO0HGb4x2CvYbiB7YsGiesi7zVikwg70mkQLuoRNOidQSvnSRgaLTrU="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -2533,6 +2603,7 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="CHECK" name="CREATE_PROJECTION" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_4">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -2573,12 +2644,16 @@
     <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
     <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
     <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-512" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_5"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println((String)globalMap.get(&quot;tFileList_5_CURRENT_FILE&quot;));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_5"/>
   </node>
@@ -2626,6 +2701,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_13">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -2640,6 +2716,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_5"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(input_row.pdv);&#10;if(input_row.pdv.equals(&quot;253_MIRANO_PORARA&quot;)){&#10;System.out.println (&quot;true&quot;);&#10;context.condition=true;&#10;} else {&#10;System.out.println (&quot;false&quot;);&#10;context.condition=false;&#10;}&#10;&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_5"/>
   </node>
@@ -2793,6 +2871,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="metadata1"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_14">
       <column comment="" key="false" length="-1" name="newColumn1" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -2870,6 +2949,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="out9">
       <column comment="" key="false" length="-1" name="FV_M_01TN" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
@@ -2987,6 +3068,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_15">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -3005,6 +3087,8 @@
       <elementValue elementRef="COLUMN" value="punto_vendita"/>
     </elementParameter>
     <elementParameter field="CHECK" name="INCLUDE_EMPTY_VALUES" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tUnpivotRow_5">
       <column key="false" length="0" name="pivot_key" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -3026,6 +3110,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out10">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -3067,7 +3153,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:5K81eUURLKbCp667+q10ZLtU/dajV88Dv7j5NljpZpTejyr2V28ZzF+450DFaplg209eiIAZ30XfL4c="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:h27NEn7VFlA0O4Ty2+7ZGuXl4Kw8Q1dIgPmq03O/gGtpQG50fjPneSe08c0jwJIfE+iy9z1A+DL3a8k="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -3127,6 +3213,7 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="CHECK" name="CREATE_PROJECTION" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_5">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -3159,11 +3246,13 @@
     <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
     <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
     <elementParameter field="CHECK" name="FAILON" value="false"/>
+    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
+    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="CHECK" name="INFORMATION" value="true"/>
     <elementParameter field="MEMO" name="COMMENT" value="archivia l'allegato arneg nel seguente path : opt/mail/attachment/archive/arneg"/>
-    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
-    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
     <metadata connector="FLOW" name="tFileCopy_1">
       <column comment="" key="true" length="21" name="DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FV_ADR_1010_MATR_0RVE211201" nullable="true" pattern="" precision="0" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true"/>
@@ -3200,12 +3289,16 @@
     <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
     <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
     <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-512" posY="1216">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_6"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println((String)globalMap.get(&quot;tFileList_6_CURRENT_FILE&quot;));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_6"/>
   </node>
@@ -3253,6 +3346,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_16">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -3267,6 +3361,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_6"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(input_row.pdv);&#10;if(input_row.pdv.equals(&quot;297_CASALE_SUL_SILE&quot;)){&#10;System.out.println (&quot;true&quot;);&#10;context.condition=true;&#10;} else {&#10;System.out.println (&quot;false&quot;);&#10;context.condition=false;&#10;}&#10;&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_6"/>
   </node>
@@ -3418,6 +3514,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="metadata1"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_17">
       <column comment="" key="false" length="-1" name="newColumn1" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -3495,6 +3592,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="out11">
       <column comment="" key="false" length="-1" name="FV_01TNM_MATR_0SZH153901" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
@@ -3574,6 +3673,8 @@
       <elementValue elementRef="COLUMN" value="punto_vendita"/>
     </elementParameter>
     <elementParameter field="CHECK" name="INCLUDE_EMPTY_VALUES" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tUnpivotRow_6">
       <column key="false" length="0" name="pivot_key" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -3595,6 +3696,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out12">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -3667,6 +3770,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_18">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -3690,7 +3794,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:fSNz8mNA/EBMaC3lY8lY0DoR3hmOOJ6Krmynejja1c8qjuiHr/B1LJ3l8STXcNaFU0bhfIFxhNCQdpk="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:xF9vqSnT1D5J1Iw5PYtL4jifps6NZo/DIk8JrIsUxnhLuWqH39NA7U9aRkZIJYvKdQXNxccN9YBtMKw="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -3750,6 +3854,7 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="CHECK" name="CREATE_PROJECTION" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_6">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -3790,12 +3895,16 @@
     <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
     <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
     <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-512" posY="1472">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_7"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println((String)globalMap.get(&quot;tFileList_7_CURRENT_FILE&quot;));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_7"/>
   </node>
@@ -3843,6 +3952,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_19">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -3857,6 +3967,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_7"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(input_row.pdv);&#10;if(input_row.pdv.equals(&quot;462_CAMISANO&quot;)){&#10;System.out.println (&quot;true&quot;);&#10;context.condition=true;&#10;} else {&#10;System.out.println (&quot;false&quot;);&#10;context.condition=false;&#10;}&#10;&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_7"/>
   </node>
@@ -4010,6 +4122,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="metadata1"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_20">
       <column comment="" key="false" length="-1" name="newColumn1" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -4087,6 +4200,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="out13">
       <column comment="" key="false" length="-1" name="LT_ADR_1002_MATR_0SZF021501" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
@@ -4170,6 +4285,8 @@
       <elementValue elementRef="COLUMN" value="punto_vendita"/>
     </elementParameter>
     <elementParameter field="CHECK" name="INCLUDE_EMPTY_VALUES" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tUnpivotRow_7">
       <column key="false" length="0" name="pivot_key" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -4191,6 +4308,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out14">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -4263,6 +4382,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_21">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -4286,7 +4406,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:DdbfzrA6vgxXCTBRw27WjQgLwqisGLP12jgnBKzig2Jr0poW6KfdHmMB7PY8xWt7kY2oPYZdKsiW2hs="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:0TN/kJrAXIWye82IyLnWRgcWrm3bGo7LeUXRL19UIsOrsIkMw+he7gQ+Ql5wDYuG3CTcJzbOBFgou4A="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -4346,6 +4466,7 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="CHECK" name="CREATE_PROJECTION" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_7">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -4386,12 +4507,16 @@
     <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
     <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
     <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-512" posY="1728">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_8"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println((String)globalMap.get(&quot;tFileList_8_CURRENT_FILE&quot;));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_8"/>
   </node>
@@ -4439,6 +4564,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_22">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -4453,6 +4579,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_8"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(input_row.pdv);&#10;if(input_row.pdv.equals(&quot;494_ABANO_ROMANA&quot;)){&#10;System.out.println (&quot;true&quot;);&#10;context.condition=true;&#10;} else {&#10;System.out.println (&quot;false&quot;);&#10;context.condition=false;&#10;}&#10;&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_8"/>
   </node>
@@ -4606,6 +4734,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="metadata1"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_23">
       <column comment="" key="false" length="-1" name="newColumn1" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -4683,6 +4812,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="out15">
       <column comment="" key="false" length="-1" name="FV_ADR_1002_MATR_0TAB170001" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
@@ -4766,6 +4897,8 @@
       <elementValue elementRef="COLUMN" value="punto_vendita"/>
     </elementParameter>
     <elementParameter field="CHECK" name="INCLUDE_EMPTY_VALUES" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tUnpivotRow_8">
       <column key="false" length="0" name="pivot_key" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -4818,6 +4951,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_24">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -4841,6 +4975,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out16">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -4882,7 +5018,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:OuMCwWfFn4Nv1qZb2YR41MQt6lqZ3UfqtTFIyVtZmGbuegY4K36muHP2kTkXIF4WEcV1kw2u5zZcXGA="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:nzp7LGEcDBmkdXwiSNSc8ehVC3XnmAgIeKAHr8PDv9Id4/7mWcqQQk0ZCIPkPOUVxzEF56SQjLYZTK4="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -4942,6 +5078,7 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="CHECK" name="CREATE_PROJECTION" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_8">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -4982,12 +5119,16 @@
     <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
     <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
     <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-512" posY="1984">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_9"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println((String)globalMap.get(&quot;tFileList_9_CURRENT_FILE&quot;));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_9"/>
   </node>
@@ -5035,6 +5176,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_25">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -5049,6 +5191,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_9"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(input_row.pdv);&#10;if(input_row.pdv.equals(&quot;795_FARA_VICENTINO&quot;)){&#10;System.out.println (&quot;true&quot;);&#10;context.condition=true;&#10;} else {&#10;System.out.println (&quot;false&quot;);&#10;context.condition=false;&#10;}&#10;&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_9"/>
   </node>
@@ -5202,6 +5346,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="metadata1"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_26">
       <column comment="" key="false" length="-1" name="newColumn1" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -5279,6 +5424,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="out17">
       <column comment="" key="false" length="-1" name="SU_ADR_1015_MATR_SPV181603" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
@@ -5362,6 +5509,8 @@
       <elementValue elementRef="COLUMN" value="punto_vendita"/>
     </elementParameter>
     <elementParameter field="CHECK" name="INCLUDE_EMPTY_VALUES" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tUnpivotRow_9">
       <column key="false" length="0" name="pivot_key" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -5414,6 +5563,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_27">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -5437,6 +5587,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out18">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -5478,7 +5630,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:R1j2kPoyhthH+skFG0sma9b+t7Hyot7IgeSE5GxcCEPmKpLTpfAagqY2VupBRZpwBudj5UKqvqr94d0="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ho2XyjpQsmLWQfALVMA2xPa4ZPcmbz8KW1XYtDnpHdG6xpLRLUbD2svQ3actCKzTxB5U37cZFVj/8Fc="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -5538,6 +5690,7 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="CHECK" name="CREATE_PROJECTION" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_9">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -5570,11 +5723,13 @@
     <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
     <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
     <elementParameter field="CHECK" name="FAILON" value="false"/>
+    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
+    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="CHECK" name="INFORMATION" value="true"/>
     <elementParameter field="MEMO" name="COMMENT" value="archivia l'allegato arneg nel seguente path : opt/mail/attachment/archive/arneg"/>
-    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
-    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
     <metadata connector="FLOW" name="tFileCopy_2">
       <column comment="" key="true" length="21" name="DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FV_ADR_1010_MATR_0RVE211201" nullable="true" pattern="" precision="0" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true"/>
@@ -5603,11 +5758,13 @@
     <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
     <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
     <elementParameter field="CHECK" name="FAILON" value="false"/>
+    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
+    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="CHECK" name="INFORMATION" value="true"/>
     <elementParameter field="MEMO" name="COMMENT" value="archivia l'allegato arneg nel seguente path : opt/mail/attachment/archive/arneg"/>
-    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
-    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
     <metadata connector="FLOW" name="tFileCopy_3">
       <column comment="" key="true" length="21" name="DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FV_ADR_1010_MATR_0RVE211201" nullable="true" pattern="" precision="0" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true"/>
@@ -5636,11 +5793,13 @@
     <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
     <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
     <elementParameter field="CHECK" name="FAILON" value="false"/>
+    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
+    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="CHECK" name="INFORMATION" value="true"/>
     <elementParameter field="MEMO" name="COMMENT" value="archivia l'allegato arneg nel seguente path : opt/mail/attachment/archive/arneg"/>
-    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
-    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
     <metadata connector="FLOW" name="tFileCopy_4">
       <column comment="" key="true" length="21" name="DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FV_ADR_1010_MATR_0RVE211201" nullable="true" pattern="" precision="0" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true"/>
@@ -5669,11 +5828,13 @@
     <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
     <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
     <elementParameter field="CHECK" name="FAILON" value="false"/>
+    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
+    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="CHECK" name="INFORMATION" value="true"/>
     <elementParameter field="MEMO" name="COMMENT" value="archivia l'allegato arneg nel seguente path : opt/mail/attachment/archive/arneg"/>
-    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
-    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
     <metadata connector="FLOW" name="tFileCopy_5">
       <column comment="" key="true" length="21" name="DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FV_ADR_1010_MATR_0RVE211201" nullable="true" pattern="" precision="0" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true"/>
@@ -5702,11 +5863,13 @@
     <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
     <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
     <elementParameter field="CHECK" name="FAILON" value="false"/>
+    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
+    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="CHECK" name="INFORMATION" value="true"/>
     <elementParameter field="MEMO" name="COMMENT" value="archivia l'allegato arneg nel seguente path : opt/mail/attachment/archive/arneg"/>
-    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
-    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
     <metadata connector="FLOW" name="tFileCopy_6">
       <column comment="" key="true" length="21" name="DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FV_ADR_1010_MATR_0RVE211201" nullable="true" pattern="" precision="0" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true"/>
@@ -5735,11 +5898,13 @@
     <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
     <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
     <elementParameter field="CHECK" name="FAILON" value="false"/>
+    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
+    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="CHECK" name="INFORMATION" value="true"/>
     <elementParameter field="MEMO" name="COMMENT" value="archivia l'allegato arneg nel seguente path : opt/mail/attachment/archive/arneg"/>
-    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
-    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
     <metadata connector="FLOW" name="tFileCopy_7">
       <column comment="" key="true" length="21" name="DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FV_ADR_1010_MATR_0RVE211201" nullable="true" pattern="" precision="0" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true"/>
@@ -5768,11 +5933,13 @@
     <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
     <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
     <elementParameter field="CHECK" name="FAILON" value="false"/>
+    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
+    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="CHECK" name="INFORMATION" value="true"/>
     <elementParameter field="MEMO" name="COMMENT" value="archivia l'allegato arneg nel seguente path : opt/mail/attachment/archive/arneg"/>
-    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
-    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
     <metadata connector="FLOW" name="tFileCopy_8">
       <column comment="" key="true" length="21" name="DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FV_ADR_1010_MATR_0RVE211201" nullable="true" pattern="" precision="0" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true"/>
@@ -5801,11 +5968,13 @@
     <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
     <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
     <elementParameter field="CHECK" name="FAILON" value="false"/>
+    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
+    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="CHECK" name="INFORMATION" value="true"/>
     <elementParameter field="MEMO" name="COMMENT" value="archivia l'allegato arneg nel seguente path : opt/mail/attachment/archive/arneg"/>
-    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
-    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
     <metadata connector="FLOW" name="tFileCopy_9">
       <column comment="" key="true" length="21" name="DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FV_ADR_1010_MATR_0RVE211201" nullable="true" pattern="" precision="0" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true"/>
@@ -5842,12 +6011,16 @@
     <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
     <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
     <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-512" posY="2240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_10"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println((String)globalMap.get(&quot;tFileList_10_CURRENT_FILE&quot;));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_10"/>
   </node>
@@ -5895,6 +6068,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_28">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -5909,6 +6083,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_10"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(input_row.pdv);&#10;if(input_row.pdv.equals(&quot;845_MONZA&quot;)){&#10;System.out.println (&quot;true&quot;);&#10;context.condition=true;&#10;} else {&#10;System.out.println (&quot;false&quot;);&#10;context.condition=false;&#10;}&#10;&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_10"/>
   </node>
@@ -6062,6 +6238,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="metadata1"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_29">
       <column comment="" key="false" length="-1" name="newColumn1" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -6139,6 +6316,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="out19">
       <column comment="" key="false" length="-1" name="OF_M_1TN" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
@@ -6218,6 +6397,8 @@
       <elementValue elementRef="COLUMN" value="punto_vendita"/>
     </elementParameter>
     <elementParameter field="CHECK" name="INCLUDE_EMPTY_VALUES" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tUnpivotRow_10">
       <column key="false" length="0" name="pivot_key" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -6239,6 +6420,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out20">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -6280,7 +6463,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:BiC3lqjwToJJZARyB20ggKtbEne/OBVckVJ73c+bZzz1lym9y4duvXpLGJ02gJfm0bhCJuaXzHC7xrc="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:wKLgiTwgM6StlNoiJ3a4rh1tYEXVXvRiPvqKEr9wOcfI83O+K/BlQ8aYHk+l+U1g7Cbz/Q34tjF0gVI="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -6340,6 +6523,7 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="CHECK" name="CREATE_PROJECTION" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_10">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="20" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -6404,6 +6588,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_30">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -6426,11 +6611,13 @@
     <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
     <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
     <elementParameter field="CHECK" name="FAILON" value="false"/>
+    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
+    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="CHECK" name="INFORMATION" value="true"/>
     <elementParameter field="MEMO" name="COMMENT" value="archivia l'allegato arneg nel seguente path : opt/mail/attachment/archive/arneg"/>
-    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
-    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
     <metadata connector="FLOW" name="tFileCopy_10">
       <column comment="" key="true" length="21" name="DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FV_ADR_1010_MATR_0RVE211201" nullable="true" pattern="" precision="0" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true"/>
@@ -6491,6 +6678,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_31">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -6505,6 +6693,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_11"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(input_row.pdv);&#10;if(input_row.pdv.equals(&quot;262_ARZIGNANO_2&quot;)){&#10;System.out.println (&quot;true&quot;);&#10;context.condition=true;&#10;} else {&#10;System.out.println (&quot;false&quot;);&#10;context.condition=false;&#10;}&#10;&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_11"/>
   </node>
@@ -6648,6 +6838,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="Impianti_Arneg_Others"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_32">
       <column comment="" key="false" length="118" name="Column0" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -6719,6 +6910,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out33" name="out21">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="3" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -6804,6 +6997,8 @@
       <elementValue elementRef="COLUMN" value="punto_vendita"/>
     </elementParameter>
     <elementParameter field="CHECK" name="INCLUDE_EMPTY_VALUES" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tUnpivotRow_11">
       <column key="false" length="0" name="pivot_key" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -6825,6 +7020,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out33" name="out22">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="3" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -6866,7 +7063,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:cfUS1TawuCUyC+/HnyhJj+ajlAO6Z3cFlKrYJOVSUGwWM5lnTdzF8RBeRF6KOJtbH7N6wvgtp0IBa7E="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:CUJ8CtvKQmycIFgRAgydP5olxNj50OTBEjNE8Mgy0iEBsF4IyMShrobJqzuKyWpa1OxSooRFko//ewo="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -6926,6 +7123,7 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="CHECK" name="CREATE_PROJECTION" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out33" name="tDBOutput_11">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="3" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -6990,6 +7188,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_33">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -7012,11 +7211,13 @@
     <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
     <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
     <elementParameter field="CHECK" name="FAILON" value="false"/>
+    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
+    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="CHECK" name="INFORMATION" value="true"/>
     <elementParameter field="MEMO" name="COMMENT" value="archivia l'allegato arneg nel seguente path : opt/mail/attachment/archive/arneg"/>
-    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
-    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
     <metadata connector="FLOW" name="tFileCopy_11">
       <column comment="" key="true" length="21" name="DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FV_ADR_1010_MATR_0RVE211201" nullable="true" pattern="" precision="0" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true"/>
@@ -7053,6 +7254,8 @@
     <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
     <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
     <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="CHECK" name="INFORMATION" value="true"/>
     <elementParameter field="MEMO" name="COMMENT" value="file name diverso dagli altri file Arneg , creata variabile di contesto ad hoc"/>
@@ -7061,6 +7264,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_11"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println((String)globalMap.get(&quot;tFileList_11_CURRENT_FILE&quot;));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_11"/>
   </node>
@@ -7084,6 +7289,8 @@
     <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
     <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
     <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="CHECK" name="INFORMATION" value="true"/>
     <elementParameter field="MEMO" name="COMMENT" value="file name diverso dagli altri file Arneg , creata variabile di contesto ad hoc"/>
@@ -7092,6 +7299,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_12"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println((String)globalMap.get(&quot;tFileList_12_CURRENT_FILE&quot;));"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_12"/>
   </node>
@@ -7139,6 +7348,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_34">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -7153,6 +7363,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_12"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(input_row.pdv);&#10;if(input_row.pdv.equals(&quot;980_CORSICO&quot;)){&#10;System.out.println (&quot;true&quot;);&#10;context.condition=true;&#10;} else {&#10;System.out.println (&quot;false&quot;);&#10;context.condition=false;&#10;}&#10;&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_12"/>
   </node>
@@ -7168,11 +7380,13 @@
     <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
     <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
     <elementParameter field="CHECK" name="FAILON" value="false"/>
+    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
+    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="CHECK" name="INFORMATION" value="true"/>
     <elementParameter field="MEMO" name="COMMENT" value="archivia l'allegato arneg nel seguente path : opt/mail/attachment/archive/arneg"/>
-    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
-    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
     <metadata connector="FLOW" name="tFileCopy_12">
       <column comment="" key="true" length="21" name="DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.s&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FV_ADR_1010_MATR_0RVE211201" nullable="true" pattern="" precision="0" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true"/>
@@ -7329,6 +7543,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="Impianti_Arneg_Others"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_37">
       <column comment="" key="false" length="118" name="Column0" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -7400,6 +7615,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out33" name="out23">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="3" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -7485,6 +7702,8 @@
       <elementValue elementRef="COLUMN" value="punto_vendita"/>
     </elementParameter>
     <elementParameter field="CHECK" name="INCLUDE_EMPTY_VALUES" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tUnpivotRow_13">
       <column key="false" length="0" name="pivot_key" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -7506,6 +7725,8 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out33" name="out24">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="3" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -7547,7 +7768,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:LqPAGxmUc0tGpFixa+fbHFySJR4FSYJ+xcG0lfJ9vwLlxk6sDEA041w2TTZn70sCYI5U8yywVsVuwKs="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Cdk4iLsMwDH9b5jhLkrjoKv0/CF7U8FqtJ6Gf2akpC8B9nG9J3rfPpL/OYNtIlsHE140dJwr0i4G0Pc="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ext_impianti_frigo&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -7607,6 +7828,7 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="CHECK" name="CREATE_PROJECTION" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out33" name="tDBOutput_13">
       <column comment="" key="false" length="3" name="punto_vendita" nullable="true" originalLength="3" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -7671,6 +7893,7 @@
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="pdv"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="pdv" name="tFileInputDelimited_38">
       <column comment="" key="false" length="50" name="pdv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -12169,13 +12392,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8290026b-e74e-443c-960a-84aabaf89d40"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Uu6v/w7ceXGLcjLFW/tdfZ5TGb4JcQt/xiglgfdsdK+FoJbRN+pBgXhxGMjHw4oPtN77f3DYGc11&#13;
-bT4xyjofMA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_125db378-d269-403a-adc6-2b50115b806b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>26tl1nztWM+36vnc4P9ol/xinYNoP1VPeXfJAUMDa+BJ3ALkDLUznGJJYeI6gXNh72ZDQcJfaptc&#13;
-QLtO4rgGkA==</DigestValue></Reference></SignedInfo><SignatureValue>RomBLTng5V/kNeSP5/bOJvU8n/AGt7yFG0HMlRBtCKXWqHLz3AanFTlcfznZaA5D/PuLc49VAFXE&#13;
-hz9/78BUyI0yAQoWEpp7TMoBYALzU5zR4ru2eA0t6OiHENSkFdUR4vsuJcTi3WinwgUOPyeamMgY&#13;
-fPFokRf8JwqdvsmwpGcK2fBdVUANObvU3QYnaUYzMfjS0Lk8T6CFXw3mMf/aI5J7CwaJ97Bm1d3g&#13;
-Jgil9Q/O3ZlRlq6a+cqYo8xopqohP2axiDcQtRfFBZj7rZjcP5tJjgdSVTq3Twn4WHE5noBUgdyf&#13;
-MHZSpSH9fdKHmd5xqwDKk4C81qqNohQwYsaN5w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_634cc408-f803-4cfd-9a11-7b96ef235ee5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ySYJg9PAi4Cchfzf8IMj4qVnxBVhNjwK9LQbu4KuCd9OuhsCCh+6e0iQhG+zPIiUsQJ0c/hSDf8v&#13;
+0KuQJPXcug==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b5bc988f-1b11-411c-9f3f-6a2b4873fcee"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1oJeB8fqSBrHEFstJceOqSfcqzqOdjjCrlAv3QXERIcvmzw47IsTPt6u/0wbkX+uWO8x7z3u0Evj&#13;
+iCrUeSd6Vw==</DigestValue></Reference></SignedInfo><SignatureValue>Zw7nXcc8wCCAihq231sCZc1v2LcThIKpta5lJxmHyI3HMYuhFPIBhdXh1tTKGagi05PuXpHqLzm5&#13;
+0TbCdNi22tymht9oVSNFWE9MNbr1RFiPtcV8kJ4cSJXbCdNO6X685AaGp6bNYeTpA2f/gbNizsfo&#13;
+N98KukC/lwrFay9urs6eznE90CDhzPre1kffY/y036YzmfNHm9MxS7lNXMHz/N+bWdqj08UUTv+p&#13;
+Rh9l+RvfarV3oXvoe3vdilNhhejjOM2u5fH7K0aZQybvg239Y6/0F190ZCqeV395N8a1dXHbHdlm&#13;
+nBbTgBKF4eK/JEOcf5s9mZPsj9CARqDkpsvVsg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -12197,4 +12420,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_125db378-d269-403a-adc6-2b50115b806b" Target="#_8290026b-e74e-443c-960a-84aabaf89d40"><Timestamp>2022-03-21 08:29:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b5bc988f-1b11-411c-9f3f-6a2b4873fcee" Target="#_634cc408-f803-4cfd-9a11-7b96ef235ee5"><Timestamp>2022-03-21 16:14:25</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
