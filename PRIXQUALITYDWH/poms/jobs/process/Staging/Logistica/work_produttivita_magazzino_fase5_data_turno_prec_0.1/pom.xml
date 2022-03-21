@@ -9,9 +9,9 @@
     <relativePath>../../../../../</relativePath>
   </parent>
   <groupId>org.example.prixqualitydwh.job</groupId>
-  <artifactId>main_produttivita_logistica_test</artifactId>
+  <artifactId>work_produttivita_magazzino_fase5_data_turno_prec</artifactId>
   <version>0.1.0</version>
-  <name>PRIXQUALITYDWH main_produttivita_logistica_test-0.1.0 (0.1,Job Designs)</name>
+  <name>PRIXQUALITYDWH work_produttivita_magazzino_fase5_data_turno_prec-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -23,20 +23,20 @@
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>PRIXQUALITYDWH</talend.project.name>
-    <talend.product.version>7.3.1.20220304_0607-patch</talend.product.version>
-    <talend.job.finalName>main_produttivita_logistica_test_0_1</talend.job.finalName>
+    <talend.product.version>7.3.1.20220105_1637-patch</talend.product.version>
+    <talend.job.finalName>work_produttivita_magazzino_fase5_data_turno_prec_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.prixqualitydwh.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.prixqualitydwh.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
     <talend.job.jvmargs>-Xms1024M -Xmx4096M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
-    <talend.job.context>Production</talend.job.context>
+    <talend.job.context>Default</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>main_produttivita_logistica_test</talend.job.name>
-    <talend.job.id>_JPlEIDAtEeymfsICDv-lQA</talend.job.id>
+    <talend.job.name>work_produttivita_magazzino_fase5_data_turno_prec</talend.job.name>
+    <talend.job.id>_-LmJcI6LEey4ovGkqVN-xg</talend.job.id>
     <talend.project.id>0</talend.project.id>
-    <talend.job.folder>main/logistica/</talend.job.folder>
+    <talend.job.folder>staging/logistica/</talend.job.folder>
     <talend.job.framework></talend.job.framework>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.type>Standard</talend.job.type>
@@ -83,6 +83,11 @@
       <version>2.1.3</version>
     </dependency>
     <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>external_sort</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
       <groupId>org.talend.components.lib</groupId>
       <artifactId>job-audit</artifactId>
       <version>1.4</version>
@@ -95,17 +100,17 @@
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
-      <version>2.17.1</version>
+      <version>2.16.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
-      <version>2.17.1</version>
+      <version>2.16.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-slf4j-impl</artifactId>
-      <version>2.17.1</version>
+      <version>2.16.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.daikon</groupId>
@@ -128,24 +133,14 @@
       <version>1.1</version>
     </dependency>
     <dependency>
+      <groupId>com.vertica</groupId>
+      <artifactId>vertica-jdbc</artifactId>
+      <version>9.3.1-0</version>
+    </dependency>
+    <dependency>
       <groupId>org.example.prixqualitydwh.code</groupId>
       <artifactId>routines</artifactId>
       <version>7.3.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.prixqualitydwh.job</groupId>
-      <artifactId>main_timbrature</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.prixqualitydwh.job</groupId>
-      <artifactId>main_ext_table</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.prixqualitydwh.job</groupId>
-      <artifactId>main_PR</artifactId>
-      <version>0.1.0</version>
     </dependency>
   </dependencies>
   <build>
