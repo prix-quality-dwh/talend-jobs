@@ -28,7 +28,7 @@
     <talend.pigudf.groupid>org.example.prixqualitydwh.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.prixqualitydwh.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8</talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
     <talend.job.context>Default</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
@@ -136,6 +136,12 @@
       <groupId>org.example.prixqualitydwh.job</groupId>
       <artifactId>Stg_Main_Tracciati</artifactId>
       <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.prixqualitydwh.joblet</groupId>
+      <artifactId>log_batch</artifactId>
+      <version>0.1.0</version>
+      <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.example.prixqualitydwh.job</groupId>
