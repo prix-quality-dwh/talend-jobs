@@ -28,7 +28,7 @@
     <talend.pigudf.groupid>org.example.prixqualitydwh.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.prixqualitydwh.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms1024M -Xmx4096M </talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
     <talend.job.context>Production</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
@@ -126,6 +126,11 @@
       <groupId>org.talend.components.lib</groupId>
       <artifactId>talend_file_enhanced</artifactId>
       <version>1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.vertica</groupId>
+      <artifactId>vertica-jdbc</artifactId>
+      <version>9.3.1-0</version>
     </dependency>
     <dependency>
       <groupId>org.example.prixqualitydwh.code</groupId>
