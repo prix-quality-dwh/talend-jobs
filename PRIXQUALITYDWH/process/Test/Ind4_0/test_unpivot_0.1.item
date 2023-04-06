@@ -87,14 +87,14 @@
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" show="false" value="BUILT_IN"/>
     <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" show="false" value="_EnPBcCptEeutodfUG7h-rA"/>
     <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="VERTICA_9_0"/>
-    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;jdbc:vertica://10.0.1.217:5433/Vertica01&quot;"/>
     <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
-    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;com.vertica.jdbc.Driver&quot;"/>
     <elementParameter field="TEXT" name="HOST" show="false" value="context.VerticaStaging_Server"/>
     <elementParameter field="TEXT" name="PORT" show="false" value="context.VerticaStaging_Port"/>
     <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
@@ -102,8 +102,8 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.VerticaStaging_Database"/>
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.VerticaStaging_AdditionalParams"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
-    <elementParameter field="TEXT" name="USER" show="false" value="context.VerticaStaging_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:aaGpoh3Xzggk38/rN2AWZjGGAXPCrHLqMRbJbOWR+9u9Ym8GNq+wAJTqhcDROFOk0psSLXq064T6JR8="/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;horsadmin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:RL/p8nBNC/oYBrk0PymC2takIOTHwy2nnc5ZpdQ/1H6K7SZBrQ=="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;talend_stats&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;talend_logs&quot;"/>
@@ -889,13 +889,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e6e5361e-3dc3-490b-96f1-6759e1fe0178"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+C/WMbc29N417ASCw1DDwxEaq4bAfGE4xt3oETJ5LwZBzzsDvnTOrbqMvYOpADs26UMCtbaHW/Yy
-hwe2y7OOvg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ea5f6bac-ca70-4fa4-94e1-2b4ddc77025f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kxiJC+KpRE1ieOrEkIoJSnsH2TdiolWTIhPRrpjWRXsH4IkgSw9V8XTZ8QZ4u5oOxb5inTaZLUSQ
-8NOVOCnaUA==</DigestValue></Reference></SignedInfo><SignatureValue>ls+CLIK+zLMSb45H31ANkDwChvdvGCLBKMs6bNmL0kR16/zWq+n6Sm+3G+pEFHVwaOeUxv3ynDdL
-pL93oC75SBwhXOFCAsFIIgTNPrFrllXCA6f2sYCXqEkBmYHmRv7aHbYy9haG8nQx4foX7U704q3/
-tdhws2XHp+kzW8bya9aXw1k1GP5lzbYWu80Dnq0wjvBCACjqAdCL3V1AviBG8kw7y+L3/HhePxAR
-lYLNgO/06734qywXVPfQ2j+9O7OtceApLc3NrF5Bxviy8wj7Bz0l9qd1YI6INU6Ans2TZ5HNLLOT
-eKsyyG14p7/MhyrAM4+uKC+hemKwonk9KSIY3w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_23003556-82ca-4a10-9e1c-5d7ce9629ae9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IArsJ+M4D2ZwSVjDv+2dLMZ4D88MAgIepmrfcvm8GLyEF7L2NH149AfScBOZ6462EbqHYitTnUOt
+fqr7aw+xEg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_59a59aa2-9247-4b24-96ad-6927f07b2e15"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8rUaQcJM1xboRCYITxLHMe3sIt7GWWERB2CkXLct/M2qritS5qO3rn2lzX8qwo/zVdH8OxoWqZ7u
++hABAP2zag==</DigestValue></Reference></SignedInfo><SignatureValue>MwrcA0mneqT4jmGkWgUv+h5bbN2UDvijMVIsNE0GYS/So9GyMLDsIbJsueWlfij6gj9owe7kKYdh
++iWAjbTdvOL1rrgHcRAh+3BbchDu98fht2iK2L9UOMTLKCUcmt2JKoLcZ1xq961vdACUROZ9qBwb
+Jdnm+4JcfqS4V+8FJtBLWZZvRepPn/6dIebboMQFtByi7vJlO76SLdlKKd0C9SvnOvghQvmS+mn+
+jjG233jkaUzu3W7FeqJ+J+dICWreYEZhSVd+I0aT6MRtEVnG+BvD7Cu9L5OqHLoI1LPCuIyHJmhA
+59+9aasNEG2LnXOKk7S65OHI2/vVR/C6qp/GcA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -917,4 +917,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ea5f6bac-ca70-4fa4-94e1-2b4ddc77025f" Target="#_e6e5361e-3dc3-490b-96f1-6759e1fe0178"><Timestamp>2023-04-06 09:27:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_59a59aa2-9247-4b24-96ad-6927f07b2e15" Target="#_23003556-82ca-4a10-9e1c-5d7ce9629ae9"><Timestamp>2023-04-06 09:59:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
