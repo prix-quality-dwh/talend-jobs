@@ -97,7 +97,7 @@
         "show" : true,
         "field" : "CHECK",
         "name" : "ON_DATABASE_FLAG",
-        "value" : "false",
+        "value" : "true",
         "contextMode" : false
       }, {
         "show" : true,
@@ -121,18 +121,23 @@
         "show" : true,
         "field" : "TEXT",
         "name" : "URL",
-        "value" : "\"\"",
+        "value" : "\"jdbc:vertica://10.0.1.217:5433/Vertica01\"",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "TABLE",
         "name" : "DRIVER_JAR",
-        "contextMode" : false
+        "contextMode" : false,
+        "elementValue" : [ {
+          "elementRef" : "drivers",
+          "value" : "mvn:com.vertica/vertica-jdbc/9.3.1-0/jar",
+          "isHexValue" : false
+        } ]
       }, {
         "show" : true,
         "field" : "TEXT",
         "name" : "DRIVER_CLASS",
-        "value" : "\"\"",
+        "value" : "\"com.vertica.jdbc.Driver\"",
         "contextMode" : false
       }, {
         "show" : true,
@@ -174,13 +179,13 @@
         "show" : true,
         "field" : "TEXT",
         "name" : "USER",
-        "value" : "context.VerticaStaging_Login",
+        "value" : "\"horsadmin\"",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "PASSWORD",
         "name" : "PASS",
-        "value" : "enc:system.encryption.key.v1:YM6XHIMq7/sPCH4L3jhZmMiPF7og1MX0lJl6aj0eHaSC9mTI2fne2RXLBcduRe9NdEJ4Tu1tCgYaQ74=",
+        "value" : "enc:system.encryption.key.v1:/XmqkrHbjmCm0SZp8NR7qbumbx7nYU9FbugklSLVKaqlv/p/TgZM",
         "contextMode" : false
       }, {
         "show" : true,
@@ -192,19 +197,19 @@
         "show" : true,
         "field" : "DBTABLE",
         "name" : "TABLE_STATS",
-        "value" : "\"talend_stats\"",
+        "value" : "\"DWH_INT.LOG_STATS_TALEND\"",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "DBTABLE",
         "name" : "TABLE_LOGS",
-        "value" : "\"talend_logs\"",
+        "value" : "\"DWH_INT.LOG_ERRORS_TALEND\"",
         "contextMode" : false
       }, {
         "show" : true,
         "field" : "DBTABLE",
         "name" : "TABLE_METER",
-        "value" : "\"talend_metrics\"",
+        "value" : "\"DWH_INT.LOG_VOLUMETRICS_TALEND\"",
         "contextMode" : false
       }, {
         "show" : true,
@@ -240,7 +245,7 @@
         "show" : true,
         "field" : "TECHNICAL",
         "name" : "PROPERTY_TYPE:PROPERTY_TYPE",
-        "value" : "REPOSITORY",
+        "value" : "BUILT_IN",
         "contextMode" : false
       }, {
         "show" : true,

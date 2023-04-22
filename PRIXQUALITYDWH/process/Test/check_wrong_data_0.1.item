@@ -1,0 +1,1938 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" internalId="_cjZVANRXEe2eOs8Ti09W2g" name="InazSQL_Schema" prompt="InazSQL_Schema?" promptNeeded="false" repositoryContextId="__xld4IfyEeu4l8kPpvfBgQ" type="id_String" value="DWH"/>
+    <contextParameter comment="" internalId="_cjZVAdRXEe2eOs8Ti09W2g" name="InazSQL_Login" prompt="InazSQL_Login?" promptNeeded="false" repositoryContextId="__xld4IfyEeu4l8kPpvfBgQ" type="id_String" value="cdg"/>
+    <contextParameter comment="" internalId="_cjZVAtRXEe2eOs8Ti09W2g" name="InazSQL_Database" prompt="InazSQL_Database?" promptNeeded="false" repositoryContextId="__xld4IfyEeu4l8kPpvfBgQ" type="id_String" value="DbHR"/>
+    <contextParameter comment="" internalId="_cjZVA9RXEe2eOs8Ti09W2g" name="InazSQL_AdditionalParams" prompt="InazSQL_AdditionalParams?" promptNeeded="false" repositoryContextId="__xld4IfyEeu4l8kPpvfBgQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_cjZVBNRXEe2eOs8Ti09W2g" name="InazSQL_Password" prompt="InazSQL_Password?" promptNeeded="false" repositoryContextId="__xld4IfyEeu4l8kPpvfBgQ" type="id_Password" value="enc:system.encryption.key.v1:OtOIsIP00Niegcmfvs+we1+AvWtlcmKz6Ms9cr8eFh641+OavNmm"/>
+    <contextParameter comment="" internalId="_cjZVBdRXEe2eOs8Ti09W2g" name="InazSQL_Server" prompt="InazSQL_Server?" promptNeeded="false" repositoryContextId="__xld4IfyEeu4l8kPpvfBgQ" type="id_String" value="10.0.1.199"/>
+    <contextParameter comment="" internalId="_cjZVBtRXEe2eOs8Ti09W2g" name="InazSQL_Port" prompt="InazSQL_Port?" promptNeeded="false" repositoryContextId="__xld4IfyEeu4l8kPpvfBgQ" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_cjZVB9RXEe2eOs8Ti09W2g" name="VerticaStaging_Login" prompt="VerticaStaging_Login?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="horsadmin"/>
+    <contextParameter comment="" internalId="_cjZVCNRXEe2eOs8Ti09W2g" name="VerticaStaging_AdditionalParams" prompt="VerticaStaging_AdditionalParams?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_cjZVCdRXEe2eOs8Ti09W2g" name="VerticaStaging_Database" prompt="VerticaStaging_Database?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="vertica01"/>
+    <contextParameter comment="" internalId="_cjZVCtRXEe2eOs8Ti09W2g" name="VerticaStaging_Password" prompt="VerticaStaging_Password?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:gXGjWxkfUeaxpqvbClpCT3nj9grwIWXncFr4yNxMLRSfhyqRBg=="/>
+    <contextParameter comment="" internalId="_cjZVC9RXEe2eOs8Ti09W2g" name="VerticaStaging_Schema" prompt="VerticaStaging_Schema?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="DWH_int"/>
+    <contextParameter comment="" internalId="_cjZVDNRXEe2eOs8Ti09W2g" name="VerticaStaging_Server" prompt="VerticaStaging_Server?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="10.0.1.217"/>
+    <contextParameter comment="" internalId="_cjZVDdRXEe2eOs8Ti09W2g" name="VerticaStaging_Port" prompt="VerticaStaging_Port?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="5433"/>
+    <contextParameter comment="" internalId="_cjZVDtRXEe2eOs8Ti09W2g" name="AS400_Server" prompt="AS400_Server?" promptNeeded="false" repositoryContextId="_Mwc5YCpvEeutodfUG7h-rA" type="id_String" value="10.0.1.205"/>
+    <contextParameter comment="" internalId="_cjZVD9RXEe2eOs8Ti09W2g" name="AS400_AdditionalParams" prompt="AS400_AdditionalParams?" promptNeeded="false" repositoryContextId="_Mwc5YCpvEeutodfUG7h-rA" type="id_String" value="prompt=false;libraries=STOREDAT;translate binary=true;date format=iso"/>
+    <contextParameter comment="" internalId="_cjZVENRXEe2eOs8Ti09W2g" name="AS400_Login" prompt="AS400_Login?" promptNeeded="false" repositoryContextId="_Mwc5YCpvEeutodfUG7h-rA" type="id_String" value="DB2DRDA"/>
+    <contextParameter comment="" internalId="_cjZVEdRXEe2eOs8Ti09W2g" name="AS400_Database" prompt="AS400_Database?" promptNeeded="false" repositoryContextId="_Mwc5YCpvEeutodfUG7h-rA" type="id_String" value="STOREDAT"/>
+    <contextParameter comment="" internalId="_cjZVEtRXEe2eOs8Ti09W2g" name="AS400_Password" prompt="AS400_Password?" promptNeeded="false" repositoryContextId="_Mwc5YCpvEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:i+JwrnxEV9+aJHbgiirX7HptmMmqOzkiwt2Qiq0qQZVVzdM="/>
+    <contextParameter comment="" internalId="_4gYkUNRXEe2eOs8Ti09W2g" name="diff_date" prompt="diff_date?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_Long" value=""/>
+    <contextParameter comment="" internalId="_4gYkUdRXEe2eOs8Ti09W2g" name="load_year" prompt="load_year?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_4gYkUtRXEe2eOs8Ti09W2g" name="SourceDB" prompt="SourceDB?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkU9RXEe2eOs8Ti09W2g" name="SourceTable" prompt="SourceTable?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkVNRXEe2eOs8Ti09W2g" name="SourceLibrary" prompt="SourceLibrary?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkVdRXEe2eOs8Ti09W2g" name="load_date" prompt="load_date?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkVtRXEe2eOs8Ti09W2g" name="SchemaDest" prompt="SchemaDest?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkV9RXEe2eOs8Ti09W2g" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkWNRXEe2eOs8Ti09W2g" name="library" prompt="library?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkWdRXEe2eOs8Ti09W2g" name="elab_date" prompt="elab_date?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_Date" value=""/>
+    <contextParameter comment="" internalId="_4gYkWtRXEe2eOs8Ti09W2g" name="DestTable" prompt="DestTable?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkW9RXEe2eOs8Ti09W2g" name="start_date" prompt="start_date?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_Date" value=""/>
+    <contextParameter comment="" internalId="_4gYkXNRXEe2eOs8Ti09W2g" name="DestTableNameComplete" prompt="DestTableNameComplete?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkXdRXEe2eOs8Ti09W2g" name="filtro" prompt="filtro?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkXtRXEe2eOs8Ti09W2g" name="filtro_azione_da_escludere" prompt="filtro_azione_da_escludere?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkX9RXEe2eOs8Ti09W2g" name="data_turno_var" prompt="data_turno_var?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkYNRXEe2eOs8Ti09W2g" name="qta_ore_inizio_turno" prompt="qta_ore_inizio_turno?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Long" value=""/>
+    <contextParameter comment="" internalId="_4gYkYdRXEe2eOs8Ti09W2g" name="filtro_attivita" prompt="filtro_attivita?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkYtRXEe2eOs8Ti09W2g" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkY9RXEe2eOs8Ti09W2g" name="codice_azione" prompt="codice_azione?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkZNRXEe2eOs8Ti09W2g" name="delete_param" prompt="delete_param?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkZdRXEe2eOs8Ti09W2g" name="load_month_depth_inf" prompt="load_month_depth_inf?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Integer" value="-2"/>
+    <contextParameter comment="" internalId="_4gYkZtRXEe2eOs8Ti09W2g" name="id_var" prompt="id_var?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Long" value=""/>
+    <contextParameter comment="" internalId="_4gYkZ9RXEe2eOs8Ti09W2g" name="tag" prompt="tag?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value="&quot;'hr','as'&quot;"/>
+    <contextParameter comment="" internalId="_4gYkaNRXEe2eOs8Ti09W2g" name="id" prompt="id?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Long" value=""/>
+    <contextParameter comment="" internalId="_4gYkadRXEe2eOs8Ti09W2g" name="load_month" prompt="load_month?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_4gYkatRXEe2eOs8Ti09W2g" name="load_month_depth_sup" prompt="load_month_depth_sup?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_4gYka9RXEe2eOs8Ti09W2g" name="codice_azione_orig" prompt="codice_azione_orig?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkbNRXEe2eOs8Ti09W2g" name="filtro_azione" prompt="filtro_azione?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkbdRXEe2eOs8Ti09W2g" name="data_turno" prompt="data_turno?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkbtRXEe2eOs8Ti09W2g" name="load_param" prompt="load_param?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkb9RXEe2eOs8Ti09W2g" name="index" prompt="index?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_4gYkcNRXEe2eOs8Ti09W2g" name="counter" prompt="counter?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_4gYkcdRXEe2eOs8Ti09W2g" name="flag_source" prompt="flag_source?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkctRXEe2eOs8Ti09W2g" name="tipo_azione" prompt="tipo_azione?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkc9RXEe2eOs8Ti09W2g" name="filtro_azione_temp" prompt="filtro_azione_temp?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkdNRXEe2eOs8Ti09W2g" name="azione" prompt="azione?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkddRXEe2eOs8Ti09W2g" name="flag_inizio_turno" prompt="flag_inizio_turno?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Long" value=""/>
+    <contextParameter comment="" internalId="_4gYkdtRXEe2eOs8Ti09W2g" name="percorso_cartella" prompt="percorso_cartella?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value="/opt/samba/shared/"/>
+  </context>
+  <context confirmationNeeded="false" name="Production">
+    <contextParameter comment="" internalId="_cjZVE9RXEe2eOs8Ti09W2g" name="InazSQL_Schema" prompt="InazSQL_Schema?" promptNeeded="false" repositoryContextId="__xld4IfyEeu4l8kPpvfBgQ" type="id_String" value="DWH"/>
+    <contextParameter comment="" internalId="_cjZVFNRXEe2eOs8Ti09W2g" name="InazSQL_Login" prompt="InazSQL_Login?" promptNeeded="false" repositoryContextId="__xld4IfyEeu4l8kPpvfBgQ" type="id_String" value="cdg"/>
+    <contextParameter comment="" internalId="_cjZVFdRXEe2eOs8Ti09W2g" name="InazSQL_Database" prompt="InazSQL_Database?" promptNeeded="false" repositoryContextId="__xld4IfyEeu4l8kPpvfBgQ" type="id_String" value="DbHR"/>
+    <contextParameter comment="" internalId="_cjZVFtRXEe2eOs8Ti09W2g" name="InazSQL_AdditionalParams" prompt="InazSQL_AdditionalParams?" promptNeeded="false" repositoryContextId="__xld4IfyEeu4l8kPpvfBgQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_cjZVF9RXEe2eOs8Ti09W2g" name="InazSQL_Password" prompt="InazSQL_Password?" promptNeeded="false" repositoryContextId="__xld4IfyEeu4l8kPpvfBgQ" type="id_Password" value="enc:system.encryption.key.v1:3LnJD36XPK2c/GyeeNZZGi2+kQFP4fLTYcAT7NctS5Oes4YsuL67"/>
+    <contextParameter comment="" internalId="_cjZVGNRXEe2eOs8Ti09W2g" name="InazSQL_Server" prompt="InazSQL_Server?" promptNeeded="false" repositoryContextId="__xld4IfyEeu4l8kPpvfBgQ" type="id_String" value="10.0.1.199"/>
+    <contextParameter comment="" internalId="_cjZVGdRXEe2eOs8Ti09W2g" name="InazSQL_Port" prompt="InazSQL_Port?" promptNeeded="false" repositoryContextId="__xld4IfyEeu4l8kPpvfBgQ" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_cjZVGtRXEe2eOs8Ti09W2g" name="VerticaStaging_Login" prompt="VerticaStaging_Login?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="horsadmin"/>
+    <contextParameter comment="" internalId="_cjZVG9RXEe2eOs8Ti09W2g" name="VerticaStaging_AdditionalParams" prompt="VerticaStaging_AdditionalParams?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_cjZVHNRXEe2eOs8Ti09W2g" name="VerticaStaging_Database" prompt="VerticaStaging_Database?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="vertica01"/>
+    <contextParameter comment="" internalId="_cjZVHdRXEe2eOs8Ti09W2g" name="VerticaStaging_Password" prompt="VerticaStaging_Password?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:k0qUbtDF7S6NG7WU7bPABciMTljgfJ4WezMdeF2VIUiPB0RaZw=="/>
+    <contextParameter comment="" internalId="_cjZVHtRXEe2eOs8Ti09W2g" name="VerticaStaging_Schema" prompt="VerticaStaging_Schema?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="DWH_int"/>
+    <contextParameter comment="" internalId="_cjZVH9RXEe2eOs8Ti09W2g" name="VerticaStaging_Server" prompt="VerticaStaging_Server?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="10.0.1.217"/>
+    <contextParameter comment="" internalId="_cjZVINRXEe2eOs8Ti09W2g" name="VerticaStaging_Port" prompt="VerticaStaging_Port?" promptNeeded="false" repositoryContextId="_qIMhYCptEeutodfUG7h-rA" type="id_String" value="5433"/>
+    <contextParameter comment="" internalId="_cjZVIdRXEe2eOs8Ti09W2g" name="AS400_Server" prompt="AS400_Server?" promptNeeded="false" repositoryContextId="_Mwc5YCpvEeutodfUG7h-rA" type="id_String" value="10.0.1.205"/>
+    <contextParameter comment="" internalId="_cjZVItRXEe2eOs8Ti09W2g" name="AS400_AdditionalParams" prompt="AS400_AdditionalParams?" promptNeeded="false" repositoryContextId="_Mwc5YCpvEeutodfUG7h-rA" type="id_String" value="prompt=false;libraries=STOREDAT;translate binary=true;date format=iso"/>
+    <contextParameter comment="" internalId="_cjZVI9RXEe2eOs8Ti09W2g" name="AS400_Login" prompt="AS400_Login?" promptNeeded="false" repositoryContextId="_Mwc5YCpvEeutodfUG7h-rA" type="id_String" value="DB2DRDA"/>
+    <contextParameter comment="" internalId="_cjZVJNRXEe2eOs8Ti09W2g" name="AS400_Database" prompt="AS400_Database?" promptNeeded="false" repositoryContextId="_Mwc5YCpvEeutodfUG7h-rA" type="id_String" value="STOREDAT"/>
+    <contextParameter comment="" internalId="_cjZVJdRXEe2eOs8Ti09W2g" name="AS400_Password" prompt="AS400_Password?" promptNeeded="false" repositoryContextId="_Mwc5YCpvEeutodfUG7h-rA" type="id_Password" value="enc:system.encryption.key.v1:xupyqJlxQbQryOHFZ0CnUFkoLF15aMGEZVm4lmUKjj6pVAA="/>
+    <contextParameter comment="" internalId="_4gYkd9RXEe2eOs8Ti09W2g" name="diff_date" prompt="diff_date?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_Long" value=""/>
+    <contextParameter comment="" internalId="_4gYkeNRXEe2eOs8Ti09W2g" name="load_year" prompt="load_year?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_4gYkedRXEe2eOs8Ti09W2g" name="SourceDB" prompt="SourceDB?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYketRXEe2eOs8Ti09W2g" name="SourceTable" prompt="SourceTable?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYke9RXEe2eOs8Ti09W2g" name="SourceLibrary" prompt="SourceLibrary?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkfNRXEe2eOs8Ti09W2g" name="load_date" prompt="load_date?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkfdRXEe2eOs8Ti09W2g" name="SchemaDest" prompt="SchemaDest?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkftRXEe2eOs8Ti09W2g" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkf9RXEe2eOs8Ti09W2g" name="library" prompt="library?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkgNRXEe2eOs8Ti09W2g" name="elab_date" prompt="elab_date?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_Date" value=""/>
+    <contextParameter comment="" internalId="_4gYkgdRXEe2eOs8Ti09W2g" name="DestTable" prompt="DestTable?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkgtRXEe2eOs8Ti09W2g" name="start_date" prompt="start_date?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_Date" value=""/>
+    <contextParameter comment="" internalId="_4gYkg9RXEe2eOs8Ti09W2g" name="DestTableNameComplete" prompt="DestTableNameComplete?" promptNeeded="false" repositoryContextId="_U9tuoGbcEeubr4k7RyZReg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkhNRXEe2eOs8Ti09W2g" name="filtro" prompt="filtro?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkhdRXEe2eOs8Ti09W2g" name="filtro_azione_da_escludere" prompt="filtro_azione_da_escludere?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkhtRXEe2eOs8Ti09W2g" name="data_turno_var" prompt="data_turno_var?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkh9RXEe2eOs8Ti09W2g" name="qta_ore_inizio_turno" prompt="qta_ore_inizio_turno?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Long" value=""/>
+    <contextParameter comment="" internalId="_4gYkiNRXEe2eOs8Ti09W2g" name="filtro_attivita" prompt="filtro_attivita?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkidRXEe2eOs8Ti09W2g" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkitRXEe2eOs8Ti09W2g" name="codice_azione" prompt="codice_azione?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYki9RXEe2eOs8Ti09W2g" name="delete_param" prompt="delete_param?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkjNRXEe2eOs8Ti09W2g" name="load_month_depth_inf" prompt="load_month_depth_inf?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Integer" value="-2"/>
+    <contextParameter comment="" internalId="_4gYkjdRXEe2eOs8Ti09W2g" name="id_var" prompt="id_var?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Long" value=""/>
+    <contextParameter comment="" internalId="_4gYkjtRXEe2eOs8Ti09W2g" name="tag" prompt="tag?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value="&quot;'hr','as'&quot;"/>
+    <contextParameter comment="" internalId="_4gYkj9RXEe2eOs8Ti09W2g" name="id" prompt="id?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Long" value=""/>
+    <contextParameter comment="" internalId="_4gYkkNRXEe2eOs8Ti09W2g" name="load_month" prompt="load_month?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_4gYkkdRXEe2eOs8Ti09W2g" name="load_month_depth_sup" prompt="load_month_depth_sup?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_4gYkktRXEe2eOs8Ti09W2g" name="codice_azione_orig" prompt="codice_azione_orig?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkk9RXEe2eOs8Ti09W2g" name="filtro_azione" prompt="filtro_azione?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYklNRXEe2eOs8Ti09W2g" name="data_turno" prompt="data_turno?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkldRXEe2eOs8Ti09W2g" name="load_param" prompt="load_param?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkltRXEe2eOs8Ti09W2g" name="index" prompt="index?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_4gYkl9RXEe2eOs8Ti09W2g" name="counter" prompt="counter?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_4gYkmNRXEe2eOs8Ti09W2g" name="flag_source" prompt="flag_source?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkmdRXEe2eOs8Ti09W2g" name="tipo_azione" prompt="tipo_azione?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkmtRXEe2eOs8Ti09W2g" name="filtro_azione_temp" prompt="filtro_azione_temp?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYkm9RXEe2eOs8Ti09W2g" name="azione" prompt="azione?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_4gYknNRXEe2eOs8Ti09W2g" name="flag_inizio_turno" prompt="flag_inizio_turno?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_Long" value=""/>
+    <contextParameter comment="" internalId="_4gYkndRXEe2eOs8Ti09W2g" name="percorso_cartella" prompt="percorso_cartella?" promptNeeded="false" repositoryContextId="_ZrBzAIfxEeuUG9l6Z2_ZTg" type="id_String" value="/opt/samba/shared/"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:QEp7hBQLuqW4V+4LCSmoKs9tVMbDSG5nGaqHuQup"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/temp/Log&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="VERTICA_9_0"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;jdbc:vertica://10.0.1.217:5433/Vertica01&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR">
+      <elementValue elementRef="drivers" value="mvn:com.vertica/vertica-jdbc/9.3.1-0/jar"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;com.vertica.jdbc.Driver&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.VerticaStaging_Server"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.VerticaStaging_Port"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.VerticaStaging_Database"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.VerticaStaging_Database"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.VerticaStaging_AdditionalParams"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.VerticaStaging_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;horsadmin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:MRutWnkJ7kt+dxX0C/NAZc+7CQJLCcxu1MtuUrvflL9pDKEnIxTB"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;DWH_INT.LOG_STATS_TALEND&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;DWH_INT.LOG_ERRORS_TALEND&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;DWH_INT.LOG_VOLUMETRICS_TALEND&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_QhonIDo1EeuTtMZ8L3C03g" name="DQTechnical"/>
+    <routinesParameter id="_QhDYUDo1EeuTtMZ8L3C03g" name="DataMasking"/>
+    <routinesParameter id="_QczKcDo1EeuTtMZ8L3C03g" name="DataOperation"/>
+    <routinesParameter id="_QhVsMDo1EeuTtMZ8L3C03g" name="DataQualityDependencies"/>
+    <routinesParameter id="_QhOXcDo1EeuTtMZ8L3C03g" name="DataQuality"/>
+    <routinesParameter id="_QhhSYDo1EeuTtMZ8L3C03g" name="DqStringHandling"/>
+    <routinesParameter id="_QfyNADo1EeuTtMZ8L3C03g" name="Mathematical"/>
+    <routinesParameter id="_Qf5hwDo1EeuTtMZ8L3C03g" name="Numeric"/>
+    <routinesParameter id="_Qf_oYDo1EeuTtMZ8L3C03g" name="Relational"/>
+    <routinesParameter id="_Qg8DkDo1EeuTtMZ8L3C03g" name="SQLike"/>
+    <routinesParameter id="_QgL1oDo1EeuTtMZ8L3C03g" name="StringHandling"/>
+    <routinesParameter id="_QgXb0Do1EeuTtMZ8L3C03g" name="TalendDataGenerator"/>
+    <routinesParameter id="_QgewkDo1EeuTtMZ8L3C03g" name="TalendDate"/>
+    <routinesParameter id="_QgxEcDo1EeuTtMZ8L3C03g" name="TalendStringUtil"/>
+    <routinesParameter id="_Qgk3MDo1EeuTtMZ8L3C03g" name="TalendString"/>
+  </parameters>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_IES-IIf3Eeu8mrmP0sCnUQ"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.InazSQL_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.InazSQL_Port"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.InazSQL_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.InazSQL_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.InazSQL_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jW8bCZQQf/vaPRpjYvDzQbwXZqYF+y/2BuAvN/zXz5AO9lM2gbSGcVrJn8aeUhrn/03EeA=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.InazSQL_AdditionalParams"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" show="false" value="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;InazSQL"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tVerticaConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_EnPBcCptEeutodfUG7h-rA"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="VERTICA_9_0"/>
+    <elementParameter field="TEXT" name="HOST" value="context.VerticaStaging_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="VERTICA"/>
+    <elementParameter field="TEXT" name="PORT" value="context.VerticaStaging_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.VerticaStaging_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.VerticaStaging_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.VerticaStaging_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:B4QpT7UGXNvn5BX16G5ULRLzr8okGTFW4Bk/Ete/y9lDlqyECsVAKxpkHopVVHA6Fu8EQoA5WXhY/kM="/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.VerticaStaging_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;VerticaStaging"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tAS400Connection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_3"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_2QY3sCpsEeutodfUG7h-rA"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="jt400-9.8.jar"/>
+    <elementParameter field="TEXT" name="HOST" value="context.AS400_Server"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.AS400_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="AS400"/>
+    <elementParameter field="TEXT" name="USER" value="context.AS400_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:rpGZH5zmVZWV+cVwP6KyLFts+28aoVplVsy7toobHXy/VX09xVJUBo8LbHGprigLaxI="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.AS400_AdditionalParams"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;AS400"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.table_name= &quot;&quot;;&#10;context.flag_source= &quot;&quot;;&#10;context.tag= &quot;'hr','as'&quot;;&#10;&#10;//solo TEST&#10;context.load_month = 1;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="928" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;__CONNECTION__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tVerticaClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_2"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;__CONNECTION__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tAS400Close" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1376" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_3"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_3"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;__CONNECTION__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tVerticaInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="VERTICA_9_0"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="VERTICA"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5433&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:C85AWUGelLPJ15foWkZYHGcx7dKxkBbX+deTiBc0"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;conf_load_table&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT table_name, flag_source, flag_active, tag,load_param&#13;&#10;FROM &quot;+ context.VerticaStaging_Schema +&quot;.conf_load_table&#13;&#10;where flag_active=1 and tag in (&quot; + context.tag + &quot;)&quot;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="vertica_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="table_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="flag_source"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="flag_active"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tag"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="load_param"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" key="false" length="50" name="table_name" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="flag_source" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="flag_active" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="tag" nullable="true" originalLength="20" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="load_param" nullable="true" originalLength="250" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowToIterate_1"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.table_name=(String)globalMap.get(&quot;row2.table_name&quot;);&#10;context.flag_source=(String)globalMap.get(&quot;row2.flag_source&quot;);&#10;context.load_param=(String)globalMap.get(&quot;row2.load_param&quot;);&#10;System.out.println(&quot;Carica tabella: &quot;  + context.table_name);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="tVerticaRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="VERTICA_9_0"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5433&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="VERTICA"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:FWxf2JkWdUDf+DkO+PGvQa+jRUHmxMH67CrP8Gnn"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Truncate table&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;TRUNCATE TABLE &quot;+ context.VerticaStaging_Schema +&quot;.&quot; + context.table_name"/>
+    <elementParameter field="CLOSED_LIST" name="USE_NB_LINE" value="NONE"/>
+    <elementParameter field="LABEL" name="USE_NB_LINE_NOTE" value="* Only used if the query is an insert, an update or a delete."/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBRow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;select  * from &quot; + context.table_name + &quot; &quot; + context.load_param);&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
+  <node componentName="tAS400Input" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_3"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="jt400-9.8.jar"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="AS400"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:sk8gWStGL4ueImZdZHyZshiUocgq9o6rEl/6k7XL"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;PRSTO00F&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT CDMA, CALM, DATA,&#13;&#10; RISO, DECRISO, ATTI, SUBATTI,&#13;&#10; AZIO, DEAZIO, PAZI, KAZM, DTIN, ORIN, D2IN, &#13;&#10;DTFI, ORFI, D2FI, TORC, TORCORE, TORCMIN, TORCSEC, &#13;&#10;TORI, TORIORE, TORIMIN, TORISEC, TORS, TORSORE, TORSMIN, &#13;&#10;TORSSEC, TTCO, TTPZ, TTKG, TTPP, TTUM, TTCA, TTFO, TTRE, CPMT, &#13;&#10;TIDP, CCML, GRUP, CNBO, GRCM, GRCP, CCAPD, CNBOD, CCBMD, CCAPA,&#13;&#10; CNBOA, CCBMA, USWR, PRWR, DTWR, ORWR, USUP, PRUP, DTUP, ORUP, NRUP&#13;&#10;FROM STOREDAT.PRSTO00F&#13;&#10;where data &gt;= '2023-02-01 00:00:00'&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="as400_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CDMA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CALM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RISO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DECRISO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUBATTI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AZIO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEAZIO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PAZI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KAZM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTIN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORIN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D2IN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTFI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORFI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D2FI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORCORE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORCMIN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORCSEC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORI"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORIORE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORIMIN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORISEC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORSORE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORSMIN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORSSEC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TTCO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TTPZ"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TTKG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TTPP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TTUM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TTCA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TTFO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TTRE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CPMT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIDP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CCML"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GRUP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CNBO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GRCM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GRCP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CCAPD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CNBOD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CCBMD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CCAPA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CNBOA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CCBMA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USWR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRWR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTWR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORWR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USUP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRUP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTUP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORUP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NRUP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;__CONNECTION__&lt;br&gt;&lt;b&gt;__TABLE__&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="PRSTO00F" name="tDBInput_2">
+      <column comment="" defaultValue="' '" key="false" length="2" name="CDMA" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="CALM" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_DATE'" key="false" length="10" name="DATA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="13" name="RISO" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="49" name="DECRISO" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="ATTI" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="SUBATTI" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="AZIO" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="49" name="DEAZIO" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="13" name="PAZI" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="20" name="KAZM" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_DATE'" key="false" length="10" name="DTIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="ORIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="D2IN" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_DATE'" key="false" length="10" name="DTFI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="ORFI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="D2FI" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="TORC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORCORE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORCMIN" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="10" name="TORCSEC" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="TORI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORIORE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORIMIN" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="10" name="TORISEC" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="TORS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORSORE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORSMIN" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="10" name="TORSSEC" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="10" name="TTCO" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TTPZ" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TTKG" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="6" name="TTPP" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="10" name="TTUM" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="6" name="TTCA" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="6" name="TTFO" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="6" name="TTRE" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CPMT" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="TIDP" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="7" name="CCML" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="GRUP" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CNBO" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="4" name="GRCM" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="4" name="GRCP" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="CCAPD" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CNBOD" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CCBMD" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="CCAPA" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CNBOA" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CCBMA" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="USWR" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="PRWR" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_DATE'" key="false" length="10" name="DTWR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="ORWR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="USUP" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="PRUP" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_DATE'" key="false" length="10" name="DTUP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="ORUP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="5" name="NRUP" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="SYSTEM_TABLE_NAME" value="PRSTO00F"/>
+      <additionalProperties key="TABLE_SCHEMA" value="STOREDAT"/>
+      <additionalProperties key="SYSTEM_TABLE_SCHEMA" value="STOREDAT"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="960" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_4S0e4NRWEe2eOs8Ti09W2g-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out2">
+      <column comment="" defaultValue="' '" key="false" length="2" name="CDMA" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="CALM" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_DATE'" key="false" length="10" name="DATA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="13" name="RISO" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="49" name="DECRISO" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="ATTI" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="SUBATTI" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="AZIO" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="49" name="DEAZIO" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="13" name="PAZI" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="20" name="KAZM" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_DATE'" key="false" length="10" name="DTIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="ORIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="D2IN" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_DATE'" key="false" length="10" name="DTFI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="ORFI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="D2FI" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="TORC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORCORE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORCMIN" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="10" name="TORCSEC" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="TORI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORIORE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORIMIN" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="10" name="TORISEC" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="TORS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORSORE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORSMIN" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="10" name="TORSSEC" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="10" name="TTCO" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TTPZ" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TTKG" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="6" name="TTPP" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="10" name="TTUM" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="6" name="TTCA" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="6" name="TTFO" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="6" name="TTRE" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CPMT" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="TIDP" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="7" name="CCML" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="GRUP" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CNBO" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="4" name="GRCM" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="4" name="GRCP" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="CCAPD" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CNBOD" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CCBMD" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="CCAPA" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CNBOA" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CCBMA" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="USWR" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="PRWR" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_DATE'" key="false" length="10" name="DTWR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="ORWR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="USUP" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="PRUP" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_DATE'" key="false" length="10" name="DTUP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="ORUP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="5" name="NRUP" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out2" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row4.CDMA " name="CDMA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.CALM " name="CALM" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.DATA " name="DATA" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row4.RISO " name="RISO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.DECRISO " name="DECRISO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.ATTI " name="ATTI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.SUBATTI " name="SUBATTI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.AZIO " name="AZIO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.DEAZIO " name="DEAZIO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.PAZI " name="PAZI" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row4.KAZM " name="KAZM" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.DTIN " name="DTIN" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row4.ORIN " name="ORIN" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row4.D2IN " name="D2IN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.DTFI " name="DTFI" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row4.ORFI " name="ORFI" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row4.D2FI " name="D2FI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.TORC " name="TORC" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row4.TORCORE " name="TORCORE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row4.TORCMIN " name="TORCMIN" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row4.TORCSEC " name="TORCSEC" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row4.TORI " name="TORI" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row4.TORIORE " name="TORIORE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row4.TORIMIN " name="TORIMIN" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row4.TORISEC " name="TORISEC" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row4.TORS " name="TORS" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row4.TORSORE " name="TORSORE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row4.TORSMIN " name="TORSMIN" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row4.TORSSEC " name="TORSSEC" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row4.TTCO " name="TTCO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row4.TTPZ " name="TTPZ" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row4.TTKG " name="TTKG" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row4.TTPP " name="TTPP" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row4.TTUM " name="TTUM" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row4.TTCA " name="TTCA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row4.TTFO " name="TTFO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row4.TTRE " name="TTRE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row4.CPMT " name="CPMT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.TIDP " name="TIDP" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.CCML " name="CCML" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.GRUP " name="GRUP" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.CNBO " name="CNBO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.GRCM " name="GRCM" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.GRCP " name="GRCP" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.CCAPD " name="CCAPD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.CNBOD " name="CNBOD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.CCBMD " name="CCBMD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.CCAPA " name="CCAPA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.CNBOA " name="CNBOA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.CCBMA " name="CCBMA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.USWR " name="USWR" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.PRWR " name="PRWR" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.DTWR " name="DTWR" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row4.ORWR " name="ORWR" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row4.USUP " name="USUP" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.PRUP " name="PRUP" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.DTUP " name="DTUP" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row4.ORUP " name="ORUP" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row4.NRUP " name="NRUP" nullable="true" type="id_Integer"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row4" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="CDMA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CALM" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DATA" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="RISO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DECRISO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ATTI" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SUBATTI" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AZIO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DEAZIO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PAZI" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="KAZM" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DTIN" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="ORIN" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="D2IN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DTFI" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="ORFI" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="D2FI" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TORC" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="TORCORE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TORCMIN" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TORCSEC" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TORI" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="TORIORE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TORIMIN" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TORISEC" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TORS" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="TORSORE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TORSMIN" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TORSSEC" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TTCO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TTPZ" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TTKG" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TTPP" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TTUM" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TTCA" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TTFO" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TTRE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="CPMT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TIDP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CCML" nullable="true" type="id_String"/>
+        <mapperTableEntries name="GRUP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CNBO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="GRCM" nullable="true" type="id_String"/>
+        <mapperTableEntries name="GRCP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CCAPD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CNBOD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CCBMD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CCAPA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CNBOA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CCBMA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="USWR" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PRWR" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DTWR" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="ORWR" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="USUP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PRUP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DTUP" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="ORUP" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="NRUP" nullable="true" type="id_Integer"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tVerticaOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="VERTICA_9_0"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="VERTICA"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5433&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:qq1oe2Py/QmRxv/c+Sp3gC+ImNhXwiJb33H7TVvH"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;PRSTO00F_orig_1&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="CHECK" name="USE_CASCADE" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="vertica_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ABORT_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="TEXT" name="REJECT_MAX" show="false" value=""/>
+    <elementParameter field="FILE" name="EXCEPTIONS_PATH" show="false" value=""/>
+    <elementParameter field="TEXT" name="EXCEPTIONS_NODE" show="false" value=""/>
+    <elementParameter field="FILE" name="REJECTED_DATA" show="false" value=""/>
+    <elementParameter field="TEXT" name="REJECTED_NODE" show="false" value=""/>
+    <elementParameter field="CHECK" name="NO_COMMIT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="100"/>
+    <elementParameter field="CHECK" name="BATCH_MODE" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="100"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="true"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CDMA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CALM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RISO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DECRISO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTI"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUBATTI"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AZIO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEAZIO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PAZI"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KAZM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTIN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORIN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D2IN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTFI"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORFI"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D2FI"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORC"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORCORE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORCMIN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORCSEC"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORI"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORIORE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORIMIN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORISEC"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORSORE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORSMIN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TORSSEC"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TTCO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TTPZ"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TTKG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TTPP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TTUM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TTCA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TTFO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TTRE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CPMT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIDP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CCML"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GRUP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CNBO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GRCM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GRCP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CCAPD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CNBOD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CCBMD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CCAPA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CNBOA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CCBMA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USWR"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRWR"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTWR"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORWR"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USUP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRUP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTUP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORUP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NRUP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="true"/>
+    <elementParameter field="CHECK" name="CREATE_PROJECTION" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;__CONNECTION__&lt;br&gt;&lt;b&gt;__TABLE__&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_1">
+      <column comment="" defaultValue="' '" key="false" length="2" name="CDMA" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="CALM" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_DATE'" key="false" length="10" name="DATA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="13" name="RISO" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="49" name="DECRISO" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="ATTI" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="SUBATTI" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="AZIO" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="49" name="DEAZIO" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="13" name="PAZI" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="20" name="KAZM" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_DATE'" key="false" length="10" name="DTIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="ORIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="D2IN" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_DATE'" key="false" length="10" name="DTFI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="ORFI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="D2FI" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="TORC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORCORE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORCMIN" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="10" name="TORCSEC" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="TORI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORIORE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORIMIN" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="10" name="TORISEC" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="TORS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORSORE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORSMIN" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="10" name="TORSSEC" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="10" name="TTCO" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TTPZ" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TTKG" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="6" name="TTPP" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="10" name="TTUM" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="6" name="TTCA" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="6" name="TTFO" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="6" name="TTRE" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CPMT" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="TIDP" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="7" name="CCML" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="GRUP" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CNBO" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="4" name="GRCM" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="4" name="GRCP" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="CCAPD" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CNBOD" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CCBMD" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="CCAPA" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CNBOA" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CCBMA" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="USWR" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="PRWR" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_DATE'" key="false" length="10" name="DTWR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="ORWR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="USUP" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="PRUP" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_DATE'" key="false" length="10" name="DTUP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="ORUP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="5" name="NRUP" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="SYSTEM_TABLE_NAME" value="PRSTO00F"/>
+      <additionalProperties key="TABLE_SCHEMA" value="STOREDAT"/>
+      <additionalProperties key="SYSTEM_TABLE_SCHEMA" value="STOREDAT"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="' '" key="false" length="2" name="CDMA" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="CALM" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_DATE'" key="false" length="10" name="DATA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="13" name="RISO" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="49" name="DECRISO" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="ATTI" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="SUBATTI" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="AZIO" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="49" name="DEAZIO" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="13" name="PAZI" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="20" name="KAZM" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_DATE'" key="false" length="10" name="DTIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="ORIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="D2IN" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_DATE'" key="false" length="10" name="DTFI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="ORFI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="D2FI" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="TORC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORCORE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORCMIN" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="10" name="TORCSEC" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="TORI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORIORE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORIMIN" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="10" name="TORISEC" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="TORS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORSORE" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TORSMIN" nullable="true" pattern="" precision="5" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="10" name="TORSSEC" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="10" name="TTCO" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TTPZ" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="15" name="TTKG" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="6" name="TTPP" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="10" name="TTUM" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="6" name="TTCA" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="6" name="TTFO" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="6" name="TTRE" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CPMT" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="TIDP" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="7" name="CCML" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="GRUP" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CNBO" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="4" name="GRCM" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="4" name="GRCP" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="CCAPD" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CNBOD" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CCBMD" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="2" name="CCAPA" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CNBOA" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="3" name="CCBMA" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="USWR" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="PRWR" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_DATE'" key="false" length="10" name="DTWR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="ORWR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="USUP" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="' '" key="false" length="10" name="PRUP" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_DATE'" key="false" length="10" name="DTUP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'CURRENT_TIME'" key="false" length="8" name="ORUP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="5" name="NRUP" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="SYSTEM_TABLE_NAME" value="PRSTO00F"/>
+      <additionalProperties key="TABLE_SCHEMA" value="STOREDAT"/>
+      <additionalProperties key="SYSTEM_TABLE_SCHEMA" value="STOREDAT"/>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBConnection_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_2" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_2" target="tDBConnection_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_3" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_3" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tDBClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk5"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBClose_1" offsetLabelX="0" offsetLabelY="0" source="tDBClose_1" target="tDBClose_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk6"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBClose_2" offsetLabelX="0" offsetLabelY="0" source="tDBClose_2" target="tDBClose_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk7"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tFlowToIterate_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="tag"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="load_param"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tJava_2">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tDBRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk13"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBRow_1" offsetLabelX="0" offsetLabelY="0" source="tDBRow_1" target="tJava_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk14"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tDBInput_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.flag_source.contains(&quot;as400&quot;)&amp;&amp;context.table_name.contains(&quot;PRSTO00F&quot;)"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out2"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e24e093d-ab05-4846-8215-89fc91191b81"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>H1bUIRaGfVN7EY7VsAZSUIuTtgWX4XSra+G7CZ7q1BFe9I2CVZIFnLZ2GTwVrk47/zXFrbRy411k
+4fyByAOpWA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8ac45af7-7d6e-4e35-9bab-b86ee8847835"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>s03v6+JM4zDhtdnYvu59NV3rPNwSIkQ/YQs+8zkwond+pgcIyh8nmJ7rhaMw9gs/tHwIgBGF2BcN
+XremBFqHcw==</DigestValue></Reference></SignedInfo><SignatureValue>UMEuHG8irw3dTjvfFTAv+7IJz/7gAlkl0BhJ89qbmIIqy3epX+p3BeEPNPZ4iHGppln5JoegqQP4
+FyQMj+KmxgQPbH/P6iUXHncgIcgiq6sfdaD3aiGHQCERbjSWNCqGIJs2604+kz6Wu9ddk8oXCQJk
+teStjZwkknHRRdOiL86jsM0qr8SmRaN3k3XaTc9nUfbGUqvIBqRXyoTFludou2uzxH54WxyzQDjS
+rZ5MrE1EvsaOZyY7ZpugwufWBaZC7ZBIk35KsHwmQ7DAzv74ge0tvfw9WJIkvxr+DXfbQXTDYnkP
+YLX888q/N9Nlv5HnZIeuV+NquhFwfUQaDablMA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8ac45af7-7d6e-4e35-9bab-b86ee8847835" Target="#_e24e093d-ab05-4846-8215-89fc91191b81"><Timestamp>2023-04-11 20:16:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
