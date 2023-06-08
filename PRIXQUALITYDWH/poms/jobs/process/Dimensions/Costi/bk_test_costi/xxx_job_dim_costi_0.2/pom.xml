@@ -6,16 +6,16 @@
     <groupId>org.example.prixqualitydwh</groupId>
     <artifactId>code.Master</artifactId>
     <version>7.3.1</version>
-    <relativePath>../../../../../</relativePath>
+    <relativePath>../../../../../../</relativePath>
   </parent>
   <groupId>org.example.prixqualitydwh.job</groupId>
   <artifactId>xxx_job_dim_costi</artifactId>
-  <version>0.1.0</version>
-  <name>PRIXQUALITYDWH xxx_job_dim_costi-0.1.0 (0.1,Job Designs)</name>
+  <version>0.2.0</version>
+  <name>PRIXQUALITYDWH xxx_job_dim_costi-0.2.0 (0.2,Job Designs)</name>
   <properties>
     <talend.job.type>Standard</talend.job.type>
-    <talend.pigudf.groupid>org.example.prixqualitydwh.pigudf</talend.pigudf.groupid>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
+    <talend.pigudf.groupid>org.example.prixqualitydwh.pigudf</talend.pigudf.groupid>
     <talend.job.folder>dimensions/</talend.job.folder>
     <talend.job.context>Default</talend.job.context>
     <talend.job.path>prixqualitydwh</talend.job.path>
@@ -23,7 +23,7 @@
     <talend.job.stat>true</talend.job.stat>
     <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8</talend.job.jvmargs>
     <talend.job.id>_MdwQ8FQeEeuDKbmHdGLIqQ</talend.job.id>
-    <talend.job.version>0.1</talend.job.version>
+    <talend.job.version>0.2</talend.job.version>
     <talend.job.framework></talend.job.framework>
     <talend.routine.groupid>org.example.prixqualitydwh.code</talend.routine.groupid>
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
@@ -39,7 +39,7 @@
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
     <talend.job.name>xxx_job_dim_costi</talend.job.name>
-    <talend.job.finalName>xxx_job_dim_costi_0_1</talend.job.finalName>
+    <talend.job.finalName>xxx_job_dim_costi_0_2</talend.job.finalName>
   </properties>
   <dependencies>
     <dependency>
@@ -136,6 +136,12 @@
       <groupId>org.example.prixqualitydwh.code</groupId>
       <artifactId>routines</artifactId>
       <version>7.3.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.prixqualitydwh.joblet</groupId>
+      <artifactId>log_batch</artifactId>
+      <version>0.1.0</version>
+      <type>pom</type>
     </dependency>
   </dependencies>
   <build>
