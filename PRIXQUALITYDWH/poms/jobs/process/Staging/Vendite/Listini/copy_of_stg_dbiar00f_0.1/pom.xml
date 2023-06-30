@@ -6,23 +6,23 @@
     <groupId>org.example.prixqualitydwh</groupId>
     <artifactId>code.Master</artifactId>
     <version>7.3.1</version>
-    <relativePath>../../../../../</relativePath>
+    <relativePath>../../../../../../</relativePath>
   </parent>
   <groupId>org.example.prixqualitydwh.job</groupId>
-  <artifactId>Stg_DBIAR00F_20230421</artifactId>
+  <artifactId>Copy_of_Stg_DBIAR00F</artifactId>
   <version>0.1.0</version>
-  <name>PRIXQUALITYDWH Stg_DBIAR00F_20230421-0.1.0 (0.1,Job Designs)</name>
+  <name>PRIXQUALITYDWH Copy_of_Stg_DBIAR00F-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <talend.job.type>Standard</talend.job.type>
-    <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <talend.pigudf.groupid>org.example.prixqualitydwh.pigudf</talend.pigudf.groupid>
+    <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <talend.job.folder>staging/listini/</talend.job.folder>
     <talend.job.context>Production</talend.job.context>
     <talend.job.path>prixqualitydwh</talend.job.path>
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <talend.job.stat>true</talend.job.stat>
-    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
-    <talend.job.id>_4WqsQDvGEeu_TfPfH6GknQ</talend.job.id>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8</talend.job.jvmargs>
+    <talend.job.id>_aEBAMD4CEeuYoo3p7NoI5A</talend.job.id>
     <talend.job.version>0.1</talend.job.version>
     <talend.job.framework></talend.job.framework>
     <talend.routine.groupid>org.example.prixqualitydwh.code</talend.routine.groupid>
@@ -33,13 +33,13 @@
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
-    <talend.product.version>7.3.1.20220304_0607-patch</talend.product.version>
+    <talend.product.version>7.3.1.20220105_1637-patch</talend.product.version>
     <talend.project.name>PRIXQUALITYDWH</talend.project.name>
     <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.name>Stg_DBIAR00F_20230421</talend.job.name>
-    <talend.job.finalName>stg_dbiar00f_20230421_0_1</talend.job.finalName>
+    <talend.job.name>Copy_of_Stg_DBIAR00F</talend.job.name>
+    <talend.job.finalName>copy_of_stg_dbiar00f_0_1</talend.job.finalName>
   </properties>
   <dependencies>
     <dependency>
@@ -100,17 +100,17 @@
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
-      <version>2.17.1</version>
+      <version>2.16.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
-      <version>2.17.1</version>
+      <version>2.16.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-slf4j-impl</artifactId>
-      <version>2.17.1</version>
+      <version>2.16.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.daikon</groupId>
@@ -131,11 +131,6 @@
       <groupId>org.talend.components.lib</groupId>
       <artifactId>talend_file_enhanced</artifactId>
       <version>1.1</version>
-    </dependency>
-    <dependency>
-      <groupId>com.vertica</groupId>
-      <artifactId>vertica-jdbc</artifactId>
-      <version>9.3.1-0</version>
     </dependency>
     <dependency>
       <groupId>org.example.prixqualitydwh.code</groupId>
@@ -238,8 +233,8 @@
         <assemblies.dir>${basedir}/src/main/assemblies/</assemblies.dir>
         <pigudfpom.dir>${parentpom.dir}code/pigudf/</pigudfpom.dir>
         <templates.dir>${basedir}/src/main/templates/</templates.dir>
-        <poms.dir>${basedir}</poms.dir>
         <joblet.dir>${parentpom.dir}jobs/</joblet.dir>
+        <poms.dir>${basedir}</poms.dir>
         <parentpom.dir>${project.parent.relativePath}</parentpom.dir>
         <pigudfcode.dir>${parentpom.dir}code/pigudf/src/main/</pigudfcode.dir>
       </properties>
@@ -262,8 +257,8 @@
         <talend.libraries.excludes.set>${talend.libraries.includes.set}</talend.libraries.excludes.set>
         <current.job.binaries.include>${project.groupId}:${project.artifactId}:${project.version}</current.job.binaries.include>
         <talend.pigudf.excludes.set>org.talend.pigudf.${talend.project.name.lowercase}:*</talend.pigudf.excludes.set>
-        <talend.jobs.excludes.set>${project.groupId}:*</talend.jobs.excludes.set>
         <talend.code.excludes.set>org.talend.code.${talend.project.name.lowercase}:*</talend.code.excludes.set>
+        <talend.jobs.excludes.set>${project.groupId}:*</talend.jobs.excludes.set>
         <talend.libraries.includes.set>org.talend.libraries:*</talend.libraries.includes.set>
       </properties>
     </profile>
