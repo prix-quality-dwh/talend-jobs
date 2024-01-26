@@ -14,14 +14,14 @@
   <name>PRIXQUALITYDWH job_fact_versamento_dettaglio-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <talend.job.type>Standard</talend.job.type>
-    <talend.pigudf.groupid>org.example.prixqualitydwh.pigudf</talend.pigudf.groupid>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
-    <talend.job.folder>fact/negozio/</talend.job.folder>
+    <talend.pigudf.groupid>org.example.prixqualitydwh.pigudf</talend.pigudf.groupid>
+    <talend.job.folder>fact/vendite/negozio/</talend.job.folder>
     <talend.job.context>Production</talend.job.context>
     <talend.job.path>prixqualitydwh</talend.job.path>
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <talend.job.stat>true</talend.job.stat>
-    <talend.job.jvmargs>-Xms1024M -Xmx4096M -Dfile.encoding=UTF-8</talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.id>_zpolkGJLEeulJe9uTRc3Hw</talend.job.id>
     <talend.job.version>0.1</talend.job.version>
     <talend.job.framework></talend.job.framework>
@@ -533,8 +533,8 @@
         <assemblies.dir>${basedir}/src/main/assemblies/</assemblies.dir>
         <pigudfpom.dir>${parentpom.dir}code/pigudf/</pigudfpom.dir>
         <templates.dir>${basedir}/src/main/templates/</templates.dir>
-        <joblet.dir>${parentpom.dir}jobs/</joblet.dir>
         <poms.dir>${basedir}</poms.dir>
+        <joblet.dir>${parentpom.dir}jobs/</joblet.dir>
         <parentpom.dir>${project.parent.relativePath}</parentpom.dir>
         <pigudfcode.dir>${parentpom.dir}code/pigudf/src/main/</pigudfcode.dir>
       </properties>
@@ -557,8 +557,8 @@
         <talend.libraries.excludes.set>${talend.libraries.includes.set}</talend.libraries.excludes.set>
         <current.job.binaries.include>${project.groupId}:${project.artifactId}:${project.version}</current.job.binaries.include>
         <talend.pigudf.excludes.set>org.talend.pigudf.${talend.project.name.lowercase}:*</talend.pigudf.excludes.set>
-        <talend.code.excludes.set>org.talend.code.${talend.project.name.lowercase}:*</talend.code.excludes.set>
         <talend.jobs.excludes.set>${project.groupId}:*</talend.jobs.excludes.set>
+        <talend.code.excludes.set>org.talend.code.${talend.project.name.lowercase}:*</talend.code.excludes.set>
         <talend.libraries.includes.set>org.talend.libraries:*</talend.libraries.includes.set>
       </properties>
     </profile>
