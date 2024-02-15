@@ -9,21 +9,21 @@
     <relativePath>../../../../../</relativePath>
   </parent>
   <groupId>org.example.prixqualitydwh.job</groupId>
-  <artifactId>main_impianti</artifactId>
-  <version>0.1.0</version>
-  <name>PRIXQUALITYDWH main_impianti-0.1.0 (0.1,Job Designs)</name>
+  <artifactId>ext_impianti_frigoveneta</artifactId>
+  <version>0.2.0</version>
+  <name>PRIXQUALITYDWH ext_impianti_frigoveneta-0.2.0 (0.2,Job Designs)</name>
   <properties>
     <talend.job.type>Standard</talend.job.type>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <talend.pigudf.groupid>org.example.prixqualitydwh.pigudf</talend.pigudf.groupid>
-    <talend.job.folder>main/ind4_0/</talend.job.folder>
-    <talend.job.context>PROD</talend.job.context>
+    <talend.job.folder>staging/ind4_0/</talend.job.folder>
+    <talend.job.context>DEV</talend.job.context>
     <talend.job.path>prixqualitydwh</talend.job.path>
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <talend.job.stat>true</talend.job.stat>
     <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
-    <talend.job.id>_FUU0kDGjEeyguqBpT4LnMw</talend.job.id>
-    <talend.job.version>0.1</talend.job.version>
+    <talend.job.id>_WoZKEMqHEe62yruclR5hXg</talend.job.id>
+    <talend.job.version>0.2</talend.job.version>
     <talend.job.framework></talend.job.framework>
     <talend.routine.groupid>org.example.prixqualitydwh.code</talend.routine.groupid>
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
@@ -38,8 +38,8 @@
     <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.name>main_impianti</talend.job.name>
-    <talend.job.finalName>main_impianti_0_1</talend.job.finalName>
+    <talend.job.name>ext_impianti_frigoveneta</talend.job.name>
+    <talend.job.finalName>ext_impianti_frigoveneta_0_2</talend.job.finalName>
   </properties>
   <dependencies>
     <dependency>
@@ -228,6 +228,11 @@
       <version>1.0.1</version>
     </dependency>
     <dependency>
+      <groupId>org.talend.components</groupId>
+      <artifactId>filecopy</artifactId>
+      <version>2.0.3</version>
+    </dependency>
+    <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
       <version>30.0-jre</version>
@@ -271,6 +276,11 @@
       <groupId>org.codehaus.jackson</groupId>
       <artifactId>jackson-mapper-asl</artifactId>
       <version>1.9.16-TALEND</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>jakarta-oro-2.0.8</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.janino</groupId>
@@ -423,6 +433,11 @@
       <version>1.1</version>
     </dependency>
     <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>talendcsv</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
       <groupId>com.vertica</groupId>
       <artifactId>vertica-jdbc</artifactId>
       <version>9.3.1-0</version>
@@ -436,36 +451,6 @@
       <groupId>org.example.prixqualitydwh.code</groupId>
       <artifactId>routines</artifactId>
       <version>7.3.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.prixqualitydwh.job</groupId>
-      <artifactId>canc_file_impianti</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.prixqualitydwh.job</groupId>
-      <artifactId>ext_impianti_epta</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.prixqualitydwh.job</groupId>
-      <artifactId>ext_impianti_frigoveneta</artifactId>
-      <version>0.2.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.prixqualitydwh.job</groupId>
-      <artifactId>fact_impianti_frigo</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.prixqualitydwh.job</groupId>
-      <artifactId>lettura_mail_impianti</artifactId>
-      <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.prixqualitydwh.job</groupId>
-      <artifactId>ext_impianti_arneg</artifactId>
-      <version>0.1.0</version>
     </dependency>
   </dependencies>
   <build>
